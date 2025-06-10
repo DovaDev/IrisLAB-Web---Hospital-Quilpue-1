@@ -1,5 +1,6 @@
 ﻿Imports Datos
 Imports Entidades
+Imports System.Web
 
 Public Class N_Ate_Resultados
     'Declaraciones generales
@@ -120,12 +121,37 @@ Public Class N_Ate_Resultados
 
     End Function
 
+    Function IRIS_WEB_RESULTADOS_BUSCA_VISOR_DETALLE(ID_ATE As Long,
+                                                     ID_SECCION As Long,
+                                                     ID_EXAMEN As Long,
+                                                     R_DIA As Integer,
+                                                     R_MES As Integer,
+                                                     R_AÑO As Integer,
+                                                     ID_AREA As Integer,
+                                                     ID_RLS_LS As Integer) As List(Of E_IRIS_WEBF_BUSCA_VISOR_DETALLE_RESULTADO_SECCION_EXAMEN2)
+        Return DD_Data.IRIS_WEB_RESULTADOS_BUSCA_VISOR_DETALLE(ID_ATE, ID_SECCION, ID_EXAMEN, R_DIA, R_MES, R_AÑO, ID_AREA, ID_RLS_LS)
+
+    End Function
+
     Function busca_numero_atencion_l_r(numeroAtencion As Integer, direccion As Boolean, idCodigoFonasa As Integer) As Integer
         Return DD_Data.busca_numero_atencion_l_r(numeroAtencion, direccion, idCodigoFonasa)
     End Function
 
     Function IRIS_WEBF_UPDATE_CRIT_MANUAL(ByVal ID_ATE_RES As Long) As Integer
         Return DD_Data.IRIS_WEBF_UPDATE_CRIT_MANUAL(ID_ATE_RES)
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_ATE_L_R_2_AREA(ByVal ATE_NUM As Long, ByVal DIRECTION As Boolean, ByVal ID_PROC As Integer,
+                                                 ByVal ID_PREV As Integer, ByVal ID_PROG As Integer, ByVal ID_SECC As Integer,
+                                                 ByVal ID_EXAM As Integer, ByVal ID_SECT As Integer, ByVal ID_PACI As Long,
+                                                 ByVal ID_AREA As Integer, ByVal PENDIENTE As Boolean, ByVal ID_RLS_LS As Integer,
+                                                 ByVal USU_ID_PROC As Integer) As Long
+        Dim ID_USER As HttpCookie = HttpContext.Current.Request.Cookies("ID_USER")
+        If (IsNothing(ID_USER) = True) Then
+            HttpContext.Current.Response.Redirect("~/index.aspx")
+        End If
+
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_ATE_L_R_2_AREA(ATE_NUM, DIRECTION, ID_PROC, ID_PREV, ID_PROG, ID_SECC, ID_EXAM, ID_SECT, ID_PACI, CInt(ID_USER.Value), USU_ID_PROC, ID_AREA, PENDIENTE, ID_RLS_LS)
     End Function
 
     Function IRIS_WEBF_BUSCA_VISOR_DETALLE_RESULTADO_SECCION_EXAMEN2(ByVal ID_ATE As Long, ByVal ID_SECCION As Long, ByVal ID_EXAMEN As Long)
