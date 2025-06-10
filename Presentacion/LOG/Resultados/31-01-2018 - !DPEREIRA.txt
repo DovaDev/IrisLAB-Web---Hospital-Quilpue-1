@@ -1,0 +1,1052 @@
+[31-01-2018 -> 09:32:53] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:32:53] Cargando datos del paciente...
+[31-01-2018 -> 09:32:53] Paciente identificado:
+                         - RUT: 4.570.092-5
+                         - Nombre: ANA AYALA AYALA
+[31-01-2018 -> 09:32:53] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:32:54] ID_ATE = 20114
+[31-01-2018 -> 09:32:54] Cargando resultados del paciente...
+[31-01-2018 -> 09:32:54] Cant. Resultados: 10
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:43:44] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:43:44] Cargando datos del paciente...
+[31-01-2018 -> 09:43:45] Paciente identificado:
+                         - RUT: 15.117.479-5
+                         - Nombre: DOMENICA BUSTAMANTE YAÑEZ
+[31-01-2018 -> 09:43:45] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:43:45] Cargando resultados del paciente...
+[31-01-2018 -> 09:43:45] Cant. Resultados: 10
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:43:46] ID_ATE = 20103
+[31-01-2018 -> 09:45:04] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:45:04] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:45:07] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297181
+                         Resultado: 10,0
+[31-01-2018 -> 09:45:07] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:45:09] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:45:09] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:46:39] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:46:39] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:46:39] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:46:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:46:40] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:46:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:46:41] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:46:41] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:46:51] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:46:52] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:47:54] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:47:55] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:02] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:48:02] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:12] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:48:12] Cargando datos del paciente...
+[31-01-2018 -> 09:48:12] Paciente identificado:
+                         - RUT: 12.097.096-8
+                         - Nombre: PAOLA OLAVARRIA MAUREIRA
+[31-01-2018 -> 09:48:12] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:12] Cargando resultados del paciente...
+[31-01-2018 -> 09:48:13] Cant. Resultados: 15
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:14] ID_ATE = 20113
+[31-01-2018 -> 09:48:15] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:48:16] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:22] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:48:23] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:25] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:48:25] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:32] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:48:32] Cargando datos del paciente...
+[31-01-2018 -> 09:48:32] Paciente identificado:
+                         - RUT: 5.915.434-6
+                         - Nombre: NOEMI DIAZ DIAZ
+[31-01-2018 -> 09:48:32] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:32] Cargando resultados del paciente...
+[31-01-2018 -> 09:48:32] Cant. Resultados: 64
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:36] ID_ATE = 20106
+[31-01-2018 -> 09:48:46] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:48:46] Cargando datos del paciente...
+[31-01-2018 -> 09:48:47] Paciente identificado:
+                         - RUT: 15.117.479-5
+                         - Nombre: DOMENICA BUSTAMANTE YAÑEZ
+[31-01-2018 -> 09:48:47] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:47] Cargando resultados del paciente...
+[31-01-2018 -> 09:48:47] Cant. Resultados: 10
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:48:48] ID_ATE = 20103
+[31-01-2018 -> 09:51:09] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297181
+                         Resultado: 10,0
+[31-01-2018 -> 09:51:09] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:10] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297182
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:10] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:11] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:11] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:11] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297182
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:12] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:12] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297181
+                         Resultado: 10,0
+[31-01-2018 -> 09:51:12] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:12] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:12] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:13] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:51:13] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:14] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:51:14] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:15] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297182
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:15] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:16] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297181
+                         Resultado: 10,0
+[31-01-2018 -> 09:51:16] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:16] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:51:17] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:17] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:17] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:17] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:18] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:18] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:18] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:20] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:21] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:21] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:51:21] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:21] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:51:22] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:22] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:51:22] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:22] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:23] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:23] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:51:23] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:24] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:51:24] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:24] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:25] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:25] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:25] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:25] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:51:25] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:26] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:51:26] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:26] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:51:26] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:26] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:26] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:27] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:27] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:27] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:51:27] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:27] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:51:28] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:28] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 
+[31-01-2018 -> 09:51:28] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:29] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:29] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:29] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: No Reactivo
+[31-01-2018 -> 09:51:29] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:30] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:51:30] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:32] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:32] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:32] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:33] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:33] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:33] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:33] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:33] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:33] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:34] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:34] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: ytityi
+[31-01-2018 -> 09:51:34] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:37] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:51:37] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:39] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:39] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:39] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:39] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:39] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:40] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:40] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:40] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:40] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:41] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:41] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:42] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: jgkghkg
+[31-01-2018 -> 09:51:42] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:44] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:44] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:44] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:44] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:45] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:45] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:45] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:45] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:45] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: No Reactivo
+[31-01-2018 -> 09:51:46] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:46] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:46] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:47] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:47] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:47] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:51:47] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:47] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:47] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:47] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:48] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:48] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:48] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:48] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:48] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:48] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:48] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:49] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:51:49] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:49] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:49] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:49] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:49] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:49] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:50] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:50] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:50] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:50] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:50] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:50] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:50] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:51] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,0
+                         Evaluación: 33,0
+[31-01-2018 -> 09:51:51] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:51] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:51] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:51] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:51] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:51] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:51:52] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:52] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:52] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:52] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 33
+[31-01-2018 -> 09:51:52] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:52] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,0
+                         Evaluación: 33,0
+[31-01-2018 -> 09:51:52] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:53] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 33
+[31-01-2018 -> 09:51:53] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:53] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 33
+[31-01-2018 -> 09:51:53] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:53] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 33
+[31-01-2018 -> 09:51:53] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:53] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 33
+[31-01-2018 -> 09:51:53] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:53] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 33
+[31-01-2018 -> 09:51:54] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:54] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,0
+                         Evaluación: 33,0
+[31-01-2018 -> 09:51:54] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:54] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: gkkgkgh
+[31-01-2018 -> 09:51:54] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:54] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: k
+[31-01-2018 -> 09:51:55] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:55] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297182
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:55] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:55] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:56] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:56] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:56] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:56] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:56] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:56] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:56] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:56] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 
+[31-01-2018 -> 09:51:57] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:57] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:57] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:57] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:57] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:57] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:58] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:58] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:58] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:58] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:58] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:58] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 75
+[31-01-2018 -> 09:51:58] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:58] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 29,7
+[31-01-2018 -> 09:51:59] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: 71,000
+[31-01-2018 -> 09:51:59] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:51:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 71
+[31-01-2018 -> 09:52:00] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:00] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297179
+                         Resultado: 75
+[31-01-2018 -> 09:52:00] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:00] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: No Reactivo
+[31-01-2018 -> 09:52:00] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:00] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: 71,000
+[31-01-2018 -> 09:52:01] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:01] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297177
+                         Resultado: 75,0
+[31-01-2018 -> 09:52:01] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:01] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:52:01] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:01] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: 71,000
+[31-01-2018 -> 09:52:02] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:02] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: 71,000
+[31-01-2018 -> 09:52:02] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:03] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:52:03] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:05] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:52:05] Cargando datos del paciente...
+[31-01-2018 -> 09:52:06] Paciente identificado:
+                         - RUT: 15.117.479-5
+                         - Nombre: DOMENICA BUSTAMANTE YAÑEZ
+[31-01-2018 -> 09:52:06] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:06] Cargando resultados del paciente...
+[31-01-2018 -> 09:52:06] Cant. Resultados: 10
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:07] ID_ATE = 20103
+[31-01-2018 -> 09:52:14] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:52:14] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:16] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:52:16] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:37] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:52:37] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:40] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:52:41] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:45] El usuario DPEREIRA ha ingresado al formulario.
+[31-01-2018 -> 09:52:45] Cargando datos del paciente...
+[31-01-2018 -> 09:52:45] Paciente identificado:
+                         - RUT: 15.117.479-5
+                         - Nombre: DOMENICA BUSTAMANTE YAÑEZ
+[31-01-2018 -> 09:52:45] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:45] Cargando resultados del paciente...
+[31-01-2018 -> 09:52:45] Cant. Resultados: 10
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:48] ID_ATE = 20103
+[31-01-2018 -> 09:52:49] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:52:49] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:58] Actualizar Valor Numérico
+                         Usuario: DPEREIRA
+                         ID Result: 297183
+                         Resultado: 33,7
+                         Evaluación: 33,7
+[31-01-2018 -> 09:52:58] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 
+[31-01-2018 -> 09:52:59] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:52:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297175
+                         Resultado: 71,000
+[31-01-2018 -> 09:53:00] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:00] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:53:00] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:01] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:53:01] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:02] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:53:02] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:03] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297184
+                         Resultado: 
+[31-01-2018 -> 09:53:03] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:05] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297180
+                         Resultado: 
+[31-01-2018 -> 09:53:05] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:05] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297178
+                         Resultado: 
+[31-01-2018 -> 09:53:06] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[31-01-2018 -> 09:53:06] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 297176
+                         Resultado: 
+[31-01-2018 -> 09:53:07] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------

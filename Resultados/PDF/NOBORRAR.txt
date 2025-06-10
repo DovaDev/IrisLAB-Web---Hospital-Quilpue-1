@@ -1,0 +1,10 @@
+APUNTES VALPO
+
+
+- volver a ingreso manual.
+	
+- generar estadistica, con serie de datos asociados vih, sifilis,blabla
+		
+- crear campo adicional, junto a VIH, lista desplegable.
+	usar cama y poner a cama 0 
+	

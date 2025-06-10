@@ -1,0 +1,151 @@
+﻿.table-iris thead tr {
+    background-color: #1d96b2 !important;
+    color: white !important;
+}
+
+.table-iris tbody tr.active, .table-iris tbody tr.active > td {
+    background-color: #d1edf0;
+}
+
+.table-iris td, .table-iris th {
+    border-top: 1px solid #a8e2f0 !important;
+}
+
+.bg-nav-iris {
+    background-color: #014b5d !important;
+}
+
+.bg-bar {
+    background-color: #00738e !important;
+    color: white !important;
+}
+
+    .bg-bar h5 {
+        text-align: center;
+        margin: 0;
+    }
+
+.border-bar {
+    border-color: #00738e !important;
+}
+
+.espera {
+    background-color: #ffdaaa !important;
+    color: black !important;
+}
+
+.atendido {
+    background-color: #9bffb1 !important;
+    color: black !important;
+}
+
+.pendiente {
+    background-color: #a9d1fc !important;
+    color: black !important;
+}
+
+.table-iris th {
+    padding: .25rem !important;
+    border:none;
+}
+
+/*BOTONES*/
+
+.btn-buscar {
+    background-color: #008e7a !important;
+    border-color: #008e7a !important;
+    color: white;
+}
+
+    .btn-buscar:disabled {
+        background-color: #008e7a !important;
+        border-color: #008e7a !important;
+        color: white;
+    }
+
+    .btn-buscar:hover {
+        background-color: #006859 !important;
+    }
+
+    .btn-buscar:focus {
+        box-shadow: 0 0 0 3px rgba(0, 142, 122,.5);
+    }
+
+.btn-warning {
+    color: white;
+    background-color: #f39c11;
+}
+
+    .btn-warning:disabled {
+        color: white !important;
+        background-color: #f39c11 !important;
+    }
+
+    .btn-warning:hover {
+        color: white;
+        background-color: #dd8c0b;
+    }
+
+    .btn-warning:focus {
+        box-shadow: 0 0 0 3px rgba(243, 156, 17,.5);
+    }
+
+.btn-limpiar {
+    background-color: #6559b5;
+    color: white;
+}
+
+    .btn-limpiar:disabled {
+        background-color: #6559b5 !important;
+        color: white !important;
+    }
+
+    .btn-limpiar:hover {
+        background-color: #483d91;
+        color: white;
+    }
+
+    .btn-limpiar:focus {
+        box-shadow: 0 0 0 3px rgba(101, 89, 181,.5);
+    }
+
+.btn-print {
+    background-color: #e66f40;
+    border-color: #e66f40;
+    color: white;
+}
+
+    .btn-print:disabled {
+        background-color: #e66f40 !important;
+        border-color: #e66f40 !important;
+        color: white !important;
+    }
+
+    .btn-print:hover {
+        background-color: #d45e30;
+        border-color: #e66f40;
+        color: white;
+    }
+
+    .btn-print:focus {
+        box-shadow: 0 0 0 3px rgba(230, 111, 64,.5);
+    }
+
+.btn-pendiente {
+    background-color: #7e8c8d;
+    color: white;
+}
+
+    .btn-pendiente:disabled {
+        background-color: #7e8c8d !important;
+        color: white !important;
+    }
+
+    .btn-pendiente:hover {
+        background-color: #6a7677;
+        color: white;
+    }
+
+    .btn-pendiente:focus {
+        box-shadow: 0 0 0 3px rgba(126, 140, 141,.5);
+    }

@@ -1,0 +1,86 @@
+﻿
+.input-group.date input {
+    cursor: pointer!important;
+}
+/*.input-group.date input:read-only {
+    background: #ffffff;
+}*/
+
+/*--------------------------------------------------------------*/
+.ts-table-loading {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.table th {
+    color: #ffffff;
+    background: #55a42f;
+}
+
+.table th, .table td {
+    border-top: none!important;
+}
+
+.table td {
+    padding: 5px;
+}
+
+tr.selected td {
+    color: #ffffff;
+    background: #0094ff!important;
+}
+
+/*--------------------------------------------------------------*/
+.checkbox-group input[type=checkbox] {
+    display: none;
+}
+
+    .form-group .checkbox-group input[type=checkbox] ~ label {
+        height: 38px;
+        padding: 0.45rem;
+    }
+
+    .checkbox-group input[type=checkbox] ~ label {
+        display: inline-block;
+        margin-bottom: 0;
+        cursor: pointer!important;
+        white-space: pre;
+
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .checkbox-group input[type=checkbox] ~ label > i {
+            font-size: 1.5rem;
+        }
+
+        .checkbox-group input[type=checkbox] ~ label > span {
+            display: inline-block;
+            font-size: 1rem;
+            margin-left: 0.6rem;
+        }
+
+        .checkbox-group input[type=checkbox] ~ label > span:empty {
+            margin-left: 0;
+        }
+
+.checkbox-group input[type=checkbox] ~ label > i[data-value="0"] {
+    display: inline-block;
+}
+
+.checkbox-group input[type=checkbox] ~ label > i[data-value="1"] {
+    display: none;
+}
+
+.checkbox-group input[type=checkbox]:checked ~ label > i[data-value="0"] {
+    display: none;
+}
+
+.checkbox-group input[type=checkbox]:checked ~ label > i[data-value="1"] {
+    display: inline-block;
+}

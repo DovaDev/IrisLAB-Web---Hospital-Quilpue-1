@@ -1,0 +1,14 @@
+[12-02-2019 -> 09:51:10] ID_ATE = 154172
+[12-02-2019 -> 09:51:14] El usuario LCATALAN ha ingresado al formulario.
+[12-02-2019 -> 09:51:14] Cargando datos del paciente...
+[12-02-2019 -> 09:51:14] Paciente identificado:
+                         - RUT: 3.365.495-2
+                         - Nombre: INELIA OLIVARES ARANCIBIA
+[12-02-2019 -> 09:51:14] Carga Completada.
+
+----------------------------------------------------------------------------------
+[12-02-2019 -> 09:51:14] Cargando resultados del paciente...
+[12-02-2019 -> 09:51:14] Cant. Resultados: 39
+                         Carga Completada.
+
+----------------------------------------------------------------------------------

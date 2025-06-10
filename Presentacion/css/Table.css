@@ -1,0 +1,103 @@
+﻿/*Formato tablas jQuery*/
+/*.dataTables_wrapper {
+    display: inline-block;
+    width: 100%;
+}*/
+.dataTables_wrapper .col-sm-12 {
+    margin: 0;
+    padding: 0;
+}
+.dataTables_wrapper .dataTables_wrapper .row {
+    margin: 0;
+    padding: 0;
+}
+.dataTables_wrapper .dataTables_length {
+    float: left;
+    display: inline-block;
+    margin: 5px;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    display: inline-block;
+    margin: 5px;
+}
+.dataTables_wrapper .dataTables_info {
+    margin: 5px;
+}
+.dataTables_wrapper .dataTables_paginate {
+    margin: 5px;
+}
+.dataTables_wrapper .col-sm-12 {
+    width: 100%;
+    overflow: auto;
+}
+.dataTables_wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.dataTables_wrapper thead > tr > th {
+    font-size: 14px;
+    padding: 5px;
+    color: #ffffff;
+    /*background: #4ac94c;*/
+    background: #46963f;
+    /*background: -webkit-linear-gradient(180deg, #ffffff, #a9cea6);
+    background: -o-linear-gradient(180deg, #ffffff, #a9cea6); 
+    background: -moz-linear-gradient(180deg, #ffffff, #a9cea6);
+    background: linear-gradient(180deg, #ffffff, #a9cea6);*/
+}
+    
+    /*Bordes Celdas*/
+    .dataTables_wrapper tr th ~ th {
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+    }
+    .dataTables_wrapper tr th:last-child {
+        border-right: none;
+    }
+    .dataTables_wrapper tbody > tr {
+        height: 24px;
+    }
+    .dataTables_wrapper tbody > tr > td {
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid #c8c8c8;
+    }
+    /*Colorear Celdas*/
+    .dataTables_wrapper tbody > .odd > td {
+        background: #f2f8f1!important;
+    }
+    .dataTables_wrapper tbody > .even > td {
+        background: #ffffff!important;
+    }
+.dataTables_wrapper .dataTables_info {
+    float: left;
+    display: inline-block;
+    margin: 5px;
+}
+.dataTables_wrapper .pagination {
+    float: right;
+    display: inline-block;
+    list-style: none;
+}
+    .dataTables_wrapper .pagination li {
+        display: inline-block;
+    }
+    
+        .dataTables_wrapper .pagination li a {
+            user-select: none;
+            display: inline-block;
+            text-decoration: none;
+            color: #242424;
+        }
+        .dataTables_wrapper .pagination .paginate_button a {
+            margin: 2.5px;
+            padding: 5px;
+            background: #e4e4e4;
+            border: 1px solid #bbbbbb;
+            border-radius: 3px;
+        }
+        .dataTables_wrapper .pagination .active a {
+            color: #fff;
+            background: #0065cf;
+        }

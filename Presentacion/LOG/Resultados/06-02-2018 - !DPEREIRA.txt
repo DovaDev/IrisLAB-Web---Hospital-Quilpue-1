@@ -1,0 +1,98 @@
+[06-02-2018 -> 11:34:57] El usuario DPEREIRA ha ingresado al formulario.
+[06-02-2018 -> 11:34:57] Cargando datos del paciente...
+[06-02-2018 -> 11:34:58] Paciente identificado:
+                         - RUT: 14.549.354-4
+                         - Nombre: CINTHIA TAPIA GARCIA
+[06-02-2018 -> 11:34:58] Carga Completada.
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:34:58] Cargando resultados del paciente...
+[06-02-2018 -> 11:34:59] Cant. Resultados: 24
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:35:01] ID_ATE = 21871
+[06-02-2018 -> 11:37:32] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:37:32] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:37:35] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 349127
+                         Resultado: Celulas clue escasa cantidad
+[06-02-2018 -> 11:37:35] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:37:52] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:37:53] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:37:56] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:37:56] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:37:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:37:59] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:38:13] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:38:13] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:38:15] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:38:15] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:38:16] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:38:16] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:42:59] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 388634
+                         Resultado: Positivo, Cepa productora de Beta - Lactamasa de espectro extendido, resistente a todas las Cefalosporinas, Penicilina y Aztreonam
+[06-02-2018 -> 11:42:59] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:43:12] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 349126
+                         Resultado: 
+[06-02-2018 -> 11:43:12] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:51:07] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 349126
+                         Resultado: 
+[06-02-2018 -> 11:51:07] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------
+[06-02-2018 -> 11:51:35] Actualizar Valor Texto
+                         Usuario: DPEREIRA
+                         ID Result: 349126
+                         Resultado: 
+[06-02-2018 -> 11:51:35] Campo actualizado correctamente
+
+----------------------------------------------------------------------------------

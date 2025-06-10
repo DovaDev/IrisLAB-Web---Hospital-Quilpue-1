@@ -1,0 +1,316 @@
+﻿#mdlGraph .modal-lg {
+    width: 90%;
+    max-width: none;
+}
+
+table {
+    border-collapse: collapse !important;
+}
+
+    table td {
+        height: 35px;
+    }
+
+#Dtt_Exam table td:nth-child(5) {
+    padding: 0px !important;
+}
+
+table input[type=text] {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: none;
+    background: #ffffff;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+table input[type=text] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+table .input_error[type=text] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    box-shadow: 0 0 0 2px rgba(231, 43, 43, 0.75);
+}
+
+table tr:hover input[type=text] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    /*width: calc(100% - 5px)!important;*/
+    height: calc(100% - 5px) !important;
+    margin: 0px;
+    margin-left: 0px;
+    box-shadow: 0 0 0 3px rgba(0,123,255,.25);
+}
+
+.tr_selected input[type=text] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.6);
+}
+
+.tr_selected:hover input[type=text] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 0 0 0 4px rgba(0,123,255,.6);
+}
+
+input[class="input_error"] {
+    color: #ff0000;
+    box-shadow: 0 0 0 2px #ff0000 !important;
+}
+
+.tr_selected:hover input[class="input_error"] {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 0 0 0 5px #ff0000 !important;
+}
+
+table .tr_selected td {
+    /*color: #ffffff;*/
+    background: #9edeff !important;
+}
+
+#Txt_NumAte {
+    color: #e30000 !important;
+    font-weight: 700;
+    /*border-color: #e30000;*/
+    font-size: 1.2rem !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (max-width: 1366px) {
+    .form-header {
+        font-size: 0.80rem;
+    }
+
+        .form-header input[type=text], .form-header select, .form-header button {
+            height: 24px !important;
+            font-size: 0.70rem !important;
+        }
+
+    #Dtt_Exam {
+        font-size: 0.80rem;
+    }
+
+        #Dtt_Exam table th {
+            font-size: 0.80rem;
+        }
+
+        #Dtt_Exam table td {
+            font-size: 0.70rem;
+            height: 24px;
+        }
+
+            #Dtt_Exam table td input[type=text] {
+                font-size: 0.70rem;
+                height: 20px;
+            }
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.scroll-to-top {
+    z-index: 100;
+}
+
+.card-last {
+    margin-bottom: 64px;
+}
+
+.float_buttons {
+    position: fixed;
+    bottom: 0;
+    left: 280px;
+    z-index: 50;
+    background: #f1f1f1;
+    border: 1px solid #7d7d7d;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    width: calc(100vw - 326px);
+}
+
+    .float_buttons > div {
+        margin: 8px;
+    }
+
+.float_buttons_toggled {
+    left: 85px;
+    width: calc(100vw - 132px);
+}
+
+@media (max-width: 992px) {
+    .float_buttons {
+        left: 8px;
+        width: calc(100vw - 32px);
+    }
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Tabla Resultados Codificados*/
+.mini-table {
+    border: 1px solid #868e96;
+    border-radius: .25rem;
+    overflow-y: auto;
+    height: 300px;
+    max-height: 300px;
+}
+
+    .mini-table strong {
+        display: none;
+    }
+
+#mdlResCodificados .dataTables_wrapper > .row:nth-child(1) > div {
+    width: 100%;
+}
+
+    #mdlResCodificados .dataTables_wrapper > .row:nth-child(1) > div .dataTables_filter {
+        width: 100%;
+    }
+
+    #mdlResCodificados .dataTables_wrapper > .row:nth-child(1) > div label {
+        width: 100%;
+    }
+
+    #mdlResCodificados .dataTables_wrapper > .row:nth-child(1) > div input {
+        width: 100%;
+    }
+
+.mini-table tr > th:nth-last-child(1), .mini-table tr > td:nth-last-child(1) {
+    width: 30px;
+}
+
+#mdlResCodificados .mini-table, #Txt_ResCod_Out {
+    height: calc(40.94px * 8);
+    resize: none;
+    height: 300px;
+    max-height: 300px;
+    resize: none;
+}
+
+.mini-table input[type=search] {
+    margin-left: 0 !important;
+}
+
+.modal td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Modales de Históricos*/
+.modal input[type=text]:read-only {
+    cursor: default !important;
+    background: #ffffff !important;
+}
+
+#mdlHistExam table {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mdlHistPruebas table {
+    font-size: 1rem;
+}
+
+    #mdlHistPruebas table td {
+        font-size: 0.85rem;
+    }
+
+/*--------------------------------------------------------------------------------------------*/
+/*Colores EE*/
+#Dtt_Exam table tbody tr td:nth-child(2) {
+    padding: 0;
+}
+
+tbody tr td:nth-child(2) .EE {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sp-hist {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.EE.yellow {
+    color: #000000;
+    background: #fff849;
+}
+
+.tr_selected .EE.yellow {
+    color: #000000;
+    background: #ffaf26;
+}
+
+.EE.green {
+    color: #000000;
+    background: #5fe22f;
+}
+
+.tr_selected .EE.green {
+    color: #ffffff;
+    background: #42ba16;
+}
+
+.EE.pink {
+    color: #000000;
+    background: #f9a981;
+}
+
+.tr_selected .EE.pink {
+    color: #ffffff;
+    background: #e87237;
+}
+
+.EE.blue {
+    color: #ffffff;
+    background: #3038db;
+}
+
+.tr_selected .EE.blue {
+    color: #ffffff;
+    background: #141a91;
+}
+
+.odd_C1 {
+    background-color: #f1fdfc !important;
+}
+
+.even_C1 {
+    background-color: #defff9 !important;
+}
+
+.odd_C2 {
+    background-color: #fffdf8 !important;
+}
+
+.even_C2 {
+    background-color: #fffae8 !important;
+}
+
+.odd_C3 {
+    background-color: #fef4ff !important;
+}
+
+.even_C3 {
+    background-color: #feeaff !important;
+}

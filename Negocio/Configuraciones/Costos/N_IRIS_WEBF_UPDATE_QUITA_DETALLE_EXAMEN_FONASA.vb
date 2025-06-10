@@ -1,0 +1,12 @@
+﻿Imports Datos
+Public Class N_IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA
+    End Sub
+    Function IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA(ByVal ID_REL As Integer, ByVal ID_COST As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA(ID_REL, ID_COST)
+    End Function
+End Class
+

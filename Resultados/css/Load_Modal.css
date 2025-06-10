@@ -1,0 +1,99 @@
+﻿
+        /*-----------------------*/
+        .blur {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        
+        }
+
+        .modalcarga {
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99999999999;
+            background: rgba(0,0,0, 0.8);
+           
+            -webkit-filter: inherit;
+            -moz-filter: inherit;
+            -o-filter: inherit;
+            -ms-filter: inherit;
+            filter: inherit;
+            
+        }
+            .modalcarga > div {
+                display: block;
+                padding: 10vh 20vw 10vh 20vw;
+                color: #ffffff;
+                background: none;
+                border: 2px solid none;
+                width: 100vw;
+            }
+                .modalcarga > div > h2 {
+                    background: none;
+                    padding: 15px;
+                }
+                .modalcarga > div > div {
+                    padding: 5px;
+                }
+        .img360 {
+            display: block;
+            width: 15vw;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            margin: auto;
+            -webkit-animation: spin 1s linear infinite;
+            -moz-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        .imght {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width:900px) {
+            .modalcarga > div {
+                padding: 20vh 10vw 10vh 10vw;
+            }
+            .img360 {
+                width: 25vw;
+            }
+        }
+        @-moz-keyframes spin {
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .flex-content {
+            display: flex;
+            flex-flow: column;
+        }
+
+        .box1 {
+            margin-top: 2vh;
+            justify-content: center;
+        }
+        .box2 {
+            padding: 0 15px 0 15px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }

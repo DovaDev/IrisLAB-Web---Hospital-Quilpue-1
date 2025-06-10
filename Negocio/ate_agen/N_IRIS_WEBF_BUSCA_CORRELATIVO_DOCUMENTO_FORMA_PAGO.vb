@@ -1,0 +1,13 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO
+    End Sub
+    Function IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO() As Integer
+        Return DD_Data.IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO()
+    End Function
+End Class

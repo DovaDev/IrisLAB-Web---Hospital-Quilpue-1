@@ -1,0 +1,620 @@
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:27:40] ERROR:
+    Código: 
+        66166301
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:27:41] ERROR:
+    Código: 
+        44166315
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:27:51] ERROR:
+    Código: 
+        7894961
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:27:53] ERROR:
+    Código: 
+        39774547
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:28:02] ERROR:
+    Código: 
+        61617675
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:28:02] ERROR:
+    Código: 
+        4157111
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:28:04] ERROR:
+    Código: 
+        11970712
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:28:05] ERROR:
+    Código: 
+        61925337
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:35:52] ERROR:
+    Código: 
+        10373162
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:02] ERROR:
+    Código: 
+        66785904
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:03] ERROR:
+    Código: 
+        62706690
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:05] ERROR:
+    Código: 
+        57743045
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:06] ERROR:
+    Código: 
+        63935578
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:15] ERROR:
+    Código: 
+        42192436
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[27-02-2025 -> 02:36:30] ERROR:
+    Código: 
+        15621100
+
+    Descripción: 
+        Error de desbordamiento aritmético al convertir varchar al tipo
+        de datos numeric.
+
+    Stack Trace:
+        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1802
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_TEXTO(Int32 ID_RES, String RES)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_3.aspx.vb:línea 332
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-02-2025 -> 02:59:34] ERROR:
+    Código: 
+        57265338
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:
+        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-02-2025 -> 03:02:20] ERROR:
+    Código: 
+        55674266
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:
+        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-02-2025 -> 03:02:56] ERROR:
+    Código: 
+        48455799
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:
+        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-02-2025 -> 03:04:01] ERROR:
+    Código: 
+        60303555
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:
+        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[07-04-2025 -> 11:25:24] ERROR:
+    Código: 
+        60936695
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:
+        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------

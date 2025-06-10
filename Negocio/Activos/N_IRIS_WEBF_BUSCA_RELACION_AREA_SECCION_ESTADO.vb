@@ -1,0 +1,13 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO
+    End Sub
+    Function IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO() As List(Of E_IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO)
+        Return DD_Data.IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO()
+    End Function
+End Class

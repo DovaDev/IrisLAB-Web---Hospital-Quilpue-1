@@ -1,0 +1,12 @@
+﻿Imports Entidades
+Imports Datos
+Public Class N_IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM
+    Dim DD_Data As D_IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM
+    Sub New()
+        DD_Data = New D_IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM
+    End Sub
+    Function IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM(ByVal ID_ANA As Long, ByVal ID_LOTE As Long, ByVal ID_DET As Long) As List(Of E_IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM)
+        Return DD_Data.IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM(ID_ANA, ID_LOTE, ID_DET)
+    End Function
+
+End Class

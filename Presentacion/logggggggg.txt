@@ -1,0 +1,1983 @@
+----------------------------------------------------------------------------------
+[15 05 2018 -> 09:57:20] ERROR:
+    Código: 
+        8369316
+
+    Descripción: 
+        El índice estaba fuera del intervalo. Debe ser un valor no negativo
+        e inferior al tamaño de la colección.
+Nombre del parámetro:
+        index
+
+    Stack Trace:        
+        
+en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+        
+  
+        
+en System.Collections.Generic.List`1.get_Item(Int32 index)
+        
+  
+        
+en Presentacion.Traza_Fechas.Llenar_DataTable(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_TP, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en ROOT:\Check_List\Check_Point\Traza_Fechas.aspx.vb:línea 169
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[15 05 2018 -> 10:22:29] ERROR:
+    Código: 
+        104948
+
+    Descripción: 
+        El índice estaba fuera del intervalo. Debe ser un valor no negativo
+        e inferior al tamaño de la colección.
+Nombre del parámetro:
+        index
+
+    Stack Trace:        
+        
+en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+        
+  
+        
+en System.Collections.Generic.List`1.get_Item(Int32 index)
+        
+  
+        
+en Presentacion.Traza_Fechas.Llenar_DataTable(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_TP, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en ROOT:\Check_List\Check_Point\Traza_Fechas.aspx.vb:línea 169
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[15 05 2018 -> 10:31:07] ERROR:
+    Código: 
+        63270328
+
+    Descripción: 
+        El índice estaba fuera del intervalo. Debe ser un valor no negativo
+        e inferior al tamaño de la colección.
+Nombre del parámetro:
+        index
+
+    Stack Trace:        
+        
+en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+        
+  
+        
+en System.Collections.Generic.List`1.get_Item(Int32 index)
+        
+  
+        
+en Presentacion.Traza_Fechas.Llenar_DataTable(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_TP, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en ROOT:\Check_List\Check_Point\Traza_Fechas.aspx.vb:línea 169
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[18 05 2018 -> 07:00:43] ERROR:
+    Código: 
+        47900060
+
+    Descripción: 
+        Índice fuera de los límites de la matriz.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbDataReader.DoValueCheck(Int32 ordinal)
+        
+  
+        
+en System.Data.OleDb.OleDbDataReader.GetValue(Int32 ordinal)
+        
+  
+        
+en System.Data.OleDb.OleDbDataReader.get_Item(Int32 index)
+        
+  
+        
+en Datos.D_General_Functions.DB_NULL(OleDbDataReader Obj_Reader_inst, Int32 Index, Object Default_Value)
+        
+en C:\Users\semeo\Documents\Source\Repos\IrisLab Web\IrisLAB Web - Viña\Datos\D_General_Functions.vb:línea 6
+        
+  
+        
+en Datos.D_IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222.IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222_2(Int32 ID_ATE, Int32 ID_PER, String CB)
+        
+en C:\Users\semeo\Documents\Source\Repos\IrisLab Web\IrisLAB Web - Viña\Datos\Check_List\Check_Point\D_IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222.vb:línea 169
+        
+  
+        
+en Negocio.N_IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222.IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222_2(Int32 ID_ATE, Int32 ID_PER, String CB)
+        
+en C:\Users\semeo\Documents\Source\Repos\IrisLab Web\IrisLAB Web - Viña\Negocio\Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222.vb:línea 19
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab.Llenar_DataTable(Int32 TIPO, String DESDE, String HASTA, Int32 ID_ENVIO)
+        
+en ROOT:\Check_List\Check_Point\Traza_Env_RecepLab.aspx.vb:línea 155
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11 06 2018 -> 03:24:18] ERROR:
+    Código: 
+        9574218
+
+    Descripción: 
+        Login timeout expired
+A network-related or instance-specific
+        error has occurred while establishing a connection to SQL Server.
+        Server is not found or not accessible. Check if instance name
+        is correct and if SQL Server is configured to allow remote connections.
+        For more information see SQL Server Books Online.
+TCP Provider:
+        Se produjo un error durante el intento de conexión ya que la
+        parte conectada no respondió adecuadamente tras un periodo de
+        tiempo, o bien se produjo un error en la conexión establecida
+        ya que el host conectado no ha podido responder.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Symbols.Container.InvokeMethod(Method TargetProcedure, Object[] Arguments, Boolean[] CopyBack, BindingFlags Flags)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.NewLateBinding.CallMethod(Container BaseReference, String MethodName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack, BindingFlags InvocationFlags, Boolean ReportErrors, ResolutionFailure& Failure)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.NewLateBinding.ObjectLateCall(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack, Boolean IgnoreReturn)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack, Boolean IgnoreReturn)
+        
+  
+        
+en Datos.D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS(Int32 TIPO, DateTime DESDE, DateTime HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en C:\Users\semeo\Documents\Source\Repos\IrisLab Web\IrisLAB Web - Viña\Datos\Check_List\Check_Point\D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 153
+        
+  
+        
+en Negocio.N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS(Int32 TIPO, DateTime DESDE, DateTime HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en C:\Users\semeo\Documents\Source\Repos\IrisLab Web\IrisLAB Web - Viña\Negocio\Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 38
+        
+  
+        
+en Presentacion.Traza_Fechas.Llenar_DataTable(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PRE, Int32 ID_CF, Int32 ID_VAL, Int32 ID_NMUE, Int32 ID_SECCION, Int32 ID_TP, Int32 ID_ENVIO, Int32 ID_DERIVADO)
+        
+en ROOT:\Check_List\Check_Point\Traza_Fechas.aspx.vb:línea 133
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:13:45] ERROR:
+    Código: 
+        21805087
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\irisl\source\repos\IrisLAB-Web---Hospital-Quilpu-\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\irisl\source\repos\IrisLAB-Web---Hospital-Quilpu-\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:13:50] ERROR:
+    Código: 
+        16129352
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\irisl\source\repos\IrisLAB-Web---Hospital-Quilpu-\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\irisl\source\repos\IrisLAB-Web---Hospital-Quilpu-\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[30-10-2024 -> 08:34:26] ERROR:
+    Código: 
+        38537171
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[30-10-2024 -> 08:34:48] ERROR:
+    Código: 
+        10639088
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[18-11-2024 -> 09:46:35] ERROR:
+    Código: 
+        23656895
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[18-11-2024 -> 09:48:09] ERROR:
+    Código: 
+        59791669
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[18-11-2024 -> 09:48:16] ERROR:
+    Código: 
+        34042972
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[18-11-2024 -> 11:30:09] ERROR:
+    Código: 
+        49666952
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 01:32:21] ERROR:
+    Código: 
+        35461715
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 01:32:38] ERROR:
+    Código: 
+        56556619
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 01:34:26] ERROR:
+    Código: 
+        12238227
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 01:35:19] ERROR:
+    Código: 
+        31864982
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 02:02:13] ERROR:
+    Código: 
+        42440396
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 02:03:05] ERROR:
+    Código: 
+        48964263
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[19-11-2024 -> 02:06:05] ERROR:
+    Código: 
+        46766185
+
+    Descripción: 
+        La conversión de la cadena "SÍ" en el tipo 'Double' no es válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__8-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[21-11-2024 -> 09:39:07] ERROR:
+    Código: 
+        22263755
+
+    Descripción: 
+        El nombre de objeto 'IRIS_TP_HIS_ATENCION' no es válido.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+        
+  
+        
+en System.Data.OleDb.OleDbDataReader.NextResult()
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+        
+  
+        
+en Datos.D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS_ENVIO_Y_RECEP_LAB_id_ate2(DateTime DESDE, DateTime HASTA, Int32 ID_ATENCION, Int32 ID_PROCEDENCIA)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Check_List\Check_Point\D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 510
+        
+  
+        
+en Negocio.N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS_ENVIO_Y_RECEP_LAB_id_ate2(DateTime DESDE, DateTime HASTA, Int32 ID_ATENCION, Int32 ID_PROCEDENCIA)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 98
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 264
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[21-11-2024 -> 09:39:12] ERROR:
+    Código: 
+        18930142
+
+    Descripción: 
+        El nombre de objeto 'IRIS_TP_HIS_ATENCION' no es válido.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbDataReader.ProcessResults(OleDbHResult hr)
+        
+  
+        
+en System.Data.OleDb.OleDbDataReader.NextResult()
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+        
+  
+        
+en Datos.D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS_ENVIO_Y_RECEP_LAB_id_ate2(DateTime DESDE, DateTime HASTA, Int32 ID_ATENCION, Int32 ID_PROCEDENCIA)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Check_List\Check_Point\D_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 510
+        
+  
+        
+en Negocio.N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO_666_FECHAS_ENVIO_Y_RECEP_LAB_id_ate2(DateTime DESDE, DateTime HASTA, Int32 ID_ATENCION, Int32 ID_PROCEDENCIA)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb:línea 98
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 264
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[21-11-2024 -> 09:44:34] ERROR:
+    Código: 
+        3456706
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[21-11-2024 -> 09:44:52] ERROR:
+    Código: 
+        16240319
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[05-12-2024 -> 05:00:08] ERROR:
+    Código: 
+        11404623
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[05-12-2024 -> 05:00:14] ERROR:
+    Código: 
+        3910853
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11-12-2024 -> 12:46:36] ERROR:
+    Código: 
+        8874134
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11-12-2024 -> 12:52:12] ERROR:
+    Código: 
+        47584959
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11-12-2024 -> 12:54:31] ERROR:
+    Código: 
+        40122310
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11-12-2024 -> 12:54:50] ERROR:
+    Código: 
+        8257417
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[11-12-2024 -> 12:55:16] ERROR:
+    Código: 
+        56363596
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 09:59:17] ERROR:
+    Código: 
+        50066120
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 10:01:57] ERROR:
+    Código: 
+        5518491
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 10:03:07] ERROR:
+    Código: 
+        53558802
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 11:08:03] ERROR:
+    Código: 
+        19488079
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 11:08:55] ERROR:
+    Código: 
+        47106575
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 11:09:10] ERROR:
+    Código: 
+        4200437
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 11:10:22] ERROR:
+    Código: 
+        35709909
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 11:59:05] ERROR:
+    Código: 
+        37362613
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:10:46] ERROR:
+    Código: 
+        2959577
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:12:24] ERROR:
+    Código: 
+        23302519
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:12:56] ERROR:
+    Código: 
+        18622212
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:15:12] ERROR:
+    Código: 
+        33101875
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:26:13] ERROR:
+    Código: 
+        61570070
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:26:57] ERROR:
+    Código: 
+        12215461
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 12:49:18] ERROR:
+    Código: 
+        28877594
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 01:36:20] ERROR:
+    Código: 
+        5339033
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 02:19:56] ERROR:
+    Código: 
+        6590502
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 02:24:37] ERROR:
+    Código: 
+        47053175
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 02:25:30] ERROR:
+    Código: 
+        55257300
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 02:25:50] ERROR:
+    Código: 
+        50586184
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 02:54:18] ERROR:
+    Código: 
+        39663723
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:22:38] ERROR:
+    Código: 
+        23854417
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:29:25] ERROR:
+    Código: 
+        32551723
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:31:14] ERROR:
+    Código: 
+        29265265
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:31:35] ERROR:
+    Código: 
+        7317869
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:31:41] ERROR:
+    Código: 
+        36928839
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:31:56] ERROR:
+    Código: 
+        42229431
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[13-02-2025 -> 03:42:41] ERROR:
+    Código: 
+        8253412
+
+    Descripción: 
+        La conversión de la cadena "ESPERA" en el tipo 'Double' no es
+        válida.
+
+    Stack Trace:        
+        
+en Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2._Closure$__._Lambda$__6-8(E_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO x)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+        
+  
+        
+en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+        
+  
+        
+en System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+        
+  
+        
+en Presentacion.Traza_Env_RecepLab_V2.Llenar_DataTable_id_ate(Int32 TIPO, String DESDE, String HASTA, Int32 ID_PROCEDENCIA, Int32 ID_ENVIO, String ID_ATENCION)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb:línea 284
+----------------------------------------------------------------------------------

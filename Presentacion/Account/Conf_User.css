@@ -1,0 +1,212 @@
+﻿#divContainer * {
+    font-size: 0.9rem;
+}
+
+.card-header > h5 {
+    margin: 0px;
+}
+
+.card-body {
+    padding: 0.8rem;
+}
+
+#divContainer .row {
+    margin: 0;
+}
+
+    #divContainer .row > div {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+
+/*Checkbox*/
+.webform_chk input[type=checkbox] {
+    display: none;
+}
+.webform_chk input[type=checkbox] ~ label > .fa-check-square-o {
+    display: none;
+}
+.webform_chk input[type=checkbox] ~ label > .fa-square-o {
+    display: inherit;
+}
+.webform_chk input[type=checkbox]:checked ~ label > .fa-square-o {
+    display: none;
+}
+.webform_chk input[type=checkbox]:checked ~ label > .fa-check-square-o {
+    display: inherit;
+}
+
+/*Contenedor Principal*/
+#divContainer {
+    min-height: 390px;
+    height: calc(100vh - 88px);
+}
+
+@media (max-width: 991.98px) {
+    #divContainer {
+        height: calc(100vh - 86px);
+    }
+}
+
+/*Bloque Datos Usuario*/
+#divData {
+    min-height: 281px;
+    height: calc(100vh - 203px);
+}
+
+    #divData .card-body {
+        overflow-y: auto;
+    }
+
+        #divData .card-body label {
+            font-size: 0.8rem;
+        }
+
+@media (max-width: 767.98px) {
+    #divData {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #divData {
+        min-height: 253px;
+        height: calc(100vh - 232px);
+    }
+}
+
+/*Bloque Tabla*/
+.card-table {
+    min-height: 383px;
+    height: calc(100vh - 96px);
+}
+
+    .card-table .card-body {
+        overflow: auto;
+    }
+
+    .card-table table td {
+        font-size: 0.8rem!important;
+    }
+
+@media (max-width: 991.98px) {
+    .card-table {
+        min-height: 383px;
+        height: calc(100vh - 94px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-table {
+        min-height: 281px;
+        height: calc(100vh - 198px);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-table {
+        min-height: 253px;
+        height: calc(100vh - 222px);
+    }
+}
+
+/*Tablas*/
+.card-table table th, .card-table table td {
+    font-size: 0.7rem!important;
+}
+
+.card-table table th {
+    color: #ffffff;
+    background: #5f9c3e;
+}
+
+.card-table table td {
+    padding: 5px;
+}
+
+.tr_selected > td {
+    color: #ffffff;
+    background: #0094ff;
+}
+
+/*File Input*/
+.custom-file-control {
+    display: block!important;
+    height: 31px;
+
+    padding: .25rem .5rem!important;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.custom-file-control:before {
+    content: "Buscar";
+    border-color: #868e96;
+    height: 31px;
+
+    padding: .25rem .5rem!important;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.custom-file-control:after {
+    content: "Archivo...";
+    border-color: #868e96;
+
+    padding: .25rem .5rem!important;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.custom-file-control.selected::after {
+    content: "" !important;
+}
+
+.float-lbl-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3500;
+
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .float-lbl-container .float-lbl-content {
+        display: flex;
+        display: -webkit-flex;
+        text-align: center;
+
+        width: auto;
+        height: auto;
+        border: 3px solid #4f8d2a;
+        border-radius: 8px;
+
+        color: #ffffff;
+        background: #7fb75e;
+        box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    }
+
+        .float-lbl-container .float-lbl-content i {
+            height: 3rem;
+            font-size: 2rem;
+            padding: 0.5rem;
+            padding-left: 1rem;
+            text-align: center;
+        }
+
+        .float-lbl-container .float-lbl-content p {
+            height: 3rem;
+            padding: 0.75rem;
+            padding-left: 0px;
+            padding-right: 1rem;
+            margin: 0px;
+        }

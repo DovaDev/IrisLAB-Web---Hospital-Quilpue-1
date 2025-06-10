@@ -1,0 +1,14 @@
+[07-02-2018 -> 12:53:25] El usuario DPEREIRA ha ingresado al formulario.
+[07-02-2018 -> 12:53:25] Cargando datos del paciente...
+[07-02-2018 -> 12:53:25] Paciente identificado:
+                         - RUT: 11.119.730-K
+                         - Nombre: JACQUELINE ESCOBAR ESCOBAR
+[07-02-2018 -> 12:53:25] Carga Completada.
+
+----------------------------------------------------------------------------------
+[07-02-2018 -> 12:53:25] Cargando resultados del paciente...
+[07-02-2018 -> 12:53:26] Cant. Resultados: 41
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[07-02-2018 -> 12:53:29] ID_ATE = 21763

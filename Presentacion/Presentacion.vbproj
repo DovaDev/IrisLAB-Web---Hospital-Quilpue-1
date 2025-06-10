@@ -1,0 +1,3059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{41E0CDD5-6DA5-49D6-8E16-3999EE2FCE65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Presentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Presentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\.NET dll\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Documents\.NET dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\Documents\.NET dll\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Documents\.NET dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\..\Documents\.NET dll\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>..\..\..\..\Documents\.NET dll\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FIRMAS\Firmas Alonso\" />
+    <Folder Include="Prestaciones\" />
+    <Folder Include="pug\" />
+    <Folder Include="scripts\scss\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Acceso_Pacientes\Det_Atenc.aspx" />
+    <Content Include="Acceso_Pacientes\Login_Pacientes.aspx" />
+    <Content Include="Acceso_Pacientes\Login_Pacientes.js" />
+    <Content Include="Account\Conf_User.aspx" />
+    <Content Include="Account\Conf_User.css" />
+    <Content Include="Account\Login.js" />
+    <Content Include="Account\Logout.js" />
+    <Content Include="Account\Perm_Usu.aspx" />
+    <Content Include="Agenda_Med\AGRE_EXA_ATE.aspx" />
+    <Content Include="Agenda_Med\AGRE_EXA_ATE_CJ.aspx" />
+    <Content Include="Agenda_Med\AGRE_EXA_ATE_CJ.js" />
+    <Content Include="Agenda_Med\AGRE_EXA_ATE_NORMAL.aspx" />
+    <Content Include="Agenda_Med\AGRE_EXA_ATE_NORMAL.js" />
+    <Content Include="Agenda_Med\Ingreso_Ate.js" />
+    <Content Include="Agenda_Med\Ingreso_Ate_2.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_AVIS_3.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_MAN_3.aspx" />
+    <Content Include="Agenda_Med\Lis_Pac_TDM_2.aspx" />
+    <Content Include="Agenda_Med\N_Ver_Disponibilidad_3.aspx" />
+    <Content Include="Ate_Pac\AVIS_C_D.aspx" />
+    <Content Include="Ate_Pac\AVIS_C_D_2.aspx" />
+    <Content Include="Ate_Pac\AVIS_C_D_VER.aspx" />
+    <Content Include="Ate_Pac\Busca_Paciente_Agendado.aspx" />
+    <Content Include="Boleta_Electronica\B_Elec.aspx" />
+    <Content Include="Boleta_Electronica\Newtonsoft.Json.dll" />
+    <Content Include="Boleta_Electronica\SuperFacturaAPI.dll" />
+    <Content Include="Check_List\Check_Point\Chk_Tubo_Proce_2.aspx" />
+    <Content Include="Check_List\Check_Point\Traza_Env_RecepLab.aspx" />
+    <Content Include="Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx" />
+    <Content Include="Check_List\Check_Point\Traza_Folio_Avis.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_2.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_3.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_4.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_CC.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_GR.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_PCR.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa_Vih_Res.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa__Scre_Sif.aspx" />
+    <Content Include="Check_List\Rev_Est_Exa_New.aspx" />
+    <Content Include="Check_List\Rev_Exa_Usu.aspx" />
+    <Content Include="Check_List\Rev_Exa_Usu_Todos.aspx" />
+    <Content Include="Check_List\Val_Criticos_Notif.aspx" />
+    <Content Include="Check_List\Val_Criticos_Notif.css" />
+    <Content Include="Check_List\Val_Criticos_Notif.js" />
+    <Content Include="Configuraciones\Codigo_Fonasa\Cod_Fonasa_Indicac.aspx" />
+    <TypeScriptCompile Include="Configuraciones\Codigo_Fonasa\Cod_Fonasa_Indicac.ts" />
+    <Content Include="Configuraciones\Estudios\Estudio_Crea_Modifica.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Documentos.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Documentos_Ver.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Documentos_Ver2.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Lugar_TM_2.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Rela_Pack_Cf.aspx" />
+    <Content Include="Configuraciones\Mantenedores\TipoMuestraSangre.aspx" />
+    <Content Include="Configuraciones\Prevision\Asoc_Pre_Pre_2.aspx" />
+    <Content Include="Configuraciones\REM\Rem.aspx" />
+    <Content Include="Configuraciones\REM\Rem.js" />
+    <Content Include="Configuraciones\SQL\Charge_Script.aspx" />
+    <Content Include="Construccion.aspx" />
+    <Content Include="css\jsLists.css" />
+    <Content Include="css\Not_Found.css" />
+    <Content Include="css\WebForm2.css" />
+    <Content Include="C_C.aspx" />
+    <Content Include="C_C.js" />
+    <Content Include="C_C_I.js" />
+    <Content Include="Documentos\readme.txt" />
+    <Content Include="Env_Mues_Lab\Env_Mues_Lab_Mid_Recep.aspx" />
+    <Content Include="Env_Mues_Lab\Env_Mues_Lab_PENDIENTES_2.aspx" />
+    <Content Include="Env_Mues_Lab\Lis_Env_Mues_Lab_4.aspx" />
+    <Content Include="Env_Mues_Lab\Lis_Env_Mues_Lab_5.aspx" />
+    <Content Include="Exa_Esp_V.aspx" />
+    <Content Include="Exa_Esp_V.js" />
+    <Content Include="Agenda_Med\F_Ate_Pac.aspx" />
+    <Content Include="Agenda_Med\Imp_Ate_Directo.aspx" />
+    <Content Include="Agenda_Med\Imp_Ate_P.aspx" />
+    <Content Include="Agenda_Med\Ingreso_Ate.aspx" />
+    <Content Include="Agenda_Med\Ingreso_Ate_Avis.aspx" />
+    <Content Include="Agenda_Med\Ingreso_ate_avis_2.aspx" />
+    <Content Include="Agenda_Med\Ingreso_Ate_Saydex.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_AVIS.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_AVIS_2.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_MAN.aspx" />
+    <Content Include="Agenda_Med\IN_PAC_MAN_2.aspx" />
+    <Content Include="Agenda_Med\Lis_Agen.aspx" />
+    <Content Include="Agenda_Med\Lis_Pac_TDM.aspx" />
+    <Content Include="Agenda_Med\N_Ver_Disponibilidad.aspx" />
+    <Content Include="Agenda_Med\N_Ver_Disponibilidad_2.aspx" />
+    <Content Include="Agenda_Med\Ver_Disponibilidad.aspx" />
+    <Content Include="Ate_Pac\Editar_atencion.aspx" />
+    <Content Include="Ate_Pac\Editar_Paciente.aspx" />
+    <Content Include="blank.html" />
+    <Content Include="Ate_Pac\Busca_Paciente.aspx" />
+    <Content Include="btns.aspx" />
+    <Content Include="Buscar_Ate\Atencion_Det.aspx" />
+    <Content Include="Buscar_Ate\Buscar_Atencion.aspx" />
+    <Content Include="cards.html" />
+    <Content Include="charts.html" />
+    <Content Include="CheckList.aspx" />
+    <Content Include="Check_List\Cant_Exa_Dia.aspx" />
+    <Content Include="Check_List\Check_Point\Chk_Est_Exam.aspx" />
+    <Content Include="Check_List\Check_Point\Chk_Est_Seccion.aspx" />
+    <Content Include="Check_List\Check_Point\Chk_Tubo_Proce.aspx" />
+    <Content Include="Check_List\Check_Point\Chk_Tubo_Sec.aspx" />
+    <Content Include="Check_List\Check_Point\HT_Sec_Proce.aspx" />
+    <Content Include="Check_List\Check_Point\List_Pap.aspx" />
+    <Content Include="Check_List\Check_Point\Lis_Deriv_Exa.aspx" />
+    <Content Include="Check_List\Check_Point\Lis_Det_Resul.aspx" />
+    <Content Include="Check_List\Check_Point\Lis_Est_Tubo_Sel.aspx" />
+    <Content Include="Check_List\Check_Point\Lis_OC_Sed.aspx" />
+    <Content Include="Check_List\Check_Point\Traza_Fechas.aspx" />
+    <Content Include="Check_List\Check_Point\Traza_Folio.aspx" />
+    <Content Include="Check_List\Exa_Pen_Sec.aspx" />
+    <Content Include="Check_List\Rev_Deter_Exa.aspx" />
+    <Content Include="Check_List\Rev_Est_Exa.aspx" />
+    <Content Include="Check_List\Rev_Est_Exa2.aspx" />
+    <Content Include="Check_List\REV_VALOR_ALTER.aspx" />
+    <Content Include="Check_List\Val_Criticos.aspx" />
+    <Content Include="Check_List\Ver_Det_Pend.aspx" />
+    <Content Include="Configuraciones\Codigo_Fonasa\Codigos_Fonasa.aspx" />
+    <Content Include="Configuraciones.aspx" />
+    <Content Include="Configuraciones\Costos\Asoc_Costo_Exa.aspx" />
+    <Content Include="Configuraciones\Costos\CrModCos.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Bancos.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Comunas.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Diagnostico.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Indica_Medicas.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Menu_Usuario.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Metod_Anali.aspx" />
+    <Content Include="Configuraciones\Mantenedores\M_Prevision.aspx" />
+    <Content Include="Configuraciones\Mantenedores\M_Sub_Programa.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Nacionalidad.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Programa.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Rel_Prev_Prog_SubProg.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Sector.aspx" />
+    <Content Include="Configuraciones\Mantenedores\SubPrograma.aspx" />
+    <Content Include="Configuraciones\Mantenedores\TipoAtencion.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Tipo_Muestra.aspx" />
+    <Content Include="Configuraciones\Medicos\Crea_Edita_Med.aspx" />
+    <Content Include="Configuraciones\Medicos\Especialidades_Medicas.aspx" />
+    <Content Include="Configuraciones\Pacientes\Crear_Edit_Pac.aspx" />
+    <Content Include="Configuraciones\Prevision\Copiar_Val_Prevision.aspx" />
+    <Content Include="Configuraciones\Usuarios\Crear_Edit_Usu_Convenio.aspx" />
+    <Content Include="Configuraciones\Usuarios\Permiso_Usuario.aspx" />
+    <Content Include="css\bootstrap-datetimepicker.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.icon-large.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\Checkbox.css" />
+    <Content Include="css\ClockPicker.css" />
+    <Content Include="css\Iris_Css.css" />
+    <Content Include="css\jquery.mCustomScrollbar.css" />
+    <Content Include="css\Load_Modal.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\sb-admin.min.css" />
+    <Content Include="css\Table.css" />
+    <Content Include="Deri_Mues\Deri_Lis.aspx" />
+    <Content Include="Deri_Mues\Deri_Mues.aspx" />
+    <Content Include="Env_Mues_Lab\Env_Mues_Lab.aspx" />
+    <Content Include="Env_Mues_Lab\Lis_Env_Mues_Lab.aspx" />
+    <Content Include="Env_Mues_Lab\Lis_Env_Mues_Lab_2.aspx" />
+    <Content Include="Env_Mues_Lab\Lis_Env_Mues_Lab_3.aspx" />
+    <Content Include="Excel_TP_Real.aspx" />
+    <Content Include="Excel_TP_Real_2.aspx" />
+    <Content Include="Excel_TP_Real_ADM.aspx" />
+    <Content Include="Excel_TP_Real_ADM_2.aspx" />
+    <Content Include="Fecha_Conf\Config_Ate_LM_2.aspx" />
+    <Content Include="Fecha_Conf\Config_Ate_LM_3.aspx" />
+    <Content Include="Fecha_Conf\Config_Ate_LM_4.aspx" />
+    <Content Include="FIRMAS\15129.png" />
+    <Content Include="FIRMAS\9001.png" />
+    <Content Include="FIRMAS\ADIAZ.bmp" />
+    <Content Include="FIRMAS\AGOECKE.bmp" />
+    <Content Include="FIRMAS\AMILAB_LOGO.jpg" />
+    <Content Include="FIRMAS\AML.bmp" />
+    <Content Include="FIRMAS\AML.jpg" />
+    <Content Include="FIRMAS\ARECABARREN.bmp" />
+    <Content Include="FIRMAS\ARP.bmp" />
+    <Content Include="FIRMAS\ASR.bmp" />
+    <Content Include="FIRMAS\CALEGRIA.bmp" />
+    <Content Include="FIRMAS\cgaray.bmp" />
+    <Content Include="FIRMAS\cgaray.jpg" />
+    <Content Include="FIRMAS\CML2.bmp" />
+    <Content Include="FIRMAS\Copia de DVH.bmp" />
+    <Content Include="FIRMAS\CZH.bmp" />
+    <Content Include="FIRMAS\CZURITA.bmp" />
+    <Content Include="FIRMAS\DAS.bmp" />
+    <Content Include="FIRMAS\DDIAZ.bmp" />
+    <Content Include="FIRMAS\DG.bmp" />
+    <Content Include="FIRMAS\DPEREIRA.BMP" />
+    <Content Include="FIRMAS\DPEREIRA_.bmp" />
+    <Content Include="FIRMAS\DPEREIRA_3.bmp" />
+    <Content Include="FIRMAS\DPEREIRA__.bmp" />
+    <Content Include="FIRMAS\DPEREIRA___.bmp" />
+    <Content Include="FIRMAS\DPS.bmp" />
+    <Content Include="FIRMAS\DRAMOS.bmp" />
+    <Content Include="FIRMAS\DVH.bmp" />
+    <Content Include="FIRMAS\EEC.bmp" />
+    <Content Include="FIRMAS\FBP.bmp" />
+    <Content Include="FIRMAS\fperalta.bmp" />
+    <Content Include="FIRMAS\fperalta.jpg" />
+    <Content Include="FIRMAS\fperalta.png" />
+    <Content Include="FIRMAS\FRANCISCA.bmp" />
+    <Content Include="FIRMAS\GMORALES.bmp" />
+    <Content Include="FIRMAS\grupoh.png" />
+    <Content Include="FIRMAS\grupoh1.png" />
+    <Content Include="FIRMAS\Holanda.png" />
+    <Content Include="FIRMAS\JFLORES.bmp" />
+    <Content Include="FIRMAS\JGONZALEZ.bmp" />
+    <Content Include="FIRMAS\JMENA.bmp" />
+    <Content Include="FIRMAS\JMORAGA.bmp" />
+    <Content Include="FIRMAS\JMORAGA.jpg" />
+    <Content Include="FIRMAS\JMORAGA_.bmp" />
+    <Content Include="FIRMAS\JMORAGA_.jpg" />
+    <Content Include="FIRMAS\JSANZANA.bmp" />
+    <Content Include="FIRMAS\JSILVA.bmp" />
+    <Content Include="FIRMAS\JVV.bmp" />
+    <Content Include="FIRMAS\KCORTES.bmp" />
+    <Content Include="FIRMAS\LAB.bmp" />
+    <Content Include="FIRMAS\LCC.bmp" />
+    <Content Include="FIRMAS\LGARCIA.bmp" />
+    <Content Include="FIRMAS\LMQ.bmp" />
+    <Content Include="FIRMAS\login.jpg" />
+    <Content Include="FIRMAS\login1.JPG" />
+    <Content Include="FIRMAS\LogoAcreditado.jpg" />
+    <Content Include="FIRMAS\LogoAcreditado.png" />
+    <Content Include="FIRMAS\logohospquilpue.jpg" />
+    <Content Include="FIRMAS\logolab.jpg" />
+    <Content Include="FIRMAS\logolab.png" />
+    <Content Include="FIRMAS\LogoPrincipalClinige.jpg" />
+    <Content Include="FIRMAS\logo_allsys.JPG" />
+    <Content Include="FIRMAS\Logo_Holanda.gif" />
+    <Content Include="FIRMAS\LP.bmp" />
+    <Content Include="FIRMAS\LPI.bmp" />
+    <Content Include="FIRMAS\MAG.bmp" />
+    <Content Include="FIRMAS\MMESA.bmp" />
+    <Content Include="FIRMAS\MMESA.jpg" />
+    <Content Include="FIRMAS\MMEZA.BMP" />
+    <Content Include="FIRMAS\MMEZA.jpg" />
+    <Content Include="FIRMAS\MPAZ.bmp" />
+    <Content Include="FIRMAS\MSM.BMP" />
+    <Content Include="FIRMAS\MURIBE.bmp" />
+    <Content Include="FIRMAS\NOMBRE_Y_FIRMA.bmp" />
+    <Content Include="FIRMAS\NOMBRE_Y_FIRMA.GIF" />
+    <Content Include="FIRMAS\NOMBRE_Y_FIRMA.jpg" />
+    <Content Include="FIRMAS\NOMBRE_Y_FIRMA.png" />
+    <Content Include="FIRMAS\nombre_y_firma____.bmp" />
+    <Content Include="FIRMAS\no_foto.bmp" />
+    <Content Include="FIRMAS\no_foto.jpg" />
+    <Content Include="FIRMAS\no_foto2.bmp" />
+    <Content Include="FIRMAS\no_foto2.jpg" />
+    <Content Include="FIRMAS\no_foto2.png" />
+    <Content Include="FIRMAS\no_foto3.bmp" />
+    <Content Include="FIRMAS\no_foto3.jpg" />
+    <Content Include="FIRMAS\no_foto3.png" />
+    <Content Include="FIRMAS\no_foto5.bmp" />
+    <Content Include="FIRMAS\no_foto5.jpg" />
+    <Content Include="FIRMAS\no_fotoSW.jpg" />
+    <Content Include="FIRMAS\no_fotoV.jpg" />
+    <Content Include="FIRMAS\no_foto_.jpg" />
+    <Content Include="FIRMAS\no_foto_2.bmp" />
+    <Content Include="FIRMAS\no_foto_2.jpg" />
+    <Content Include="FIRMAS\no_foto_Antigua.bmp" />
+    <Content Include="FIRMAS\no_foto_Antigua.jpg" />
+    <Content Include="FIRMAS\no_foto_clinigne.jpg" />
+    <Content Include="FIRMAS\no_foto__.jpg" />
+    <Content Include="FIRMAS\no_foto__old.jpg" />
+    <Content Include="FIRMAS\no_foto___.jpg" />
+    <Content Include="FIRMAS\OCONTRERAS.bmp" />
+    <Content Include="FIRMAS\POV.bmp" />
+    <Content Include="FIRMAS\Principal1.jpg" />
+    <Content Include="FIRMAS\Principal2.jpg" />
+    <Content Include="FIRMAS\RLEAL.bmp" />
+    <Content Include="FIRMAS\RLOPEZ.bmp" />
+    <Content Include="FIRMAS\RVN.bmp" />
+    <Content Include="FIRMAS\sastudillo.bmp" />
+    <Content Include="FIRMAS\SINFIRMA.jpg" />
+    <Content Include="FIRMAS\VAH.bmp" />
+    <Content Include="FIRMAS\VAO.bmp" />
+    <Content Include="FIRMAS\VOL.bmp" />
+    <Content Include="FIRMAS\VOL.jpg" />
+    <Content Include="Formulario web1.aspx" />
+    <Content Include="Configuraciones\Laboratorio\Agrupacion_Exa.aspx" />
+    <Content Include="Configuraciones\Laboratorio\Area_Trabajo.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Lugar_TM.aspx" />
+    <Content Include="Configuraciones\Laboratorio\Orden_Ate.aspx" />
+    <Content Include="Configuraciones\Determinaciones\Resultados_Codificados.aspx" />
+    <Content Include="Configuraciones\Laboratorio\Seccion_Trabajo.aspx" />
+    <Content Include="Configuraciones\Laboratorio\T_Atencion.aspx" />
+    <Content Include="Configuraciones\Laboratorio\T_Rechazo.aspx" />
+    <Content Include="Configuraciones\Determinaciones\T_Recipiente.aspx" />
+    <Content Include="Configuraciones\Determinaciones\T_Resultado.aspx" />
+    <Content Include="Configuraciones\Determinaciones\Unidades_Medida.aspx" />
+    <Content Include="Excel\NO BORRAR.txt" />
+    <Content Include="Fecha_Conf\Config_Ate_LM.aspx" />
+    <Content Include="forgot-password.html" />
+    <Content Include="Gest_Financ.aspx" />
+    <Content Include="Gest_Financ\Acreditacion\Indica_Muestra_Ingresa.aspx" />
+    <Content Include="Gest_Financ\Acreditacion\Indica_Tiempo_Respuesta.aspx" />
+    <Content Include="Gest_Financ\Administracion.aspx" />
+    <Content Include="Gest_Financ\Administracion\Cobro_RUT.aspx" />
+    <Content Include="Gest_Financ\Administracion\List_Ate_Prev_and_Prog_Ag_M.aspx" />
+    <Content Include="Gest_Financ\Analisis_Atenciones.aspx" />
+    <Content Include="Gest_Financ\Analisis_Atenciones\AnaAteTPago.aspx" />
+    <Content Include="Gest_Financ\Analisis_Atenciones\AnaOrdAte.aspx" />
+    <Content Include="Gest_Financ\Analisis_Atenciones\AnaPrev.aspx" />
+    <Content Include="Gest_Financ\Convenio.aspx" />
+    <Content Include="Gest_Financ\Estadisticas.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Detalle\LugarTM_Det.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Detalle\Medico_Det.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Detalle\Prevision_Det.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Multiple\Prev_TM_Exa_Mult.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Atenciones_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\AteResumen_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate_2.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Examenes_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\LugarTM_Prev_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Medico_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\OrdenAtencion_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Pacientes_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Prevision_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Procedencia_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum_Alt.aspx" />
+    <Content Include="Gest_Financ\Estadisticas\Resumen\Usuarios_Sum.aspx" />
+    <Content Include="Gest_Financ\Listado_Graficos.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\Ana_LTM.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\Ana_MED.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\Ana_PAC.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoAtenciones.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoAteTP.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoCopago.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoExamenes.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoHORA_ATE.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoHORA_EXA.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoOrdAte.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoPAC_Mensual.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoPrevision.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoSecre.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\GraficoT_Sistema.aspx" />
+    <Content Include="Gest_Financ\Lista_Graficos\Lis_Ate_Totales.aspx" />
+    <Content Include="gulpfile.js" />
+    <Content Include="IAAS\iaas.aspx" />
+    <Content Include="IAAS\reporte_iaas.aspx" />
+    <Content Include="IAAS\reporte_iaas_fechas.aspx" />
+    <Content Include="Imagenes\00_logo_holanda_full.png" />
+    <Content Include="Imagenes\32x32.png" />
+    <Content Include="Imagenes\background_gr_comp.jpg" />
+    <Content Include="Imagenes\BGIMG.jpg" />
+    <Content Include="Imagenes\chrome_1-664x374.png" />
+    <Content Include="Imagenes\CMVM.png" />
+    <Content Include="Imagenes\en_construccion.png" />
+    <Content Include="Imagenes\ILWS.png" />
+    <Content Include="Imagenes\IMAGEN_IRISHIS.jpg" />
+    <Content Include="Imagenes\IrisLab logito.png" />
+    <Content Include="Imagenes\IrisLab Logo LARGOa.png" />
+    <Content Include="Imagenes\IrisLab_Logo_LARGO.png" />
+    <Content Include="Imagenes\IRISLOGONEWBLANCO.png" />
+    <Content Include="Imagenes\IRISLOGONEWMINI.png" />
+    <Content Include="Imagenes\IRISSSS.png" />
+    <Content Include="Imagenes\La_Cisterna.jpg" />
+    <Content Include="Imagenes\Logo-cmvm_valpo.jpg" />
+    <Content Include="Imagenes\logo-wordmark-large.f1831564f64e.png" />
+    <Content Include="Imagenes\logohospquilpue-2.jpg" />
+    <Content Include="Imagenes\logohospquilpue_new.jpg" />
+    <Content Include="Imagenes\LOGOIL2.png" />
+    <Content Include="Imagenes\logoirislabst2fnl2.png" />
+    <Content Include="Imagenes\Logo_GrupoRH.png" />
+    <Content Include="Imagenes\logo_irislabPDF.jpg" />
+    <Content Include="Imagenes\logo_largo_irislab.png" />
+    <Content Include="Imagenes\logo_san_joaquin.png" />
+    <Content Include="Imagenes\peñalolen2-2.jpg" />
+    <Content Include="Imp_Etiquetas\Impr_Dcto.aspx" />
+    <Content Include="Imp_Etiquetas\Impr_Dcto.js" />
+    <Content Include="Imp_Etiquetas\Impr_Dcto2.aspx" />
+    <Content Include="Imp_Etiquetas\Impr_Etiq.aspx" />
+    <Content Include="Imp_Etiquetas\Impr_Etiq.js" />
+    <Content Include="Imp_Etiquetas\Imp_Etiquetas.aspx" />
+    <Content Include="Agenda_Med\Ingreso_Ate_Avis_3.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="IRISPDFDERIVADOS\Parse_Docs_Aqui.txt" />
+    <Content Include="Iris_Print\Setup.exe" />
+    <Content Include="js\Base64.js" />
+    <Content Include="js\bootstrap-datetimepicker.es.js" />
+    <Content Include="js\bootstrap-datetimepicker.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\ClockPicker.js" />
+    <Content Include="js\collapse.js" />
+    <Content Include="js\colResizable-1.6.js" />
+    <Content Include="js\Custom_modal.js" />
+    <Content Include="js\Custom_Objects.js" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.min.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="js\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="js\datepicker\js\bootstrap-datepicker.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="js\Deep-Copy.js" />
+    <Content Include="js\es6-modules\Bloques.js" />
+    <Content Include="js\es6-modules\Ciudades.js" />
+    <Content Include="js\es6-modules\Comunas.js" />
+    <Content Include="js\es6-modules\Determinaciones.js" />
+    <Content Include="js\es6-modules\Diagnosticos.js" />
+    <Content Include="js\es6-modules\Doctores.js" />
+    <Content Include="js\es6-modules\Edad.js" />
+    <Content Include="js\es6-modules\EditarAgenda.js" />
+    <Content Include="js\es6-modules\Estados.js" />
+    <Content Include="js\es6-modules\Etnias.js" />
+    <Content Include="js\es6-modules\Examenes.js" />
+    <Content Include="js\es6-modules\Fetcher.js" />
+    <Content Include="js\es6-modules\FetcherV1.js" />
+    <Content Include="js\es6-modules\GruposPesquisa.js" />
+    <Content Include="js\es6-modules\Impresiones.js" />
+    <Content Include="js\es6-modules\IrisResponse.js" />
+    <Content Include="js\es6-modules\Lenguaje.js" />
+    <Content Include="js\es6-modules\Nacionalidades.js" />
+    <Content Include="js\es6-modules\NewPrevision.js" />
+    <Content Include="js\es6-modules\OrdenAtencion.js" />
+    <Content Include="js\es6-modules\Previsiones.js" />
+    <Content Include="js\es6-modules\Procedencias.js" />
+    <Content Include="js\es6-modules\Programas.js" />
+    <Content Include="js\es6-modules\Secciones.js" />
+    <Content Include="js\es6-modules\SeccionesAreas.js" />
+    <Content Include="js\es6-modules\Sectores.js" />
+    <Content Include="js\es6-modules\SelectElement.js" />
+    <Content Include="js\es6-modules\Sexos.js" />
+    <Content Include="js\es6-modules\TiposAtencion.js" />
+    <Content Include="js\es6-modules\TiposCritico.js" />
+    <Content Include="js\es6-modules\Usuarios.js" />
+    <Content Include="js\es6-modules\VisorResultados.js" />
+    <Content Include="js\Galletas.js" />
+    <Content Include="js\HighCharts.js" />
+    <Content Include="js\HighC_Exporting.js" />
+    <Content Include="js\highlight.js" />
+    <Content Include="js\IrisLabResourses.js" />
+    <Content Include="js\Iris_Functions.js" />
+    <Content Include="js\jQuery.js" />
+    <Content Include="js\jquery.mCustomScrollbar.js" />
+    <Content Include="js\jsLists.js" />
+    <Content Include="js\KeyTable.js" />
+    <Content Include="js\KeyTable.min.js" />
+    <Content Include="js\math.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="js\moment_es.js" />
+    <Content Include="js\RUT.js" />
+    <Content Include="js\sb-admin-charts.js" />
+    <Content Include="js\sb-admin-charts.min.js" />
+    <Content Include="js\sb-admin-datatables.js" />
+    <Content Include="js\sb-admin-datatables.min.js" />
+    <Content Include="js\sb-admin.js" />
+    <Content Include="js\sb-admin.min.js" />
+    <Content Include="js\transition.js" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Configuraciones\Mantenedores\Ciudad.aspx" />
+    <Content Include="Lis_Env_Avis.aspx" />
+    <Content Include="Lis_Tot_Exams.aspx" />
+    <Content Include="MSG_ASUNTO\Crear_Asunto.aspx" />
+    <Content Include="navbar.html" />
+    <Content Include="Configuraciones\Notificaciones\Edita_Notificaciones.aspx" />
+    <Content Include="Configuraciones\Notificaciones\Notificaciones.aspx" />
+    <Content Include="Configuraciones\Notificaciones\Notificaciones.js" />
+    <Content Include="Not_Found.aspx" />
+    <Content Include="PDF\Interface.txt" />
+    <Content Include="Configuraciones\Prevision\Asoc_Pre_Pre.aspx" />
+    <Content Include="Print_Ate\ConexionIRIS.asp" />
+    <Content Include="Print_Ate\PDF\no_borrar.txt" />
+    <Content Include="Print_Ate\Rutinas.asp" />
+    <Content Include="Print_Ate\VerExamenes.asp" />
+    <Content Include="Print_Ate\VerExamenesRESPALDO.asp" />
+    <Content Include="Print_Ate\VerExamenesAVIS.asp" />
+    <Content Include="Print_Ate\VerExamenesSolo.asp" />
+    <Content Include="Print_Ate\VerExamenesSoloRESPALDO.asp" />
+    <Content Include="Print_Ate\VerExamenesSoloAVISVIH.asp" />
+    <Content Include="Print_Ate\VerExamenesSoloAVIS.asp" />
+    <Content Include="Print_Ate\VerExamenesSoloAVIS_.asp" />
+    <Content Include="QC\C_Analito.aspx" />
+    <Content Include="QC\C_Analizador.aspx" />
+    <Content Include="QC\C_Can_Rang.aspx" />
+    <Content Include="QC\C_Copia_Lote.aspx" />
+    <Content Include="QC\C_Graph.aspx" />
+    <Content Include="QC\C_Graph_Niveles.aspx" />
+    <Content Include="QC\C_Graph_Sec.aspx" />
+    <Content Include="QC\C_Lote2.aspx" />
+    <Content Include="QC\C_Lote.aspx" />
+    <Content Include="QC\C_Mon_Res_QC.aspx" />
+    <Content Include="QC\C_Nivel_Lote.aspx" />
+    <Content Include="QC\C_Rel_Ana_Det_Can.aspx" />
+    <Content Include="QC\C_Rel_Lote_Ana.aspx" />
+    <Content Include="QC\C_SecAnalisis.aspx" />
+    <Content Include="QC\C_TP_Accion.aspx" />
+    <Content Include="QC\Medias_Moviles.aspx" />
+    <Content Include="QC\Medias_Moviles.js" />
+    <Content Include="QC\Menu_Conf.aspx" />
+    <Content Include="QC\Menu_Graph.aspx" />
+    <Content Include="QC\Menu_QC.aspx" />
+    <Content Include="QC\QC.aspx" />
+    <Content Include="QC\QC.js" />
+    <Content Include="QC\QC_ORIGINAL.js" />
+    <Content Include="Recep_Mue\Lis_Recep_Mue.aspx" />
+    <Content Include="Recep_Mue\Lis_Recep_Mue_2.aspx" />
+    <Content Include="Recep_Mue\Lis_Recep_Mue_Scr.aspx" />
+    <Content Include="Recep_Mue\Lis_Recep_Mue_SGB.aspx" />
+    <Content Include="Recep_Mue\Lis_Recep_Mue_VIH.aspx" />
+    <Content Include="Recep_Mue\Recep_Mue.aspx" />
+    <Content Include="Recep_Mue\Recep_Mue_PENDIENTES_2.aspx" />
+    <Content Include="Recha_Mues\Lis_Lote_Recha.aspx" />
+    <Content Include="Recha_Mues\Lis_Recha_Mues.aspx" />
+    <Content Include="Recha_Mues\Lis_Recha_Mues_2.aspx" />
+    <Content Include="Recha_Mues\Lis_Recha_Mues_Exa.aspx" />
+    <Content Include="Recha_Mues\Lis_Recha_Mues_TP.aspx" />
+    <Content Include="Recha_Mues\Recha_Mues.aspx" />
+    <Content Include="Rec_Browsers.html" />
+    <Content Include="REEE.aspx" />
+    <Content Include="register.html" />
+    <Content Include="Reg_Pap\bob.aspx" />
+    <Content Include="Reg_Pap\Excel_TP_Real_ADM_AVIS.aspx" />
+    <Content Include="Reg_Pap\Excel_TP_Real_ADM_AVIS_VER.aspx" />
+    <Content Include="Reg_Pap\Traza_Pap.aspx" />
+    <Content Include="Reg_Residuos.aspx" />
+    <Content Include="Reg_Residuos_ADM.aspx" />
+    <Content Include="Reportes.aspx" />
+    <Content Include="Reporte\Est_Result_Examen.aspx" />
+    <Content Include="Reporte\Hoja_de_Trabajo\Ate_LTM_Detalle.aspx" />
+    <Content Include="Reporte\Hoja_de_Trabajo\HT_Exa.aspx" />
+    <Content Include="Reporte\Hoja_de_Trabajo\HT_LugarTM.aspx" />
+    <Content Include="Reporte\Hoja_de_Trabajo\HT_Secc.aspx" />
+    <Content Include="Reporte\Hoja_de_Trabajo\HT_Sec_Imp.aspx" />
+    <Content Include="Reporte\Laboratorio\Lis_Dialisis.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2.js" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2_2.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2_2.js" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC.js" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC_25.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC_25.js" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_EXA_3.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_Secretaria.aspx" />
+    <Content Include="Reporte\REP_Laboratorio.aspx" />
+    <Content Include="Reporte\Secretaria\DET_ATE_X_USU.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_EXA_SECR.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_AREA.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_SECC.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_TOT.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_EXA.aspx" />
+    <Content Include="Reporte\Laboratorio\REP_LAB_SEC.aspx" />
+    <Content Include="Reporte\REP_Paciente.aspx" />
+    <Content Include="Reporte\Secretaria\RESU_ING_USU.aspx" />
+    <Content Include="Repor_check.aspx" />
+    <Content Include="Repor_check_2.aspx" />
+    <Content Include="Resultados\AgregarQuitarExamenVisor.js" />
+    <Content Include="Resultados\Ate_Resultados.aspx" />
+    <Content Include="Resultados\Ate_Resultados.css" />
+    <Content Include="Resultados\Ate_Resultados.js" />
+    <Content Include="Resultados\Ate_Resultados_2.aspx" />
+    <Content Include="Resultados\Ate_Resultados_2.js" />
+    <Content Include="Resultados\Ate_Resultados_3.aspx" />
+    <Content Include="Resultados\Ate_Resultados_3.js" />
+    <Content Include="Resultados\Editar_Paciente_Visor.js" />
+    <Content Include="Scan_Docs\Ver_Orden.aspx" />
+    <Content Include="Scan_Docs\Ver_Orden_Pre_Ingreso.aspx" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Servicio_Tecnico\Documentos_Ver_Usuarios.aspx" />
+    <Content Include="Servicio_Tecnico\Documentos_Ver_Usuarios2.aspx" />
+    <Content Include="Servicio_Tecnico\Reg_Solicitud.aspx" />
+    <Content Include="tables.html" />
+    <Content Include="Configuraciones\Usuarios\Cargo.aspx" />
+    <Content Include="Configuraciones\Usuarios\Profesiones_Usuarios.aspx" />
+    <Content Include="Toma_Muestra\Adm_TM.aspx" />
+    <Content Include="Update_File_Test.aspx" />
+    <Content Include="uploads\NO BORRAR !!!.txt" />
+    <Content Include="upload_msg\NO BORRAR !!!.txt" />
+    <Content Include="Utilidades\Ammyy Admin v3.5 - Corporate.exe" />
+    <Content Include="Utilidades\ammyy.png" />
+    <Content Include="Utilidades\barcode.jpg" />
+    <Content Include="Utilidades\pdf.PNG" />
+    <Content Include="Utilidades\print.png" />
+    <Content Include="Utilidades\Team Viewer 7.exe" />
+    <Content Include="Utilidades\tv.png" />
+    <Content Include="Utilidades\winrar.png" />
+    <Content Include="Utilidades\wrar550es.exe" />
+    <Content Include="Utilidades\Zebra Driver.exe" />
+    <Content Include="Utilidades\zebra.png" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="vendor\chart.js\Chart.js" />
+    <Content Include="vendor\chart.js\Chart.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\popper\popper.js" />
+    <Content Include="vendor\popper\popper.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso_Pacientes\Det_Atenc.aspx.designer.vb">
+      <DependentUpon>Det_Atenc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso_Pacientes\Det_Atenc.aspx.vb">
+      <DependentUpon>Det_Atenc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceso_Pacientes\Login_Pacientes.aspx.designer.vb">
+      <DependentUpon>Login_Pacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso_Pacientes\Login_Pacientes.aspx.vb">
+      <DependentUpon>Login_Pacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Conf_User.aspx.designer.vb">
+      <DependentUpon>Conf_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Conf_User.aspx.vb">
+      <DependentUpon>Conf_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Perm_Usu.aspx.designer.vb">
+      <DependentUpon>Perm_Usu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Perm_Usu.aspx.vb">
+      <DependentUpon>Perm_Usu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE.aspx.designer.vb">
+      <DependentUpon>AGRE_EXA_ATE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE.aspx.vb">
+      <DependentUpon>AGRE_EXA_ATE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE_CJ.aspx.designer.vb">
+      <DependentUpon>AGRE_EXA_ATE_CJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE_CJ.aspx.vb">
+      <DependentUpon>AGRE_EXA_ATE_CJ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE_NORMAL.aspx.designer.vb">
+      <DependentUpon>AGRE_EXA_ATE_NORMAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\AGRE_EXA_ATE_NORMAL.aspx.vb">
+      <DependentUpon>AGRE_EXA_ATE_NORMAL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_2.aspx.designer.vb">
+      <DependentUpon>Ingreso_Ate_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_2.aspx.vb">
+      <DependentUpon>Ingreso_Ate_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS_3.aspx.designer.vb">
+      <DependentUpon>IN_PAC_AVIS_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS_3.aspx.vb">
+      <DependentUpon>IN_PAC_AVIS_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN_3.aspx.designer.vb">
+      <DependentUpon>IN_PAC_MAN_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN_3.aspx.vb">
+      <DependentUpon>IN_PAC_MAN_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Pac_TDM_2.aspx.designer.vb">
+      <DependentUpon>Lis_Pac_TDM_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Pac_TDM_2.aspx.vb">
+      <DependentUpon>Lis_Pac_TDM_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad_3.aspx.designer.vb">
+      <DependentUpon>N_Ver_Disponibilidad_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad_3.aspx.vb">
+      <DependentUpon>N_Ver_Disponibilidad_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D.aspx.designer.vb">
+      <DependentUpon>AVIS_C_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D.aspx.vb">
+      <DependentUpon>AVIS_C_D.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D_2.aspx.designer.vb">
+      <DependentUpon>AVIS_C_D_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D_2.aspx.vb">
+      <DependentUpon>AVIS_C_D_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D_VER.aspx.designer.vb">
+      <DependentUpon>AVIS_C_D_VER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\AVIS_C_D_VER.aspx.vb">
+      <DependentUpon>AVIS_C_D_VER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\Busca_Paciente_Agendado.aspx.designer.vb">
+      <DependentUpon>Busca_Paciente_Agendado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\Busca_Paciente_Agendado.aspx.vb">
+      <DependentUpon>Busca_Paciente_Agendado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Boleta_Electronica\B_Elec.aspx.designer.vb">
+      <DependentUpon>B_Elec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boleta_Electronica\B_Elec.aspx.vb">
+      <DependentUpon>B_Elec.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Proce_2.aspx.designer.vb">
+      <DependentUpon>Chk_Tubo_Proce_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Proce_2.aspx.vb">
+      <DependentUpon>Chk_Tubo_Proce_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Env_RecepLab.aspx.designer.vb">
+      <DependentUpon>Traza_Env_RecepLab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Env_RecepLab.aspx.vb">
+      <DependentUpon>Traza_Env_RecepLab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.designer.vb">
+      <DependentUpon>Traza_Env_RecepLab_V2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Env_RecepLab_V2.aspx.vb">
+      <DependentUpon>Traza_Env_RecepLab_V2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Folio_Avis.aspx.designer.vb">
+      <DependentUpon>Traza_Folio_Avis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Folio_Avis.aspx.vb">
+      <DependentUpon>Traza_Folio_Avis.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_2.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_2.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_3.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_3.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_4.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_4.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_CC.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_CC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_CC.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_CC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_GR.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_GR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_GR.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_GR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_PCR.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_PCR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_PCR.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_PCR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_Vih_Res.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa_Vih_Res.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa_Vih_Res.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa_Vih_Res.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa__Scre_Sif.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa__Scre_Sif.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa__Scre_Sif.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa__Scre_Sif.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa_New.aspx.designer.vb">
+      <DependentUpon>Rev_Est_Exa_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa_New.aspx.vb">
+      <DependentUpon>Rev_Est_Exa_New.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Exa_Usu.aspx.designer.vb">
+      <DependentUpon>Rev_Exa_Usu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Exa_Usu.aspx.vb">
+      <DependentUpon>Rev_Exa_Usu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Exa_Usu_Todos.aspx.designer.vb">
+      <DependentUpon>Rev_Exa_Usu_Todos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Exa_Usu_Todos.aspx.vb">
+      <DependentUpon>Rev_Exa_Usu_Todos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Val_Criticos_Notif.aspx.designer.vb">
+      <DependentUpon>Val_Criticos_Notif.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Val_Criticos_Notif.aspx.vb">
+      <DependentUpon>Val_Criticos_Notif.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Codigo_Fonasa\Cod_Fonasa_Indicac.aspx.designer.vb">
+      <DependentUpon>Cod_Fonasa_Indicac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Codigo_Fonasa\Cod_Fonasa_Indicac.aspx.vb">
+      <DependentUpon>Cod_Fonasa_Indicac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Estudios\Estudio_Crea_Modifica.aspx.designer.vb">
+      <DependentUpon>Estudio_Crea_Modifica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Estudios\Estudio_Crea_Modifica.aspx.vb">
+      <DependentUpon>Estudio_Crea_Modifica.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos.aspx.designer.vb">
+      <DependentUpon>Documentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos.aspx.vb">
+      <DependentUpon>Documentos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos_Ver.aspx.designer.vb">
+      <DependentUpon>Documentos_Ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos_Ver.aspx.vb">
+      <DependentUpon>Documentos_Ver.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos_Ver2.aspx.designer.vb">
+      <DependentUpon>Documentos_Ver2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Documentos_Ver2.aspx.vb">
+      <DependentUpon>Documentos_Ver2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Lugar_TM_2.aspx.designer.vb">
+      <DependentUpon>Lugar_TM_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Lugar_TM_2.aspx.vb">
+      <DependentUpon>Lugar_TM_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Rela_Pack_Cf.aspx.designer.vb">
+      <DependentUpon>Rela_Pack_Cf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Rela_Pack_Cf.aspx.vb">
+      <DependentUpon>Rela_Pack_Cf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\TipoMuestraSangre.aspx.designer.vb">
+      <DependentUpon>TipoMuestraSangre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\TipoMuestraSangre.aspx.vb">
+      <DependentUpon>TipoMuestraSangre.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Asoc_Pre_Pre_2.aspx.designer.vb">
+      <DependentUpon>Asoc_Pre_Pre_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Asoc_Pre_Pre_2.aspx.vb">
+      <DependentUpon>Asoc_Pre_Pre_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\REM\Rem.aspx.designer.vb">
+      <DependentUpon>Rem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\REM\Rem.aspx.vb">
+      <DependentUpon>Rem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\SQL\Charge_Script.aspx.designer.vb">
+      <DependentUpon>Charge_Script.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\SQL\Charge_Script.aspx.vb">
+      <DependentUpon>Charge_Script.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Construccion.aspx.designer.vb">
+      <DependentUpon>Construccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Construccion.aspx.vb">
+      <DependentUpon>Construccion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="C_C.aspx.designer.vb">
+      <DependentUpon>C_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="C_C.aspx.vb">
+      <DependentUpon>C_C.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab_Mid_Recep.aspx.designer.vb">
+      <DependentUpon>Env_Mues_Lab_Mid_Recep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab_Mid_Recep.aspx.vb">
+      <DependentUpon>Env_Mues_Lab_Mid_Recep.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab_PENDIENTES_2.aspx.designer.vb">
+      <DependentUpon>Env_Mues_Lab_PENDIENTES_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab_PENDIENTES_2.aspx.vb">
+      <DependentUpon>Env_Mues_Lab_PENDIENTES_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_4.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_4.aspx.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_5.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_5.aspx.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Exa_Esp_V.aspx.designer.vb">
+      <DependentUpon>Exa_Esp_V.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exa_Esp_V.aspx.vb">
+      <DependentUpon>Exa_Esp_V.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\F_Ate_Pac.aspx.designer.vb">
+      <DependentUpon>F_Ate_Pac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\F_Ate_Pac.aspx.vb">
+      <DependentUpon>F_Ate_Pac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Imp_Ate_Directo.aspx.designer.vb">
+      <DependentUpon>Imp_Ate_Directo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Imp_Ate_Directo.aspx.vb">
+      <DependentUpon>Imp_Ate_Directo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Imp_Ate_P.aspx.designer.vb">
+      <DependentUpon>Imp_Ate_P.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Imp_Ate_P.aspx.vb">
+      <DependentUpon>Imp_Ate_P.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate.aspx.designer.vb">
+      <DependentUpon>Ingreso_Ate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate.aspx.vb">
+      <DependentUpon>Ingreso_Ate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Avis.aspx.designer.vb">
+      <DependentUpon>Ingreso_Ate_Avis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Avis.aspx.vb">
+      <DependentUpon>Ingreso_Ate_Avis.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_ate_avis_2.aspx.designer.vb">
+      <DependentUpon>Ingreso_ate_avis_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_ate_avis_2.aspx.vb">
+      <DependentUpon>Ingreso_ate_avis_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Saydex.aspx.designer.vb">
+      <DependentUpon>Ingreso_Ate_Saydex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Saydex.aspx.vb">
+      <DependentUpon>Ingreso_Ate_Saydex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS.aspx.designer.vb">
+      <DependentUpon>IN_PAC_AVIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS.aspx.vb">
+      <DependentUpon>IN_PAC_AVIS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS_2.aspx.designer.vb">
+      <DependentUpon>IN_PAC_AVIS_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_AVIS_2.aspx.vb">
+      <DependentUpon>IN_PAC_AVIS_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN.aspx.designer.vb">
+      <DependentUpon>IN_PAC_MAN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN.aspx.vb">
+      <DependentUpon>IN_PAC_MAN.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN_2.aspx.designer.vb">
+      <DependentUpon>IN_PAC_MAN_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\IN_PAC_MAN_2.aspx.vb">
+      <DependentUpon>IN_PAC_MAN_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Agen.aspx.designer.vb">
+      <DependentUpon>Lis_Agen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Agen.aspx.vb">
+      <DependentUpon>Lis_Agen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Pac_TDM.aspx.designer.vb">
+      <DependentUpon>Lis_Pac_TDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Lis_Pac_TDM.aspx.vb">
+      <DependentUpon>Lis_Pac_TDM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad.aspx.designer.vb">
+      <DependentUpon>N_Ver_Disponibilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad.aspx.vb">
+      <DependentUpon>N_Ver_Disponibilidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad_2.aspx.designer.vb">
+      <DependentUpon>N_Ver_Disponibilidad_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\N_Ver_Disponibilidad_2.aspx.vb">
+      <DependentUpon>N_Ver_Disponibilidad_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ver_Disponibilidad.aspx.designer.vb">
+      <DependentUpon>Ver_Disponibilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ver_Disponibilidad.aspx.vb">
+      <DependentUpon>Ver_Disponibilidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\Busca_Paciente.aspx.designer.vb">
+      <DependentUpon>Busca_Paciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\Busca_Paciente.aspx.vb">
+      <DependentUpon>Busca_Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\Editar_atencion.aspx.designer.vb">
+      <DependentUpon>Editar_atencion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\Editar_atencion.aspx.vb">
+      <DependentUpon>Editar_atencion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ate_Pac\Editar_Paciente.aspx.designer.vb">
+      <DependentUpon>Editar_Paciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ate_Pac\Editar_Paciente.aspx.vb">
+      <DependentUpon>Editar_Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="btns.aspx.designer.vb">
+      <DependentUpon>btns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="btns.aspx.vb">
+      <DependentUpon>btns.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Buscar_Ate\Atencion_Det.aspx.designer.vb">
+      <DependentUpon>Atencion_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Ate\Atencion_Det.aspx.vb">
+      <DependentUpon>Atencion_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscar_Ate\Buscar_Atencion.aspx.designer.vb">
+      <DependentUpon>Buscar_Atencion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Ate\Buscar_Atencion.aspx.vb">
+      <DependentUpon>Buscar_Atencion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CheckList.aspx.designer.vb">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckList.aspx.vb">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Cant_Exa_Dia.aspx.designer.vb">
+      <DependentUpon>Cant_Exa_Dia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Cant_Exa_Dia.aspx.vb">
+      <DependentUpon>Cant_Exa_Dia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Est_Exam.aspx.designer.vb">
+      <DependentUpon>Chk_Est_Exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Est_Exam.aspx.vb">
+      <DependentUpon>Chk_Est_Exam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Est_Seccion.aspx.designer.vb">
+      <DependentUpon>Chk_Est_Seccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Est_Seccion.aspx.vb">
+      <DependentUpon>Chk_Est_Seccion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Proce.aspx.designer.vb">
+      <DependentUpon>Chk_Tubo_Proce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Proce.aspx.vb">
+      <DependentUpon>Chk_Tubo_Proce.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Sec.aspx.designer.vb">
+      <DependentUpon>Chk_Tubo_Sec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Chk_Tubo_Sec.aspx.vb">
+      <DependentUpon>Chk_Tubo_Sec.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\HT_Sec_Proce.aspx.designer.vb">
+      <DependentUpon>HT_Sec_Proce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\HT_Sec_Proce.aspx.vb">
+      <DependentUpon>HT_Sec_Proce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\List_Pap.aspx.designer.vb">
+      <DependentUpon>List_Pap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\List_Pap.aspx.vb">
+      <DependentUpon>List_Pap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Deriv_Exa.aspx.designer.vb">
+      <DependentUpon>Lis_Deriv_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Deriv_Exa.aspx.vb">
+      <DependentUpon>Lis_Deriv_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Det_Resul.aspx.designer.vb">
+      <DependentUpon>Lis_Det_Resul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Det_Resul.aspx.vb">
+      <DependentUpon>Lis_Det_Resul.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Est_Tubo_Sel.aspx.designer.vb">
+      <DependentUpon>Lis_Est_Tubo_Sel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_Est_Tubo_Sel.aspx.vb">
+      <DependentUpon>Lis_Est_Tubo_Sel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_OC_Sed.aspx.designer.vb">
+      <DependentUpon>Lis_OC_Sed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Lis_OC_Sed.aspx.vb">
+      <DependentUpon>Lis_OC_Sed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Fechas.aspx.designer.vb">
+      <DependentUpon>Traza_Fechas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Fechas.aspx.vb">
+      <DependentUpon>Traza_Fechas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Folio.aspx.designer.vb">
+      <DependentUpon>Traza_Folio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Check_Point\Traza_Folio.aspx.vb">
+      <DependentUpon>Traza_Folio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Exa_Pen_Sec.aspx.designer.vb">
+      <DependentUpon>Exa_Pen_Sec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Exa_Pen_Sec.aspx.vb">
+      <DependentUpon>Exa_Pen_Sec.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa.aspx.designer.vb">
+      <DependentUpon>Rev_Deter_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Deter_Exa.aspx.vb">
+      <DependentUpon>Rev_Deter_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa.aspx.designer.vb">
+      <DependentUpon>Rev_Est_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa.aspx.vb">
+      <DependentUpon>Rev_Est_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa2.aspx.designer.vb">
+      <DependentUpon>Rev_Est_Exa2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Rev_Est_Exa2.aspx.vb">
+      <DependentUpon>Rev_Est_Exa2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\REV_VALOR_ALTER.aspx.designer.vb">
+      <DependentUpon>REV_VALOR_ALTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\REV_VALOR_ALTER.aspx.vb">
+      <DependentUpon>REV_VALOR_ALTER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Val_Criticos.aspx.designer.vb">
+      <DependentUpon>Val_Criticos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Val_Criticos.aspx.vb">
+      <DependentUpon>Val_Criticos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Check_List\Ver_Det_Pend.aspx.designer.vb">
+      <DependentUpon>Ver_Det_Pend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Check_List\Ver_Det_Pend.aspx.vb">
+      <DependentUpon>Ver_Det_Pend.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\Codigos_Fonasa.aspx.designer.vb">
+      <DependentUpon>Codigos_Fonasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Codigo_Fonasa\Codigos_Fonasa.aspx.vb">
+      <DependentUpon>Codigos_Fonasa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones.aspx.designer.vb">
+      <DependentUpon>Configuraciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones.aspx.vb">
+      <DependentUpon>Configuraciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Costos\Asoc_Costo_Exa.aspx.designer.vb">
+      <DependentUpon>Asoc_Costo_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Costos\Asoc_Costo_Exa.aspx.vb">
+      <DependentUpon>Asoc_Costo_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Costos\CrModCos.aspx.designer.vb">
+      <DependentUpon>CrModCos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Costos\CrModCos.aspx.vb">
+      <DependentUpon>CrModCos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Bancos.aspx.designer.vb">
+      <DependentUpon>Bancos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Bancos.aspx.vb">
+      <DependentUpon>Bancos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Comunas.aspx.designer.vb">
+      <DependentUpon>Comunas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Comunas.aspx.vb">
+      <DependentUpon>Comunas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Diagnostico.aspx.designer.vb">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Diagnostico.aspx.vb">
+      <DependentUpon>Diagnostico.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Indica_Medicas.aspx.designer.vb">
+      <DependentUpon>Indica_Medicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Indica_Medicas.aspx.vb">
+      <DependentUpon>Indica_Medicas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Menu_Usuario.aspx.designer.vb">
+      <DependentUpon>Menu_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Menu_Usuario.aspx.vb">
+      <DependentUpon>Menu_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Metod_Anali.aspx.designer.vb">
+      <DependentUpon>Metod_Anali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Metod_Anali.aspx.vb">
+      <DependentUpon>Metod_Anali.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\M_Prevision.aspx.designer.vb">
+      <DependentUpon>M_Prevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\M_Prevision.aspx.vb">
+      <DependentUpon>M_Prevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\M_Sub_Programa.aspx.designer.vb">
+      <DependentUpon>M_Sub_Programa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\M_Sub_Programa.aspx.vb">
+      <DependentUpon>M_Sub_Programa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Nacionalidad.aspx.designer.vb">
+      <DependentUpon>Nacionalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Nacionalidad.aspx.vb">
+      <DependentUpon>Nacionalidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Programa.aspx.designer.vb">
+      <DependentUpon>Programa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Programa.aspx.vb">
+      <DependentUpon>Programa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Rel_Prev_Prog_SubProg.aspx.designer.vb">
+      <DependentUpon>Rel_Prev_Prog_SubProg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Rel_Prev_Prog_SubProg.aspx.vb">
+      <DependentUpon>Rel_Prev_Prog_SubProg.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Sector.aspx.designer.vb">
+      <DependentUpon>Sector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Sector.aspx.vb">
+      <DependentUpon>Sector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\SubPrograma.aspx.designer.vb">
+      <DependentUpon>SubPrograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\SubPrograma.aspx.vb">
+      <DependentUpon>SubPrograma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\TipoAtencion.aspx.designer.vb">
+      <DependentUpon>TipoAtencion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\TipoAtencion.aspx.vb">
+      <DependentUpon>TipoAtencion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Tipo_Muestra.aspx.designer.vb">
+      <DependentUpon>Tipo_Muestra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Tipo_Muestra.aspx.vb">
+      <DependentUpon>Tipo_Muestra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Medicos\Crea_Edita_Med.aspx.designer.vb">
+      <DependentUpon>Crea_Edita_Med.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Medicos\Crea_Edita_Med.aspx.vb">
+      <DependentUpon>Crea_Edita_Med.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Medicos\Especialidades_Medicas.aspx.designer.vb">
+      <DependentUpon>Especialidades_Medicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Medicos\Especialidades_Medicas.aspx.vb">
+      <DependentUpon>Especialidades_Medicas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Pacientes\Crear_Edit_Pac.aspx.designer.vb">
+      <DependentUpon>Crear_Edit_Pac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Pacientes\Crear_Edit_Pac.aspx.vb">
+      <DependentUpon>Crear_Edit_Pac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Copiar_Val_Prevision.aspx.designer.vb">
+      <DependentUpon>Copiar_Val_Prevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Copiar_Val_Prevision.aspx.vb">
+      <DependentUpon>Copiar_Val_Prevision.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Crear_Edit_Usu_Convenio.aspx.designer.vb">
+      <DependentUpon>Crear_Edit_Usu_Convenio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Crear_Edit_Usu_Convenio.aspx.vb">
+      <DependentUpon>Crear_Edit_Usu_Convenio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Permiso_Usuario.aspx.designer.vb">
+      <DependentUpon>Permiso_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Permiso_Usuario.aspx.vb">
+      <DependentUpon>Permiso_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Deri_Mues\Deri_Lis.aspx.designer.vb">
+      <DependentUpon>Deri_Lis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deri_Mues\Deri_Lis.aspx.vb">
+      <DependentUpon>Deri_Lis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deri_Mues\Deri_Mues.aspx.designer.vb">
+      <DependentUpon>Deri_Mues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deri_Mues\Deri_Mues.aspx.vb">
+      <DependentUpon>Deri_Mues.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab.aspx.designer.vb">
+      <DependentUpon>Env_Mues_Lab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Env_Mues_Lab.aspx.vb">
+      <DependentUpon>Env_Mues_Lab.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Mues_Lab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab.aspx.vb">
+      <DependentUpon>Lis_Env_Mues_Lab.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_2.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_2.aspx.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_3.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\Lis_Env_Mues_Lab_3.aspx.vb">
+      <DependentUpon>Lis_Env_Mues_Lab_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Excel_TP_Real.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Excel_TP_Real.aspx.vb">
+      <DependentUpon>Excel_TP_Real.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Excel_TP_Real_2.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Excel_TP_Real_2.aspx.vb">
+      <DependentUpon>Excel_TP_Real_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Excel_TP_Real_ADM.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real_ADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Excel_TP_Real_ADM.aspx.vb">
+      <DependentUpon>Excel_TP_Real_ADM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Excel_TP_Real_ADM_2.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real_ADM_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Excel_TP_Real_ADM_2.aspx.vb">
+      <DependentUpon>Excel_TP_Real_ADM_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_2.aspx.designer.vb">
+      <DependentUpon>Config_Ate_LM_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_2.aspx.vb">
+      <DependentUpon>Config_Ate_LM_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_3.aspx.designer.vb">
+      <DependentUpon>Config_Ate_LM_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_3.aspx.vb">
+      <DependentUpon>Config_Ate_LM_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_4.aspx.designer.vb">
+      <DependentUpon>Config_Ate_LM_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM_4.aspx.vb">
+      <DependentUpon>Config_Ate_LM_4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formulario web1.aspx.designer.vb">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario web1.aspx.vb">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Agrupacion_Exa.aspx.designer.vb">
+      <DependentUpon>Agrupacion_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Agrupacion_Exa.aspx.vb">
+      <DependentUpon>Agrupacion_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Area_Trabajo.aspx.designer.vb">
+      <DependentUpon>Area_Trabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Area_Trabajo.aspx.vb">
+      <DependentUpon>Area_Trabajo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Lugar_TM.aspx.designer.vb">
+      <DependentUpon>Lugar_TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Lugar_TM.aspx.vb">
+      <DependentUpon>Lugar_TM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Orden_Ate.aspx.designer.vb">
+      <DependentUpon>Orden_Ate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Orden_Ate.aspx.vb">
+      <DependentUpon>Orden_Ate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\Resultados_Codificados.aspx.designer.vb">
+      <DependentUpon>Resultados_Codificados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\Resultados_Codificados.aspx.vb">
+      <DependentUpon>Resultados_Codificados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Seccion_Trabajo.aspx.designer.vb">
+      <DependentUpon>Seccion_Trabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\Seccion_Trabajo.aspx.vb">
+      <DependentUpon>Seccion_Trabajo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\T_Atencion.aspx.designer.vb">
+      <DependentUpon>T_Atencion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\T_Atencion.aspx.vb">
+      <DependentUpon>T_Atencion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\T_Rechazo.aspx.designer.vb">
+      <DependentUpon>T_Rechazo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Laboratorio\T_Rechazo.aspx.vb">
+      <DependentUpon>T_Rechazo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\T_Recipiente.aspx.designer.vb">
+      <DependentUpon>T_Recipiente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\T_Recipiente.aspx.vb">
+      <DependentUpon>T_Recipiente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\T_Resultado.aspx.designer.vb">
+      <DependentUpon>T_Resultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\T_Resultado.aspx.vb">
+      <DependentUpon>T_Resultado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\Unidades_Medida.aspx.designer.vb">
+      <DependentUpon>Unidades_Medida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Determinaciones\Unidades_Medida.aspx.vb">
+      <DependentUpon>Unidades_Medida.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM.aspx.designer.vb">
+      <DependentUpon>Config_Ate_LM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fecha_Conf\Config_Ate_LM.aspx.vb">
+      <DependentUpon>Config_Ate_LM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="galleta_metralleta.vb" />
+    <Compile Include="Gest_Financ.aspx.designer.vb">
+      <DependentUpon>Gest_Financ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ.aspx.vb">
+      <DependentUpon>Gest_Financ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Acreditacion\Indica_Muestra_Ingresa.aspx.designer.vb">
+      <DependentUpon>Indica_Muestra_Ingresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Acreditacion\Indica_Muestra_Ingresa.aspx.vb">
+      <DependentUpon>Indica_Muestra_Ingresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Acreditacion\Indica_Tiempo_Respuesta.aspx.designer.vb">
+      <DependentUpon>Indica_Tiempo_Respuesta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Acreditacion\Indica_Tiempo_Respuesta.aspx.vb">
+      <DependentUpon>Indica_Tiempo_Respuesta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion.aspx.designer.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion.aspx.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion\Cobro_RUT.aspx.designer.vb">
+      <DependentUpon>Cobro_RUT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion\Cobro_RUT.aspx.vb">
+      <DependentUpon>Cobro_RUT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion\List_Ate_Prev_and_Prog_Ag_M.aspx.designer.vb">
+      <DependentUpon>List_Ate_Prev_and_Prog_Ag_M.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Administracion\List_Ate_Prev_and_Prog_Ag_M.aspx.vb">
+      <DependentUpon>List_Ate_Prev_and_Prog_Ag_M.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones.aspx.designer.vb">
+      <DependentUpon>Analisis_Atenciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones.aspx.vb">
+      <DependentUpon>Analisis_Atenciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaAteTPago.aspx.designer.vb">
+      <DependentUpon>AnaAteTPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaAteTPago.aspx.vb">
+      <DependentUpon>AnaAteTPago.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaOrdAte.aspx.designer.vb">
+      <DependentUpon>AnaOrdAte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaOrdAte.aspx.vb">
+      <DependentUpon>AnaOrdAte.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaPrev.aspx.designer.vb">
+      <DependentUpon>AnaPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Analisis_Atenciones\AnaPrev.aspx.vb">
+      <DependentUpon>AnaPrev.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Convenio.aspx.designer.vb">
+      <DependentUpon>Convenio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Convenio.aspx.vb">
+      <DependentUpon>Convenio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas.aspx.designer.vb">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas.aspx.vb">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\LugarTM_Det.aspx.designer.vb">
+      <DependentUpon>LugarTM_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\LugarTM_Det.aspx.vb">
+      <DependentUpon>LugarTM_Det.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\Medico_Det.aspx.designer.vb">
+      <DependentUpon>Medico_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\Medico_Det.aspx.vb">
+      <DependentUpon>Medico_Det.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\Prevision_Det.aspx.designer.vb">
+      <DependentUpon>Prevision_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\Prevision_Det.aspx.vb">
+      <DependentUpon>Prevision_Det.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Multiple\Prev_TM_Exa_Mult.aspx.designer.vb">
+      <DependentUpon>Prev_TM_Exa_Mult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Multiple\Prev_TM_Exa_Mult.aspx.vb">
+      <DependentUpon>Prev_TM_Exa_Mult.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Atenciones_Sum.aspx.designer.vb">
+      <DependentUpon>Atenciones_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Atenciones_Sum.aspx.vb">
+      <DependentUpon>Atenciones_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\AteResumen_Sum.aspx.designer.vb">
+      <DependentUpon>AteResumen_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\AteResumen_Sum.aspx.vb">
+      <DependentUpon>AteResumen_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate_2.aspx.designer.vb">
+      <DependentUpon>Cupo_Tot_ate_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate_2.aspx.vb">
+      <DependentUpon>Cupo_Tot_ate_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate.aspx.designer.vb">
+      <DependentUpon>Cupo_Tot_ate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Cupo_Tot_ate.aspx.vb">
+      <DependentUpon>Cupo_Tot_ate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Examenes_Sum.aspx.designer.vb">
+      <DependentUpon>Examenes_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Examenes_Sum.aspx.vb">
+      <DependentUpon>Examenes_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\LugarTM_Prev_Sum.aspx.designer.vb">
+      <DependentUpon>LugarTM_Prev_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\LugarTM_Prev_Sum.aspx.vb">
+      <DependentUpon>LugarTM_Prev_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Medico_Sum.aspx.designer.vb">
+      <DependentUpon>Medico_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Medico_Sum.aspx.vb">
+      <DependentUpon>Medico_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\OrdenAtencion_Sum.aspx.designer.vb">
+      <DependentUpon>OrdenAtencion_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\OrdenAtencion_Sum.aspx.vb">
+      <DependentUpon>OrdenAtencion_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Pacientes_Sum.aspx.designer.vb">
+      <DependentUpon>Pacientes_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Pacientes_Sum.aspx.vb">
+      <DependentUpon>Pacientes_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Prevision_Sum.aspx.designer.vb">
+      <DependentUpon>Prevision_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Prevision_Sum.aspx.vb">
+      <DependentUpon>Prevision_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Procedencia_Sum.aspx.designer.vb">
+      <DependentUpon>Procedencia_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Procedencia_Sum.aspx.vb">
+      <DependentUpon>Procedencia_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum.aspx.designer.vb">
+      <DependentUpon>Res_Peñalolen_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum.aspx.vb">
+      <DependentUpon>Res_Peñalolen_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum_Alt.aspx.designer.vb">
+      <DependentUpon>Res_Peñalolen_Sum_Alt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Res_Peñalolen_Sum_Alt.aspx.vb">
+      <DependentUpon>Res_Peñalolen_Sum_Alt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Usuarios_Sum.aspx.designer.vb">
+      <DependentUpon>Usuarios_Sum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\Usuarios_Sum.aspx.vb">
+      <DependentUpon>Usuarios_Sum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Listado_Graficos.aspx.designer.vb">
+      <DependentUpon>Listado_Graficos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Listado_Graficos.aspx.vb">
+      <DependentUpon>Listado_Graficos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_LTM.aspx.designer.vb">
+      <DependentUpon>Ana_LTM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_LTM.aspx.vb">
+      <DependentUpon>Ana_LTM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_MED.aspx.designer.vb">
+      <DependentUpon>Ana_MED.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_MED.aspx.vb">
+      <DependentUpon>Ana_MED.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_PAC.aspx.designer.vb">
+      <DependentUpon>Ana_PAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Ana_PAC.aspx.vb">
+      <DependentUpon>Ana_PAC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoAtenciones.aspx.designer.vb">
+      <DependentUpon>GraficoAtenciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoAtenciones.aspx.vb">
+      <DependentUpon>GraficoAtenciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoAteTP.aspx.designer.vb">
+      <DependentUpon>GraficoAteTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoAteTP.aspx.vb">
+      <DependentUpon>GraficoAteTP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoCopago.aspx.designer.vb">
+      <DependentUpon>GraficoCopago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoCopago.aspx.vb">
+      <DependentUpon>GraficoCopago.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoExamenes.aspx.designer.vb">
+      <DependentUpon>GraficoExamenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoExamenes.aspx.vb">
+      <DependentUpon>GraficoExamenes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoHORA_ATE.aspx.designer.vb">
+      <DependentUpon>GraficoHORA_ATE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoHORA_ATE.aspx.vb">
+      <DependentUpon>GraficoHORA_ATE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoHORA_EXA.aspx.designer.vb">
+      <DependentUpon>GraficoHORA_EXA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoHORA_EXA.aspx.vb">
+      <DependentUpon>GraficoHORA_EXA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoOrdAte.aspx.designer.vb">
+      <DependentUpon>GraficoOrdAte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoOrdAte.aspx.vb">
+      <DependentUpon>GraficoOrdAte.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoPAC_Mensual.aspx.designer.vb">
+      <DependentUpon>GraficoPAC_Mensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoPAC_Mensual.aspx.vb">
+      <DependentUpon>GraficoPAC_Mensual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoPrevision.aspx.designer.vb">
+      <DependentUpon>GraficoPrevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoPrevision.aspx.vb">
+      <DependentUpon>GraficoPrevision.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoSecre.aspx.designer.vb">
+      <DependentUpon>GraficoSecre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoSecre.aspx.vb">
+      <DependentUpon>GraficoSecre.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoT_Sistema.aspx.designer.vb">
+      <DependentUpon>GraficoT_Sistema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\GraficoT_Sistema.aspx.vb">
+      <DependentUpon>GraficoT_Sistema.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Lis_Ate_Totales.aspx.designer.vb">
+      <DependentUpon>Lis_Ate_Totales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gest_Financ\Lista_Graficos\Lis_Ate_Totales.aspx.vb">
+      <DependentUpon>Lis_Ate_Totales.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IAAS\iaas.aspx.designer.vb">
+      <DependentUpon>iaas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IAAS\iaas.aspx.vb">
+      <DependentUpon>iaas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IAAS\reporte_iaas.aspx.designer.vb">
+      <DependentUpon>reporte_iaas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IAAS\reporte_iaas.aspx.vb">
+      <DependentUpon>reporte_iaas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <!-- <Compile Include="IAAS\reporte_iaas_fechas.aspx.designer.vb">
+      <DependentUpon>reporte_iaas_fechas.aspx</DependentUpon>
+    </Compile> -->
+    <Compile Include="IAAS\reporte_iaas_fechas.aspx.vb">
+      <DependentUpon>reporte_iaas_fechas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Dcto.aspx.designer.vb">
+      <DependentUpon>Impr_Dcto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Dcto.aspx.vb">
+      <DependentUpon>Impr_Dcto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Dcto2.aspx.designer.vb">
+      <DependentUpon>Impr_Dcto2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Dcto2.aspx.vb">
+      <DependentUpon>Impr_Dcto2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Etiq.aspx.designer.vb">
+      <DependentUpon>Impr_Etiq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Impr_Etiq.aspx.vb">
+      <DependentUpon>Impr_Etiq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Imp_Etiquetas.aspx.designer.vb">
+      <DependentUpon>Imp_Etiquetas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imp_Etiquetas\Imp_Etiquetas.aspx.vb">
+      <DependentUpon>Imp_Etiquetas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Ciudad.aspx.designer.vb">
+      <DependentUpon>Ciudad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Mantenedores\Ciudad.aspx.vb">
+      <DependentUpon>Ciudad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Avis_3.aspx.designer.vb">
+      <DependentUpon>Ingreso_Ate_Avis_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda_Med\Ingreso_Ate_Avis_3.aspx.vb">
+      <DependentUpon>Ingreso_Ate_Avis_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Lis_Env_Avis.aspx.designer.vb">
+      <DependentUpon>Lis_Env_Avis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lis_Env_Avis.aspx.vb">
+      <DependentUpon>Lis_Env_Avis.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Lis_Tot_Exams.aspx.designer.vb">
+      <DependentUpon>Lis_Tot_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lis_Tot_Exams.aspx.vb">
+      <DependentUpon>Lis_Tot_Exams.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Solicitud.Master.designer.vb">
+      <DependentUpon>Master_Solicitud.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Solicitud.Master.vb">
+      <DependentUpon>Master_Solicitud.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MSG_ASUNTO\Crear_Asunto.aspx.designer.vb">
+      <DependentUpon>Crear_Asunto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MSG_ASUNTO\Crear_Asunto.aspx.vb">
+      <DependentUpon>Crear_Asunto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Msg_Uploads.ashx.vb">
+      <DependentUpon>Msg_Uploads.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Asoc_Pre_Pre.aspx.designer.vb">
+      <DependentUpon>Asoc_Pre_Pre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Prevision\Asoc_Pre_Pre.aspx.vb">
+      <DependentUpon>Asoc_Pre_Pre.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Notificaciones\Edita_Notificaciones.aspx.designer.vb">
+      <DependentUpon>Edita_Notificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Notificaciones\Edita_Notificaciones.aspx.vb">
+      <DependentUpon>Edita_Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Notificaciones\Notificaciones.aspx.designer.vb">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Notificaciones\Notificaciones.aspx.vb">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Not_Found.aspx.designer.vb">
+      <DependentUpon>Not_Found.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Not_Found.aspx.vb">
+      <DependentUpon>Not_Found.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Analito.aspx.designer.vb">
+      <DependentUpon>C_Analito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Analito.aspx.vb">
+      <DependentUpon>C_Analito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Analizador.aspx.designer.vb">
+      <DependentUpon>C_Analizador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Analizador.aspx.vb">
+      <DependentUpon>C_Analizador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Can_Rang.aspx.designer.vb">
+      <DependentUpon>C_Can_Rang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Can_Rang.aspx.vb">
+      <DependentUpon>C_Can_Rang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Copia_Lote.aspx.designer.vb">
+      <DependentUpon>C_Copia_Lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Copia_Lote.aspx.vb">
+      <DependentUpon>C_Copia_Lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Graph.aspx.designer.vb">
+      <DependentUpon>C_Graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Graph.aspx.vb">
+      <DependentUpon>C_Graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Graph_Niveles.aspx.designer.vb">
+      <DependentUpon>C_Graph_Niveles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Graph_Niveles.aspx.vb">
+      <DependentUpon>C_Graph_Niveles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Graph_Sec.aspx.designer.vb">
+      <DependentUpon>C_Graph_Sec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Graph_Sec.aspx.vb">
+      <DependentUpon>C_Graph_Sec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Lote2.aspx.designer.vb">
+      <DependentUpon>C_Lote2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Lote2.aspx.vb">
+      <DependentUpon>C_Lote2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Lote.aspx.designer.vb">
+      <DependentUpon>C_Lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Lote.aspx.vb">
+      <DependentUpon>C_Lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Mon_Res_QC.aspx.designer.vb">
+      <DependentUpon>C_Mon_Res_QC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Mon_Res_QC.aspx.vb">
+      <DependentUpon>C_Mon_Res_QC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Nivel_Lote.aspx.designer.vb">
+      <DependentUpon>C_Nivel_Lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Nivel_Lote.aspx.vb">
+      <DependentUpon>C_Nivel_Lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Rel_Ana_Det_Can.aspx.designer.vb">
+      <DependentUpon>C_Rel_Ana_Det_Can.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Rel_Ana_Det_Can.aspx.vb">
+      <DependentUpon>C_Rel_Ana_Det_Can.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_Rel_Lote_Ana.aspx.designer.vb">
+      <DependentUpon>C_Rel_Lote_Ana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_Rel_Lote_Ana.aspx.vb">
+      <DependentUpon>C_Rel_Lote_Ana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_SecAnalisis.aspx.designer.vb">
+      <DependentUpon>C_SecAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_SecAnalisis.aspx.vb">
+      <DependentUpon>C_SecAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\C_TP_Accion.aspx.designer.vb">
+      <DependentUpon>C_TP_Accion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\C_TP_Accion.aspx.vb">
+      <DependentUpon>C_TP_Accion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\Medias_Moviles.aspx.designer.vb">
+      <DependentUpon>Medias_Moviles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Medias_Moviles.aspx.vb">
+      <DependentUpon>Medias_Moviles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="QC\Menu_Conf.aspx.designer.vb">
+      <DependentUpon>Menu_Conf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Menu_Conf.aspx.vb">
+      <DependentUpon>Menu_Conf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\Menu_Graph.aspx.designer.vb">
+      <DependentUpon>Menu_Graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Menu_Graph.aspx.vb">
+      <DependentUpon>Menu_Graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\Menu_QC.aspx.designer.vb">
+      <DependentUpon>Menu_QC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\Menu_QC.aspx.vb">
+      <DependentUpon>Menu_QC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QC\QC.aspx.designer.vb">
+      <DependentUpon>QC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QC\QC.aspx.vb">
+      <DependentUpon>QC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue.aspx.designer.vb">
+      <DependentUpon>Lis_Recep_Mue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue.aspx.vb">
+      <DependentUpon>Lis_Recep_Mue.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_2.aspx.designer.vb">
+      <DependentUpon>Lis_Recep_Mue_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_2.aspx.vb">
+      <DependentUpon>Lis_Recep_Mue_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_Scr.aspx.designer.vb">
+      <DependentUpon>Lis_Recep_Mue_Scr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_Scr.aspx.vb">
+      <DependentUpon>Lis_Recep_Mue_Scr.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_SGB.aspx.designer.vb">
+      <DependentUpon>Lis_Recep_Mue_SGB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_SGB.aspx.vb">
+      <DependentUpon>Lis_Recep_Mue_SGB.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_VIH.aspx.designer.vb">
+      <DependentUpon>Lis_Recep_Mue_VIH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Lis_Recep_Mue_VIH.aspx.vb">
+      <DependentUpon>Lis_Recep_Mue_VIH.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Recep_Mue.aspx.designer.vb">
+      <DependentUpon>Recep_Mue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Recep_Mue.aspx.vb">
+      <DependentUpon>Recep_Mue.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recep_Mue\Recep_Mue_PENDIENTES_2.aspx.designer.vb">
+      <DependentUpon>Recep_Mue_PENDIENTES_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recep_Mue\Recep_Mue_PENDIENTES_2.aspx.vb">
+      <DependentUpon>Recep_Mue_PENDIENTES_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Lote_Recha.aspx.designer.vb">
+      <DependentUpon>Lis_Lote_Recha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Lote_Recha.aspx.vb">
+      <DependentUpon>Lis_Lote_Recha.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues.aspx.designer.vb">
+      <DependentUpon>Lis_Recha_Mues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues.aspx.vb">
+      <DependentUpon>Lis_Recha_Mues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_2.aspx.designer.vb">
+      <DependentUpon>Lis_Recha_Mues_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_2.aspx.vb">
+      <DependentUpon>Lis_Recha_Mues_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_Exa.aspx.designer.vb">
+      <DependentUpon>Lis_Recha_Mues_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_Exa.aspx.vb">
+      <DependentUpon>Lis_Recha_Mues_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_TP.aspx.designer.vb">
+      <DependentUpon>Lis_Recha_Mues_TP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Lis_Recha_Mues_TP.aspx.vb">
+      <DependentUpon>Lis_Recha_Mues_TP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recha_Mues\Recha_Mues.aspx.designer.vb">
+      <DependentUpon>Recha_Mues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recha_Mues\Recha_Mues.aspx.vb">
+      <DependentUpon>Recha_Mues.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="REEE.aspx.designer.vb">
+      <DependentUpon>REEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Pap\bob.aspx.designer.vb">
+      <DependentUpon>bob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Pap\bob.aspx.vb">
+      <DependentUpon>bob.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Pap\Excel_TP_Real_ADM_AVIS.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real_ADM_AVIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Pap\Excel_TP_Real_ADM_AVIS.aspx.vb">
+      <DependentUpon>Excel_TP_Real_ADM_AVIS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Pap\Excel_TP_Real_ADM_AVIS_VER.aspx.designer.vb">
+      <DependentUpon>Excel_TP_Real_ADM_AVIS_VER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Pap\Excel_TP_Real_ADM_AVIS_VER.aspx.vb">
+      <DependentUpon>Excel_TP_Real_ADM_AVIS_VER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Pap\Traza_Pap.aspx.designer.vb">
+      <DependentUpon>Traza_Pap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Pap\Traza_Pap.aspx.vb">
+      <DependentUpon>Traza_Pap.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Residuos.aspx.designer.vb">
+      <DependentUpon>Reg_Residuos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Residuos.aspx.vb">
+      <DependentUpon>Reg_Residuos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Residuos_ADM.aspx.designer.vb">
+      <DependentUpon>Reg_Residuos_ADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Residuos_ADM.aspx.vb">
+      <DependentUpon>Reg_Residuos_ADM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reportes.aspx.designer.vb">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.aspx.vb">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Est_Result_Examen.aspx.designer.vb">
+      <DependentUpon>Est_Result_Examen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Est_Result_Examen.aspx.vb">
+      <DependentUpon>Est_Result_Examen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\Ate_LTM_Detalle.aspx.designer.vb">
+      <DependentUpon>Ate_LTM_Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\Ate_LTM_Detalle.aspx.vb">
+      <DependentUpon>Ate_LTM_Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Exa.aspx.designer.vb">
+      <DependentUpon>HT_Exa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Exa.aspx.vb">
+      <DependentUpon>HT_Exa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_LugarTM.aspx.designer.vb">
+      <DependentUpon>HT_LugarTM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_LugarTM.aspx.vb">
+      <DependentUpon>HT_LugarTM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Secc.aspx.designer.vb">
+      <DependentUpon>HT_Secc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Secc.aspx.vb">
+      <DependentUpon>HT_Secc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Sec_Imp.aspx.designer.vb">
+      <DependentUpon>HT_Sec_Imp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Hoja_de_Trabajo\HT_Sec_Imp.aspx.vb">
+      <DependentUpon>HT_Sec_Imp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\Lis_Dialisis.aspx.designer.vb">
+      <DependentUpon>Lis_Dialisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\Lis_Dialisis.aspx.vb">
+      <DependentUpon>Lis_Dialisis.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2_2.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC_2_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC_2_2.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC_2_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_REM_PROC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_REM_PROC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC_25.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_REM_PROC_25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_REM_PROC_25.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_REM_PROC_25.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_EXA_3.aspx.designer.vb">
+      <DependentUpon>REP_LAB_EXA_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_EXA_3.aspx.vb">
+      <DependentUpon>REP_LAB_EXA_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_Secretaria.aspx.designer.vb">
+      <DependentUpon>REP_Secretaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_Secretaria.aspx.vb">
+      <DependentUpon>REP_Secretaria.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\REP_Laboratorio.aspx.designer.vb">
+      <DependentUpon>REP_Laboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\REP_Laboratorio.aspx.vb">
+      <DependentUpon>REP_Laboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Secretaria\DET_ATE_X_USU.aspx.designer.vb">
+      <DependentUpon>DET_ATE_X_USU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Secretaria\DET_ATE_X_USU.aspx.vb">
+      <DependentUpon>DET_ATE_X_USU.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_EXA_SECR.aspx.designer.vb">
+      <DependentUpon>REP_EXA_SECR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_EXA_SECR.aspx.vb">
+      <DependentUpon>REP_EXA_SECR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_AREA.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_AREA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_AREA.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_AREA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_ARE_SECC.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_ARE_SECC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_SECC.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_SECC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_SECC.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_SECC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_TOT.aspx.designer.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_TOT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_CANT_EXA_TOT.aspx.vb">
+      <DependentUpon>REP_LAB_CANT_EXA_TOT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_EXA.aspx.designer.vb">
+      <DependentUpon>REP_LAB_EXA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_EXA.aspx.vb">
+      <DependentUpon>REP_LAB_EXA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_SEC.aspx.designer.vb">
+      <DependentUpon>REP_LAB_SEC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Laboratorio\REP_LAB_SEC.aspx.vb">
+      <DependentUpon>REP_LAB_SEC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\REP_Paciente.aspx.designer.vb">
+      <DependentUpon>REP_Paciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\REP_Paciente.aspx.vb">
+      <DependentUpon>REP_Paciente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Secretaria\RESU_ING_USU.aspx.designer.vb">
+      <DependentUpon>RESU_ING_USU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Secretaria\RESU_ING_USU.aspx.vb">
+      <DependentUpon>RESU_ING_USU.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Cargo.aspx.designer.vb">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Cargo.aspx.vb">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Profesiones_Usuarios.aspx.designer.vb">
+      <DependentUpon>Profesiones_Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\Usuarios\Profesiones_Usuarios.aspx.vb">
+      <DependentUpon>Profesiones_Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Repor_check.aspx.designer.vb">
+      <DependentUpon>Repor_check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repor_check.aspx.vb">
+      <DependentUpon>Repor_check.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Repor_check_2.aspx.designer.vb">
+      <DependentUpon>Repor_check_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repor_check_2.aspx.vb">
+      <DependentUpon>Repor_check_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados.aspx.designer.vb">
+      <DependentUpon>Ate_Resultados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados.aspx.vb">
+      <DependentUpon>Ate_Resultados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados_2.aspx.designer.vb">
+      <DependentUpon>Ate_Resultados_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados_2.aspx.vb">
+      <DependentUpon>Ate_Resultados_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados_3.aspx.designer.vb">
+      <DependentUpon>Ate_Resultados_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultados\Ate_Resultados_3.aspx.vb">
+      <DependentUpon>Ate_Resultados_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Scan_Docs\Ver_Orden.aspx.designer.vb">
+      <DependentUpon>Ver_Orden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scan_Docs\Ver_Orden.aspx.vb">
+      <DependentUpon>Ver_Orden.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Scan_Docs\Ver_Orden_Pre_Ingreso.aspx.designer.vb">
+      <DependentUpon>Ver_Orden_Pre_Ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scan_Docs\Ver_Orden_Pre_Ingreso.aspx.vb">
+      <DependentUpon>Ver_Orden_Pre_Ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Documentos_Ver_Usuarios.aspx.designer.vb">
+      <DependentUpon>Documentos_Ver_Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Documentos_Ver_Usuarios.aspx.vb">
+      <DependentUpon>Documentos_Ver_Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Documentos_Ver_Usuarios2.aspx.designer.vb">
+      <DependentUpon>Documentos_Ver_Usuarios2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Documentos_Ver_Usuarios2.aspx.vb">
+      <DependentUpon>Documentos_Ver_Usuarios2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Reg_Solicitud.aspx.designer.vb">
+      <DependentUpon>Reg_Solicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio_Tecnico\Reg_Solicitud.aspx.vb">
+      <DependentUpon>Reg_Solicitud.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Toma_Muestra\Adm_TM.aspx.designer.vb">
+      <DependentUpon>Adm_TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toma_Muestra\Adm_TM.aspx.vb">
+      <DependentUpon>Adm_TM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Update_File_Test.aspx.designer.vb">
+      <DependentUpon>Update_File_Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update_File_Test.aspx.vb">
+      <DependentUpon>Update_File_Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uploads.ashx.vb">
+      <DependentUpon>Uploads.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include=".jsbeautifyrc" />
+    <Content Include=".travis.yml" />
+    <Content Include="LICENSE" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Master.Master" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.min.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="Msg_Uploads.ashx" />
+    <Content Include="Master_Solicitud.Master" />
+    <Content Include="FIRMAS\Thumbs.db" />
+    <Content Include="js\jquery-3.7.0.min.js" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\Publicacion.pubxml" />
+    <None Include="My Project\PublishProfiles\XXX.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Uploads.ashx" />
+    <Content Include="Resultados\Ate_Resultados.js.map" />
+    <Content Include="Utilidades\code128.ttf" />
+    <Content Include="Utilidades\SETUP.rar" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.vbproj">
+      <Project>{b6c313a0-78a7-45d6-8770-a227cac9e904}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{12b862d7-1e5f-4630-9919-e81d5e932a3f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.vbproj">
+      <Project>{61d1cf7d-f0f7-4220-b948-a56c270562a9}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Account\Conf_User.ts" />
+    <TypeScriptCompile Include="Imp_Etiquetas\Impr_Dcto2.ts" />
+    <TypeScriptCompile Include="js\WebForm2.ts" />
+    <TypeScriptCompile Include="js\WebForm.ts" />
+    <TypeScriptCompile Include="Resultados\Ate_Resultados.ts" />
+    <TypeScriptCompile Include="scripts\typings\bootstrap\bootstrap.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\bootstrap\datatable.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\bootstrap\datepicker.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts-modules-boost.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts-modules-exporting.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts-modules-no-data-to-display.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts-modules-offline-exporting.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts-more.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highcharts.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\highcharts\highstock.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\clockpicker.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\moment\moment.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ASPPDFLib">
+      <Guid>{414FEE4B-2879-4090-957E-423567FFCFC6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES2015</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20697</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20698/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties package_1json__JSONSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

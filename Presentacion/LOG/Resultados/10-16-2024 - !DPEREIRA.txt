@@ -1,0 +1,202 @@
+[16-10-2024 -> 04:39:20] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:39:20] Cargando datos del paciente...
+[16-10-2024 -> 04:40:37] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:40:37] Cargando datos del paciente...
+[16-10-2024 -> 04:42:11] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:42:11] Cargando datos del paciente...
+[16-10-2024 -> 04:45:21] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:45:21] Cargando datos del paciente...
+[16-10-2024 -> 04:49:37] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:49:37] Cargando datos del paciente...
+[16-10-2024 -> 04:49:38] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:49:38] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:49:48] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:49:48] Cargando datos del paciente...
+[16-10-2024 -> 04:49:49] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:49:49] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:50:02] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:50:02] Cargando datos del paciente...
+[16-10-2024 -> 04:50:02] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:50:02] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:50:30] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:50:30] Cargando datos del paciente...
+[16-10-2024 -> 04:50:30] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:50:30] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:50:34] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:50:34] Cargando datos del paciente...
+[16-10-2024 -> 04:50:34] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:50:34] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:51:57] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:51:57] Cargando datos del paciente...
+[16-10-2024 -> 04:54:09] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:54:09] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:54:11] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:54:11] Cargando datos del paciente...
+[16-10-2024 -> 04:54:14] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:54:14] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:55:11] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:55:11] Cargando datos del paciente...
+[16-10-2024 -> 04:55:13] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:55:13] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:55:26] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:55:26] Cargando datos del paciente...
+[16-10-2024 -> 04:55:27] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:55:27] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:55:29] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:55:29] Cargando datos del paciente...
+[16-10-2024 -> 04:58:04] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:58:04] Cargando datos del paciente...
+[16-10-2024 -> 04:58:39] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:58:47] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:58:58] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:58:58] Cargando datos del paciente...
+[16-10-2024 -> 04:59:35] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:59:36] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 04:59:37] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 04:59:37] Cargando datos del paciente...
+[16-10-2024 -> 04:59:43] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 04:59:43] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:00:58] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:00:58] Cargando datos del paciente...
+[16-10-2024 -> 05:00:58] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:00:58] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:02:10] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:02:10] Cargando datos del paciente...
+[16-10-2024 -> 05:02:10] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:02:10] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:02:30] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:02:30] Cargando datos del paciente...
+[16-10-2024 -> 05:02:30] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:02:30] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:08:57] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:08:57] Cargando datos del paciente...
+[16-10-2024 -> 05:08:57] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:08:57] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:14:59] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:14:59] Cargando datos del paciente...
+[16-10-2024 -> 05:14:59] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:14:59] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:38:19] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:38:19] Cargando datos del paciente...
+[16-10-2024 -> 05:38:19] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:38:19] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:40:01] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:40:01] Cargando datos del paciente...
+[16-10-2024 -> 05:40:01] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:40:01] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:40:12] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:40:12] Cargando datos del paciente...
+[16-10-2024 -> 05:40:12] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:40:12] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:40:38] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:40:38] Cargando datos del paciente...
+[16-10-2024 -> 05:40:38] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:40:38] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:41:10] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:41:10] Cargando datos del paciente...
+[16-10-2024 -> 05:41:10] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:41:10] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:42:13] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:42:13] Cargando datos del paciente...
+[16-10-2024 -> 05:42:13] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:42:13] Carga Completada.
+
+----------------------------------------------------------------------------------
+[16-10-2024 -> 05:43:18] El usuario DPEREIRA ha ingresado al formulario.
+[16-10-2024 -> 05:43:18] Cargando datos del paciente...
+[16-10-2024 -> 05:43:18] Paciente identificado:
+                         - RUT: 
+                         - Nombre: 
+[16-10-2024 -> 05:43:18] Carga Completada.
+
+----------------------------------------------------------------------------------

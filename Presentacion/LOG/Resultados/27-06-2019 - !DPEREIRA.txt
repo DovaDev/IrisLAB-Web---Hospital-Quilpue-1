@@ -1,0 +1,14 @@
+[27-06-2019 -> 06:12:31] El usuario DPEREIRA ha ingresado al formulario.
+[27-06-2019 -> 06:12:31] Cargando datos del paciente...
+[27-06-2019 -> 06:12:31] Paciente identificado:
+                         - RUT: 22.641.277-8
+                         - Nombre: PACIENTE IRIS LABORATORIO CUATRO
+[27-06-2019 -> 06:12:31] Carga Completada.
+
+----------------------------------------------------------------------------------
+[27-06-2019 -> 06:12:32] Cargando resultados del paciente...
+[27-06-2019 -> 06:12:32] Cant. Resultados: 5
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[27-06-2019 -> 06:12:33] ID_ATE = 122921

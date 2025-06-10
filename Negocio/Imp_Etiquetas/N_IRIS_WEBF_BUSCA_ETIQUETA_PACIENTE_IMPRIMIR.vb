@@ -1,0 +1,13 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR
+    End Sub
+    Function IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR(ByVal ID_ATE As Integer) As List(Of E_IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR)
+        Return DD_Data.IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR(ID_ATE)
+    End Function
+End Class

@@ -1,0 +1,82 @@
+﻿.progress-bar.animate {
+    width: 100%;
+}
+
+#DataTable tbody td {
+    text-transform: uppercase;
+}
+
+.mrgn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnFichaAcceso {
+    margin-bottom: 1vh;
+}
+
+#i {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.manito {
+    cursor: pointer;
+}
+
+.cabezera {
+    background: #46963f;
+    color: white;
+}
+
+.cabezera2 {
+    background: #081f44;
+    color: white;
+}
+
+.textoReducido {
+    font-size: 12px;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+.highlights {
+    width: 90%;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.highlights2 {
+    width: 710px;
+    height: 404px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .flexon {
+        display: flex;
+        flex-flow: column;
+        width: 90vw;
+    }
+
+    .flx {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .highlights {
+        height: 100%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #Btn_Buscar_x_ate {
+        width: 90vw;
+        margin-left: -12px;
+    }
+}

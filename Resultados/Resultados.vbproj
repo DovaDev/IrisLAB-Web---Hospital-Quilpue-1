@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{75A11938-94BB-446D-ACB2-8856CE3E644E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Resultados</RootNamespace>
+    <AssemblyName>Resultados</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Resultados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Resultados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{12b862d7-1e5f-4630-9919-e81d5e932a3f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.vbproj">
+      <Project>{61d1cf7d-f0f7-4220-b948-a56c270562a9}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acc_Pac.aspx" />
+    <Content Include="Acc_Pac.js" />
+    <Content Include="Construccion.aspx" />
+    <Content Include="css\bootstrap-datetimepicker.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.icon-large.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\Checkbox.css" />
+    <Content Include="css\ClockPicker.css" />
+    <Content Include="css\Iris_Css.css" />
+    <Content Include="css\jquery.mCustomScrollbar.css" />
+    <Content Include="css\Load_Modal.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\sb-admin.min.css" />
+    <Content Include="css\Table.css" />
+    <Content Include="css\WebForm2.css" />
+    <Content Include="Det_Atenc.aspx" />
+    <Content Include="Documentos_Ver_Usuarios2.aspx" />
+    <Content Include="FIRMAS\15129.png" />
+    <Content Include="FIRMAS\9001.png" />
+    <Content Include="FIRMAS\LogoAcreditado.jpg" />
+    <Content Include="FIRMAS\LogoAcreditado.png" />
+    <Content Include="FIRMAS\logolab.jpg" />
+    <Content Include="FIRMAS\logolab.png" />
+    <Content Include="FIRMAS\logolab222.png" />
+    <Content Include="FIRMAS\no_foto.jpg" />
+    <Content Include="FIRMAS\SINFIRMA.jpg" />
+    <Content Include="Imagenes\32x32.png" />
+    <Content Include="Imagenes\background_gr_comp.jpg" />
+    <Content Include="Imagenes\BGIMG.jpg" />
+    <Content Include="Imagenes\chrome_1-664x374.png" />
+    <Content Include="Imagenes\CMVM.png" />
+    <Content Include="Imagenes\CMVM2.png" />
+    <Content Include="Imagenes\en_construccion.png" />
+    <Content Include="Imagenes\ILWS.png" />
+    <Content Include="Imagenes\IMAGEN_IRISHIS.jpg" />
+    <Content Include="Imagenes\IrisLab logito.png" />
+    <Content Include="Imagenes\IrisLab Logo LARGOa.png" />
+    <Content Include="Imagenes\IRISSSS.png" />
+    <Content Include="Imagenes\Logo-cmvm_valpo.jpg" />
+    <Content Include="Imagenes\logo-wordmark-large.f1831564f64e.png" />
+    <Content Include="Imagenes\LOGOIL2.png" />
+    <Content Include="Imagenes\logoirislabst2fnl2.png" />
+    <Content Include="Imagenes\logolab.jpg" />
+    <Content Include="Index - Copia.aspx" />
+    <Content Include="Index - Copia.js" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\Base64.js" />
+    <Content Include="js\bootstrap-datetimepicker.es.js" />
+    <Content Include="js\bootstrap-datetimepicker.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\ClockPicker.js" />
+    <Content Include="js\collapse.js" />
+    <Content Include="js\Custom_modal.js" />
+    <Content Include="js\Custom_Objects.js" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.min.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="js\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="js\datepicker\js\bootstrap-datepicker.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="js\datepicker\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="js\Deep-Copy.js" />
+    <Content Include="js\Galletas.js" />
+    <Content Include="js\HighCharts.js" />
+    <Content Include="js\HighC_Exporting.js" />
+    <Content Include="js\highlight.js" />
+    <Content Include="js\IrisLabResourses.js" />
+    <Content Include="js\Iris_Functions.js" />
+    <Content Include="js\jQuery.js" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="js\moment_es.js" />
+    <Content Include="js\RUT.js" />
+    <Content Include="js\sb-admin.js" />
+    <Content Include="js\sb-admin.min.js" />
+    <Content Include="js\transition.js" />
+    <Content Include="ConexionIRIS.asp" />
+    <Content Include="PDF\NOBORRAR.txt" />
+    <Content Include="Reg_Solicitud.aspx" />
+    <Content Include="VerExamenes.asp" />
+    <Content Include="VerExamenesAVIS.asp" />
+    <Content Include="VerExamenesAVIS__1.asp" />
+    <Content Include="VerExamenesSolo.asp" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="vendor\chart.js\Chart.js" />
+    <Content Include="vendor\chart.js\Chart.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\popper\popper.js" />
+    <Content Include="vendor\popper\popper.min.js" />
+    <Content Include="VerExamenesSoloAVIS.asp" />
+    <Content Include="VerExamenesSoloAVIS_1.asp" />
+    <Content Include="VerExamenesSolo_old.asp" />
+    <Content Include="VerExamenesSolo_ORIGINAL.asp" />
+    <Content Include="VerExamenes_old.asp" />
+    <Content Include="VerExamenes_ORIGINAL.asp" />
+    <Content Include="voucher.JPG" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acc_Pac.aspx.designer.vb">
+      <DependentUpon>Acc_Pac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Pac.aspx.vb">
+      <DependentUpon>Acc_Pac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Construccion.aspx.designer.vb">
+      <DependentUpon>Construccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Construccion.aspx.vb">
+      <DependentUpon>Construccion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Det_Atenc.aspx.designer.vb">
+      <DependentUpon>Det_Atenc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Det_Atenc.aspx.vb">
+      <DependentUpon>Det_Atenc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documentos_Ver_Usuarios2.aspx.designer.vb">
+      <DependentUpon>Documentos_Ver_Usuarios2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos_Ver_Usuarios2.aspx.vb">
+      <DependentUpon>Documentos_Ver_Usuarios2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Index - Copia.aspx.designer.vb">
+      <DependentUpon>Index - Copia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index - Copia.aspx.vb">
+      <DependentUpon>Index - Copia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master_Solicitud.Master.designer.vb">
+      <DependentUpon>Master_Solicitud.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Solicitud.Master.vb">
+      <DependentUpon>Master_Solicitud.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Paciente.Master.designer.vb">
+      <DependentUpon>Paciente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente.Master.vb">
+      <DependentUpon>Paciente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reg_Solicitud.aspx.designer.vb">
+      <DependentUpon>Reg_Solicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_Solicitud.aspx.vb">
+      <DependentUpon>Reg_Solicitud.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.min.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="js\datepicker\css\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="Master_Solicitud.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Test.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Paciente.Master" />
+    <Content Include="Prestaciones\IPP-01.pdf" />
+    <Content Include="Prestaciones\IPP-02.pdf" />
+    <Content Include="Prestaciones\IPP-03.pdf" />
+    <Content Include="Prestaciones\IPP-04.pdf" />
+    <Content Include="Prestaciones\IPP-05.pdf" />
+    <Content Include="Prestaciones\IPP-06.pdf" />
+    <Content Include="Prestaciones\IPP-07.pdf" />
+    <Content Include="Prestaciones\IPP-08.pdf" />
+    <Content Include="Prestaciones\IPP-09.pdf" />
+    <Content Include="Prestaciones\IPP-10.pdf" />
+    <Content Include="Prestaciones\IPP-11.pdf" />
+    <Content Include="Prestaciones\IPP-12.pdf" />
+    <Content Include="Prestaciones\IPP-13.pdf" />
+    <Content Include="Prestaciones\IPP-14.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ASPPDFLib">
+      <Guid>{414FEE4B-2879-4090-957E-423567FFCFC6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Print_Ate\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2353</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2353/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

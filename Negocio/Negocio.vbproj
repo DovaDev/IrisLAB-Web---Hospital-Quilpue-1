@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{61D1CF7D-F0F7-4220-B948-A56C270562A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Negocio</RootNamespace>
+    <AssemblyName>Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\.NET dll\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Documents\.NET dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\Documents\.NET dll\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\.NET dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\.NET dll\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight, Version=3.4.0.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\.NET dll\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Conexion\Conexion.vbproj">
+      <Project>{C3B51679-7F2E-422C-AB5A-5D2647B20D8E}</Project>
+      <Name>Conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.vbproj">
+      <Project>{b6c313a0-78a7-45d6-8770-a227cac9e904}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{12b862d7-1e5f-4630-9919-e81d5e932a3f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL XML\AspPDF.dll" />
+    <Content Include="DLL XML\DocumentFormat.OpenXml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="DLL XML\SpreadsheetLight.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\N_Conf_User.vb" />
+    <Compile Include="Account\N_IRIS_WEBF_BUSCA_USUARIO_POR_ID.vb" />
+    <Compile Include="Account\N_IRIS_WEBF_BUSCA_USUARIO_TODOS.vb" />
+    <Compile Include="Account\N_IRIS_WEBF_GRABA_USUARIO.vb" />
+    <Compile Include="Account\N_IRIS_WEBF_UPDATE_USUARIOS.vb" />
+    <Compile Include="Account\N_Login2.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_AREA.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_BANCO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_CODIGO_BARRA.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_CODIGO_FONASA_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_COSTOS_ACTIVOS_DESACTIVOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_DERIVADOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_DOC_ESPECIALIDAD.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_EST_CODIGO_FONASA_ACTIVOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_EST_CODIGO_FONASA_ACTIVOS_DERIVADOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_INDICACIONES.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_MENU.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_METODO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_PERMISO_USUARIO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_RECIPIENTE.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_RELACION_AREA_SECCION_ESTADO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_SECCIONES_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_SECTOR.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TIPO_RECHAZO_ACTIVOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TM_ESTADOS_ACTIVOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TP_MUESTRA.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TP_VALORES_CRITICOS_ACTIVOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_USUARIO_MENU.vb" />
+    <Compile Include="Atenciones\N_Atenciones.vb" />
+    <Compile Include="Atenciones\N_Ate_Det.vb" />
+    <Compile Include="Atenciones\N_Ate_Resultados.vb" />
+    <Compile Include="Atenciones\N_Ate_Resultados_Info.vb" />
+    <Compile Include="Atenciones\N_Calc_Age.vb" />
+    <Compile Include="ate_agen\N_EXAMED_BUSCAR_PREI_IRISLAB_BLUELAB.vb" />
+    <Compile Include="ate_agen\N_Exa_Esp_V.vb" />
+    <Compile Include="ate_agen\N_IRIS_GRABA_ATE_DOCUMENTO_PAGO.vb" />
+    <Compile Include="ate_agen\N_IRIS_OBTENER_INFO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_BUSCA_AGREGA_QUITA_EXAMEN_ACTUAL.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_BUSCA_EDITAR_PREI_DATOS_DE_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_BUSCA_MUESTRA_ANTECEDENTES_PACIENTES2.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_BUSCA_NUM_ATE_POR_ID_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_AGENDA_UPDATE_ESTADO_PREINGRESO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_ATE_DOCUMENTOS_DE_PAGO_POR_ID_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_CORRELATIVO_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_CORRELATIVO_DOCUMENTO_FORMA_PAGO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_CORRELATIVO_PREINGRESO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_DIAGNOSTICO_POR_HOST.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_GENERO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_PERFIL_PRUEBA_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_BUSCA_RUT_PRE_INGRESO_PACIENTE_SIN_FECHA.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_ATENCION_PROGRA2_PRO_SECTOR_AVIS.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_ATE_DET_DOCUMENTO_PAGO_SIN_TRX.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_DETALLE_ATENCION_INTERFAZ_AVIS.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_DETALLE_PREINGRESO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_PACIENTE_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_PREINGRESO2.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_PREINGRESO2_PRO_SEC.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_RESULTADO_ATENCION.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_GRABA_TRX_BONOS.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_HOST_BUSCA_CODIGO_FONSA_POR_COD_AVIS.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_HOST_BUSCA_DATOS_PACIENTE_Y_EXAMENES_POR_FOLIO_AVIS_2.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_HOST_UPDATE_CARGA_AVIS_FOLIO.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_UPDATE_ATE_AGREGA_ID_ATE_DOCP.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_UPDATE_ATE_DETALLE_AGREGA_ID_ATE_DOCP.vb" />
+    <Compile Include="ate_agen\N_IRIS_WEBF_UPDATE_PACIENTE_ATENCION.vb" />
+    <Compile Include="Ate_Pac\N_Etnias.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_DOC_POR_RUT_NOMBRE.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_HOST_BUSCA_DATOS_PACIENTE_Y_EXAMENES_POR_FOLIO_SAYDEX.vb" />
+    <Compile Include="Boleta_Electronica\N_IRIS_WEBF_CMVM_BUSCA_DATOS_BE.vb" />
+    <Compile Include="Boleta_Electronica\N_IRIS_WEBF_CMVM_BUSCA_FOLIO_BE.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ACREDITACION_LISTADO_TOTAL_POR_MUESTRA_4.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ACREDITACION_LISTADO_TOTAL_POR_MUESTRA_4_TUBOS.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ACREDITACION_LISTADO_TOTAL_POR_MUESTRA_5.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_AGENDA_POR_ID_ATENCION_DETALLE_LOGO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ATENCIONES_PARA_LOG_POR_ID_ATE.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_DETALLE_VALORES_CRITICOS_QUE_SE_HIZO_POR_ID_ATE_RES.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ESTADO_ATENCION_TRAZABILIDAD_TRAZA_NUEVO_222.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_EST_CODIGO_FONASA_OC_SED.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_EST_CODIGO_FONASA_OC_SED_PENDIENTES.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_EST_LUGAR_TM_TODOS_POR_ID_TM_POR_DERIVADO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_POR_FOLIO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_R_TUBOS.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_VALIDADO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_EXAMEN.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_EXAMEN_VALIDADO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_RECEPCION_RECHAZO_TIPO_RECHAZO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_RECEPCION_RECHAZO_TIPO_RECHAZO_POR_TIPO.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_REL_LAB_SECCION.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_TIPOS_DE_MUESTRA_CON_COD_BARRA.vb" />
+    <Compile Include="Check_List\Check_Point\N_IRIS_WEBF_BUSCA_VALOR_CRITICO_POR_ID_ATE_RESULTADO.vb" />
+    <Compile Include="Check_List\N_Ate_Resultados2.vb" />
+    <Compile Include="Check_List\N_Check_Val_Criticos.vb" />
+    <Compile Include="Check_List\N_IRIS_BUSCA_EXAMEN_DET_ESTADISTICA_CHECK_TODOS.vb" />
+    <Compile Include="Check_List\N_IRIS_BUSCA_EXAMEN_DET_ESTADISTICA_CHECK_TODOS_2.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_CANTIDAD_EXAMEN_PACIENTE_POR_TM.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_DETERMINACIONES_POR_CODIGO_FONASA_EST.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_EST_ESTADOS_DETERMINACION.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_EST_ESTADOS_INFORMAR.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_EST_ESTADOS_INFORMAR3.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_EST_EXA_USU_VALIDA.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_EST_PENDIENTE_SECCION_INFORMAR.vb" />
+    <Compile Include="Check_List\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_SECCCION_R_2.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_UPDATE_VINCULO.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_UPDATE_CONTROL_COSTOS_ELIMINA.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_UPDATE_QUITA_DETALLE_EXAMEN_FONASA.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_BUSCA_CONTROL_COSTO_RELACIONADOS.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_BUSCA_CORRELATIVO_CONTROL_COSTO.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_BUSCA_COSTOS_ACTIVOS.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_BUSCA_ID_CONTRO_COSTO_POR_FONASA.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_BUSCA_RELACION_COSTO_FONASA.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_GRABA_CONTROL_COSTO.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_GRABA_COSTOS.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_GRABA_DET_CONTROL_COSTO.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_UPDATE_CODIGO_FONASA_CONTROL_COSTO.vb" />
+    <Compile Include="Configuraciones\Costos\N_IRIS_WEBF_UPDATE_COSTO.vb" />
+    <Compile Include="Configuraciones\Estudios\D_IRIS_WEBF_QUITA_RANGO_REFERENCIA.vb" />
+    <Compile Include="Configuraciones\Estudios\N_IRIS_WEBF_GRABA_RANGO_REFERENCIA.vb" />
+    <Compile Include="Configuraciones\Estudios\N_IRIS_WEBF_QUITA_RANGO_REFERENCIA.vb" />
+    <Compile Include="Configuraciones\Estudios\N_IRIS_WEBF_UPDATE_RANGO_REFERENCIA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Agrupacion_Exa\N_IRIS_WEBF_BUSCA_AGRUPA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Area_Trabajo\N_IRIS_WEBF_BUSCA_AREA_TRABAJO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Orden_Ate\N_IRIS_WEBF_BUSCA_ORDEN_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Lugar_TM\N_IRIS_WEBF_BUSCA_PROCEDENCIA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Seccion_Trabajo\N_IRIS_WEBF_BUSCA_SECCIONES.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Atencion\N_IRIS_WEBF_BUSCA_TP_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Rechazo\N_IRIS_WEBF_BUSCA_TP_RECHAZO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TP_RECIPIENTE.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_LOCALIZACION_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_MEDICOS_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_ORDEN_ATENCION_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_PREVISION_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_PROGRAMA_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_SECTORES_ACTIVOS_TODOS.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TP_ATENCION_ACTIVO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_TP_RESULTADO_ACTIVADO.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_UNIDAD_MEDIDA_ACTIVO.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_EDITAR_ATE_DATOS_DE_ATENCION2.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_MUESTRA_ANTECEDENTES_PACIENTES2.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_RELACION_CIU_COMUNA.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_UPDATE_DATOS_ATENCIONES3_PRO_SECTOR.vb" />
+    <Compile Include="Buscar_Ate\N_IRIS_WEBF_BUSCA_ATENCION_PACIENTE_FECHA.vb" />
+    <Compile Include="Buscar_Ate\N_IRIS_WEBF_BUSCA_LISTADO_EXAMENES_IMPRIMIR.vb" />
+    <Compile Include="Buscar_Ate\N_IRIS_WEBF_BUSCA_MUESTRA_ANTECEDENTES_PACIENTES4.vb" />
+    <Compile Include="Buscar_Ate\N_IRIS_WEBF_BUSCA_PROCEDENCIA_ACTIVO.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_BUSCA_AGRUPACION_MANTENEDOR.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_BUSCA_ANOS_POR_ID.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_BUSCA_CODIGO_FONASA.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_GRABA_CODIGO_FONASA.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_UPDATE_CODIGO_FONASA.vb" />
+    <Compile Include="Configuraciones\Codigo_Fonasa\N_IRIS_WEBF_UPDATE_ESTADO_PRECIOS_FONASA_PREVISION.vb" />
+    <Compile Include="Activos\N_IRIS_WEBF_BUSCA_RES_CODIFICADO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Agrupacion_Exa\N_IRIS_WEBF_GRABA_AGRUPA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Area_Trabajo\N_IRIS_WEBF_GRABA_AREA_TRABAJO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Orden_Ate\N_IRIS_WEBF_GRABA_ORDEN_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Lugar_TM\N_IRIS_WEBF_GRABA_PROCEDENCIA.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_GRABA_RES_CODIFICADO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Seccion_Trabajo\N_IRIS_WEBF_GRABA_SECCIONES.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Atencion\N_IRIS_WEBF_GRABA_TP_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Rechazo\N_IRIS_WEBF_GRABA_TP_RECHAZO.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_GRABA_TP_RECIPIENTE.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_GRABA_TP_RESULTADO.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_GRABA_UNIDAD_MEDIDA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Agrupacion_Exa\N_IRIS_WEBF_UPDATE_AGRUPA.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Area_Trabajo\N_IRIS_WEBF_UPDATE_AREA_TRABAJO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Orden_Ate\N_IRIS_WEBF_UPDATE_ORDEN_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Lugar_TM\N_IRIS_WEBF_UPDATE_PROCEDENCIA.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_UPDATE_RES_CODIFICADO.vb" />
+    <Compile Include="Configuraciones\Laboratorio\Seccion_Trabajo\N_IRIS_WEBF_UPDATE_SECCIONES.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Atencion\N_IRIS_WEBF_UPDATE_TP_ATENCION.vb" />
+    <Compile Include="Configuraciones\Laboratorio\T_Rechazo\N_IRIS_WEBF_UPDATE_TP_RECHAZO.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_UPDATE_TP_RECIPIENTE.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_UPDATE_TP_RESULTADO.vb" />
+    <Compile Include="Configuraciones\Determinaciones\N_IRIS_WEBF_UPDATE_UNIDAD_MEDIDA.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_BUSCA_DOCUMENTOS.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_BUSCA_PACK.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_BUSCA_RELACION_PREVI_PROCE.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_BUSCA_RELACION_PROGRA_PREVI.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_PREVISION.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_PROGRAMA_SUBPROGRAMA_RELACION.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_RELACION_PRE_PROCE.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_RELACION_PROG_PREVE.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_SECTOR.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_BANCO.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_COMUNA.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_INDICACIONES.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_MENU.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_METODO.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_NACIONALIDAD.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_TP_MUESTRA.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_USUARIO_MENU.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_BANCOS.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_COMUNAS.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_INDICACIONES.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_MENU.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_METODO.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_NACIONALIDAD.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_PREVISION.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_PROGRAMA_SUBPROGRAMA_RELACION.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_RELACION_PRE_PROCE.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_RELACION_PROG_PREVE.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_SECTOR.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_TP_MUESTRA.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_USUARIO_MENU.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_BUSCA_MEDICO.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_BUSCA_RELACION_CIU_COMUNA_ID.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_GRABA_DOC_ESPECIALIDAD.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_GRABA_MEDICOS.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_UPDATE_DOC_ESPECIALIDAD.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_BUSCA_LISTA_USUARIO_NOTIF.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_BUSCA_NOTIFICACION_USUARIO.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_BUSCA_NOTIF_EDITA.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_DELETE_NOTIFICACION_USUARIO.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_GRABA_NOTIFICACION_USUARIO.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_GRABA_REL_NOTIFICACION_USUARIO.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_UPDATE_NOTIFICACION_USUARIO.vb" />
+    <Compile Include="Configuraciones\Notificaciones\N_IRIS_WEBF_CMVM_UPDATE_NOTIF_EDITA.vb" />
+    <Compile Include="Configuraciones\Pacientes\N_IRIS_WEBF_GRABA_PACIENTE.vb" />
+    <Compile Include="Configuraciones\Prevision\N_IRIS_WEBF_BUSCA_PRECIO_CF_SI_EXISTE_ANO.vb" />
+    <Compile Include="Configuraciones\Medicos\N_IRIS_WEBF_UPDATE_MEDICOS.vb" />
+    <Compile Include="Configuraciones\Prevision\N_IRIS_WEBF_BUSCA_PRECIO_PREVISION_CONVENIO.vb" />
+    <Compile Include="Configuraciones\Prevision\N_IRIS_WEBF_GRABA_PRECIOS_FONASA.vb" />
+    <Compile Include="Configuraciones\Prevision\N_IRIS_WEBF_UPDATE_PRECIO_FONASA.vb" />
+    <Compile Include="Configuraciones\Prevision\N_IRIS_WEBF_UPDATE_PRECIO_FONASA_2.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_BUSCA_USUARIOS_CONVENIO_POR_ID.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_BUSCA_USUARIOS_CONVENIO_TODOS.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_GRABA_PERMISO_USUARIO.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_GRABA_USUARIOS_CONVENIO.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_UPDATE_PERMISO_USUARIO.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_UPDATE_USUARIOS_CONVENIO.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_BUSCA_CORRELATIVO_DERIV.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_BUSCA_DATOS_DERIVADOR_DETALLE_NUEVO_NUM.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_BUSCA_DATOS_GRILLA_DERIVADOS_.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_webf_BUSCA_LISTADO_DERIVADOS_POR_NUM_PROCESO.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_GRABA_DERIVA_PROCESO_NUEVO.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_GRABA_DET_DERIVA_PROCESO_NUEVO.vb" />
+    <Compile Include="Deri_Mues\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_DERIVA2.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ANTECENDES_PACIENTE_RECEP_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_CANTIDAD_LOTE_RECEPCIONADO_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_ENVIO.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____4_ENVIO2.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____6_ENVIO2.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____8_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETA_BARRA_PACIENTE_RECEP_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETA_GUARDADA_RECEPCION_ETIQUETAS_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETA_POR_FOLIO_RECEPCION_DE_ENVIO_NUEVO2.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_ETIQUETA_RECEPCION_EN_PROCESO_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_BUSCA_LOTE_RECEPCIONADO_LOTE_2_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_2_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_GRABA_ETIQUETA_RECEPCION_ETIQUETA_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_GRABA_LOTE_DE_ETIQUETAS_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_QUITA_ESTADO_ENVIO.vb" />
+    <Compile Include="Env_Mues_Lab\N_IRIS_WEBF_UPDATE_LOTE_RECEPCION_ENVIO.vb" />
+    <Compile Include="Fecha_Conf\N_IRIS_WEBF_BUSCA_AÑO_ACTIVO.vb" />
+    <Compile Include="Fecha_Conf\N_IRIS_WEBF_BUSCA_CANTIDAD_ATENCIONES_POR_PROCEDENCIA_DEFECTO.vb" />
+    <Compile Include="Fecha_Conf\N_IRIS_WEBF_BUSCA_DIAS_CONF_ATENCIONES_PROCEDENCIA2.vb" />
+    <Compile Include="Fecha_Conf\N_IRIS_WEBF_GRABA_CONF_EXAMENES.vb" />
+    <Compile Include="Fecha_Conf\N_IRIS_WEBF_UPDATE_CONF_DIAS_EXAMEN.vb" />
+    <Compile Include="Fecha_Conf\N_VER_LISTA_JSON.vb" />
+    <Compile Include="General\N_Date.vb" />
+    <Compile Include="General\N_Date_Operat.vb" />
+    <Compile Include="General\N_EMAIL.vb" />
+    <Compile Include="General\N_EMAIL_QUILPUE.vb" />
+    <Compile Include="General\N_HTML.vb" />
+    <Compile Include="General\N_IMPRESORA.vb" />
+    <Compile Include="General\N_LOG.vb" />
+    <Compile Include="General\XlsDcto.vb" />
+    <Compile Include="Gest_Financ\Acreditacion\N_IRIS_WEBF_BUSCA_ACREDITACION_ETIQUETAS_ESTADOS_CHECK_1.vb" />
+    <Compile Include="Gest_Financ\Acreditacion\N_IRIS_WEBF_BUSCA_ACREDITACION_TIEMPO_EXAMENES_SECCION.vb" />
+    <Compile Include="Gest_Financ\Administracion\N_Cobro_RUT.vb" />
+    <Compile Include="Gest_Financ\Administracion\N_List_Ate_Prev_and_Prog_Alt_G_Resumen.vb" />
+    <Compile Include="Gest_Financ\Administracion\N_List_Ate_Prev_and_Prog_Resumen.vb" />
+    <Compile Include="Gest_Financ\Analisis_Atenciones\N_AnaAteTPago.vb" />
+    <Compile Include="Gest_Financ\Analisis_Atenciones\N_AnaOrdAte.vb" />
+    <Compile Include="Gest_Financ\Analisis_Atenciones\N_AnaPrev.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\N_LugarTM_Det.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\N_LugarTM_Det_Async.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\N_Med_Det.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Detalle\N_Prevision_Det.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Multiple\N_Prev_TM_Exa_Mult.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Atenciones_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_AteResumen_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Examenes_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Lugar_TM_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Med_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_OrdenAtencion_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Paciente_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Prevision_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Procedencia_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Res_Peñalolen_Sum.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Res_Peñalolen_Sum_Alt.vb" />
+    <Compile Include="Gest_Financ\Estadisticas\Resumen\N_Usuario_Sum.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_Ana_MED.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_Ana_PAC.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoAteOrd.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoAteTP.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoPrev.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoSecre.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoTM.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoTM_Todo.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_GraficoVisor.vb" />
+    <Compile Include="Gest_Financ\Lista_Graficos\N_Lis_Ate_Totales.vb" />
+    <Compile Include="Gest_Financ\N_Convenio.vb" />
+    <Compile Include="Imp_Etiquetas\N_Impr_Dcto.vb" />
+    <Compile Include="Imp_Etiquetas\N_Impr_Dcto2.vb" />
+    <Compile Include="Imp_Etiquetas\N_Impr_Etiq.vb" />
+    <Compile Include="Imp_Etiquetas\N_IRIS_WEBF_BUSCA_ETIQUETA_ATENCION_CORTO.vb" />
+    <Compile Include="Imp_Etiquetas\N_IRIS_WEBF_BUSCA_ETIQUETA_FOLIO_IMPRIMIR_NUEVO_2.vb" />
+    <Compile Include="Imp_Etiquetas\N_IRIS_WEBF_BUSCA_ETIQUETA_PACIENTE_IMPRIMIR.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_GRABA_CIUDAD.vb" />
+    <Compile Include="Configuraciones\Mantenedores\N_IRIS_WEBF_UPDATE_CIUDAD.vb" />
+    <Compile Include="MSG_ASUNTO\N_IRIS_WEBF_CMVM_GRABA_ASUNTO.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="N_C_C.vb" />
+    <Compile Include="N_DET_ATE_USU.vb" />
+    <Compile Include="N_Encrypt.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_ATENCIONES_POR_PACIENTE_EXAMENES_VER.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_CIUDAD.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_COMUNA.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_DIAGNOSTICO.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_EDITAR_PACIENTE_DATOS_ACTUALES.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_ESTADO_MANTENEDOR.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_ID_ATENCION_POR_NUMERO_DE_ATENCION.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA_PACIENTE.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_MUESTRA_ANTECEDENTES_PACIENTES.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_NACIONALIDAD.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_PACIENTE_LIKE2.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_PACIENTE_POR_ID.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_BUSCA_SEXO.vb" />
+    <Compile Include="Ate_Pac\N_IRIS_WEBF_UPDATE_PACIENTES.vb" />
+    <Compile Include="N_Excel.vb" />
+    <Compile Include="N_Gen_Activos.vb" />
+    <Compile Include="N_GrupoPesquisa.vb" />
+    <Compile Include="N_historial.vb" />
+    <Compile Include="N_Ingreso_Ate_Avis.vb" />
+    <Compile Include="N_IRIS_WEBF_BUSCA_ATENCION_CODIGO_FONASA.vb" />
+    <Compile Include="N_IRIS_WEBF_BUSCA_CODIGO_FONASA_PARA_CARGA_ATENCION.vb" />
+    <Compile Include="N_IRIS_WEBF_BUSCA_LIS_ADM_ESTADOS.vb" />
+    <Compile Include="N_IRIS_WEBF_BUSCA_LIS_ADM_RESU_PREVISION_PANTALLA.vb" />
+    <Compile Include="N_IRIS_WEBF_BUSCA_PACIENTE_POR_RUT.vb" />
+    <Compile Include="N_Lis_Pac_TDM.vb" />
+    <Compile Include="N_PDF.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="N_Registrar.vb" />
+    <Compile Include="QC\N_IRIS_BUSCA_QC_RELACION_ANALIZADOR_DET_NO_CARGADAS.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_ANALITO.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_ANALIZADOR.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_LOTE_DE_MUESTRA.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_RELACION_ANALIZADOR_DETERMINACION_CANAL.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_RELACION_MAQ_LOTE_DETERMINACION2.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_REL_NIVEL_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_RESULTADO_MANUAL.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_SECCIONES.vb" />
+    <Compile Include="QC\N_IRIS_GRABA_QC_TP_ACCION.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_ANALITO.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_ANALIZADOR.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_ANALIZADORES_DETERMINACION_POR_CANAL.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_ANALIZADOR_ACTIVO.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_DATOS_RESULTADO_POR_CRITERIOS20.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_DET_CARGADAS_POR_ANA_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_LOTE_ACTIVO_DESACTIVO.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_LOTE_NIVEL_SIN_REL.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_MONITOR_CONTROLES_3.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_NIVEL_ACTIVO.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_NIVEL_POR_LOTE_DESC.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_REL_ANA_DET_LOTE_POR_PARAM.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_REL_NIVEL_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_SECCIONES.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_SECCION_ACTIVO.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_TP_ACCION.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_TP_ACCION_ACTIVAS.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_TREEVIEW.vb" />
+    <Compile Include="QC\N_IRIS_QC_BUSCA_U_MEDIDA.vb" />
+    <Compile Include="QC\N_IRIS_QC_GRABA_UPDATE_FIJA_VARIABLES.vb" />
+    <Compile Include="QC\N_IRIS_QC_RELACION_ANALIZADOR_DET_NO_CARGADAS_POR_ANALIZAOR_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_PARAMS_QC_REL_ADL.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_ANALITO.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_ANALIZADOR.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_ANALIZADOR_DETERMINACION_CANAL_UPDATE.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_ESTADO_REL_LOTE_NIVEL.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_LOTE.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_RELACION_MAQ_DETERMINACON_CANAL_QUITAR.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_REL_ADL.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_RESULTADO.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_SECCIONES.vb" />
+    <Compile Include="QC\N_IRIS_UPDATE_QC_TP_ACCION.vb" />
+    <Compile Include="QC\N_IRIS_WEBF_BUSCA_DET_POR_MAKINA.vb" />
+    <Compile Include="QC\N_IRIS_WEBF_BUSCA_DET_POR_MAQ_GRAF.vb" />
+    <Compile Include="QC\N_IRIS_WEBF_BUSCA_INTERFAZ.vb" />
+    <Compile Include="QC\N_IRIS_WEBF_BUSCA_MAKINA_POR_INTERFAZ.vb" />
+    <Compile Include="QC\N_RELACION_CANAL_RANGOS.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_CANTIDAD_LOTE_RECEPCIONADO.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETAS_NO_RECEPCIONADA_Y_OTRAS_RVDR_2_2_2.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____6.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETA_BARRA_PACIENTE_RECEP.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETA_GUARDADA_RECEPCION_ETIQUETAS.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETA_RECEPCION_EN_PROCESO.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_LOTE_RECEPCIONADO_LOTE_2.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_MUESTRA_ANTECEDENTES_PACIENTES_VER.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_2.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_GRABA_ETIQUETA_RECEPCION_ETIQUETA.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_GRABA_LOTE_DE_ETIQUETAS.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_QUITA_ESTADO.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_UPDATE_LOTE_RECEPCION.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_CANTIDAD_LOTE_RECEPCIONADO_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ESTADO_DETERMINACION_RECEPCION_MUESTRA_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ETIQUETAS_EXAMENES_DESC_RECEPCION_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ETIQUETA_BARRA_PACIENTE_RECEP_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ETIQUETA_GUARDADA_RECEPCION_ETIQUETAS_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_ETIQUETA_POR_FOLIO_RECEPCION_DE_ETIQUETAS_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_LOTE_RECEPCIONADO_LOTE_2_RECHAZO_2.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_LOTE_RECEPCIONADO_LOTE_2_RECHAZO_NUEVO_1.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_BUSCA_RECHAZOS_POR_FECHA_LISTADO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_GRABA_ETIQUETA_RECEPCION_ETIQUETA_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_GRABA_LOTE_DE_ETIQUETAS_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_QUITA_ESTADO_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_UPDATE_ESTADO_RECEPCIONADO_RECEPCION_RECHAZO_INSERTA_RECHAZO.vb" />
+    <Compile Include="Recha_Mues\N_IRIS_WEBF_UPDATE_LOTE_RECEPCION_RECHAZO.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_EST_CODIGO_FONASA_POR_ID_3.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_EST_ESTADOS_INFORMAR2.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_EST_ESTADOS_INFORMAR44.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_EST_SECCIONES_POR_ID2.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_EST_SECCIONES_POR_RANGO_NUM.vb" />
+    <Compile Include="Reportes\Hoja_de_Trabajo\N_IRIS_WEBF_BUSCA_HOJA_DE_TRABAJO_DE_SECCION_FECHA_AREA_DERIVADO.vb" />
+    <Compile Include="Reportes\Laboratorio\N_IRIS_WEBF_BUSCA_CANT_EXAMENES.vb" />
+    <Compile Include="Reportes\Laboratorio\N_IRIS_WEBF_BUSCA_EST_PREVISION_POR_ID_PREVISION_DIALISIS.vb" />
+    <Compile Include="Reportes\Laboratorio\N_IRIS_WEBF_BUSCA_LIS_ADM_RESU_CANT_EXAMENES_AREA_AGREGAR_PERFIL_BIOQUIMICO_A_ACIDO_URICO.vb" />
+    <Compile Include="Reportes\N_IRIS_WEBF_BUSCA_ESTADISTICA_RESULTADOS_POR_DETERMINACION.vb" />
+    <Compile Include="Reportes\N_IRIS_WEBF_BUSCA_PREVISON_DIALISIS.vb" />
+    <Compile Include="Reportes\N_IRIS_WEBF_BUSCA_PRUEBAS_DIALISIS.vb" />
+    <Compile Include="Reportes\N_IRIS_WEBF_BUSCA_RESULTADO_DIALISIS.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_ATE_PAC_DIA.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_ATE_PAC_DIA_2.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_ATE_PAC_SCAN.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_COUNT_PAC_DOCS.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_COUNT_PAC_DOCS_2.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_IMAGEN_SCANNER.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_BUSCA_IMAGEN_SCANNER_NO_ASOC.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_GRABA_ASOC_IMG_ATE.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_GRABA_IMAGEN_SCANNER.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_UPDATE_ESTADO_WEB_IMG_MOBILE.vb" />
+    <Compile Include="Scan_Docs\N_IRIS_WEBF_CMVM_UPDATE_NOMBRE_DOC.vb" />
+    <Compile Include="Servicio_Tecnico\N_IRIS_WEBF_CMVM_BUSCA_SOPORTE_COPY.vb" />
+    <Compile Include="Servicio_Tecnico\N_IRIS_WEBF_CMVM_BUSCA_SOPORTE_DEST.vb" />
+    <Compile Include="Servicio_Tecnico\N_IRIS_WEBF_GRABA_REG_SOLICITUD.vb" />
+    <Compile Include="Toma_Muestra\N_IRIS_WEBF_BUSCA_OBSERVACIONES_TOMA_MUESTRA_ATENCION.vb" />
+    <Compile Include="Toma_Muestra\N_IRIS_WEBF_BUSCA_TOMA_MUESTRA_FECHA_ORDEN_PROCE_TODOS_TODOS.vb" />
+    <Compile Include="N_IRIS_WEBF_UPDATE_PACIENTES_FNAC.vb" />
+    <Compile Include="N_PROCEDENCIAS_Y_CANT_MAX.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_UPDATE_PROFESION.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_BUSCA_CARGO.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_BUSCA_PROFESION.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_GRABA_CARGO.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_GRABA_PROFESION.vb" />
+    <Compile Include="Configuraciones\Usuarios\N_IRIS_WEBF_UPDATE_CARGO.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ANTECENDES_PACIENTE_RECEP.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____4.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETAS_RECEP_USUARIOS4____8.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_ETIQUETA_POR_FOLIO_RECEPCION_DE_ETIQUETAS.vb" />
+    <Compile Include="Recep_Mue\N_IRIS_WEBF_BUSCA_USUARIO_TM_GRILLA.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_EXA_SECR.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_CANT_EXA_AREA.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_CANT_EXA_ARE_SECC.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_CANT_EXA_SECC.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_CANT_EXA_TOT.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_EXA.vb" />
+    <Compile Include="Reportes\Laboratorio\N_REP_LAB_SEC.vb" />
+    <Compile Include="Reportes\Laboratorio\N_RESU_ING_USU.vb" />
+    <Compile Include="Toma_Muestra\N_IRIS_WEBF_UPDATE_ESTADO_ATENDIDO_TOMA_MUESTRA_ATENCION.vb" />
+    <Compile Include="Toma_Muestra\N_IRIS_WEBF_UPDATE_ESTADO_PENDIENTE_TOMA_MUESTRA_ATENCION.vb" />
+    <Compile Include="Toma_Muestra\N_IRIS_WEB_BUSCA_USUARIO_ACTIVO_POR_PROCEDENCIA.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\XXX.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ASPPDFLib">
+      <Guid>{414FEE4B-2879-4090-957E-423567FFCFC6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20692</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3004/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

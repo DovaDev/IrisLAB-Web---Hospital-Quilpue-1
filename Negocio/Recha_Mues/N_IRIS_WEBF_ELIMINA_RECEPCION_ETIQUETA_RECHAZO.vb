@@ -1,0 +1,16 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO
+
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO
+    End Sub
+
+    Function IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO(ByVal ID_RECEP_ETI_RECHAZO_SUPREMO As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_ELIMINA_RECEPCION_ETIQUETA_RECHAZO(ID_RECEP_ETI_RECHAZO_SUPREMO)
+
+    End Function
+End Class

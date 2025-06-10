@@ -1,0 +1,1994 @@
+[28-10-2024 -> 12:19:08] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 12:19:08] Cargando datos del paciente...
+[28-10-2024 -> 12:19:08] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 12:19:08] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:19:08] Cargando resultados del paciente...
+[28-10-2024 -> 12:19:09] Cant. Resultados: 42
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:19:09] ERROR:
+    Código: 
+        14291522
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:19:10] ERROR:
+    Código: 
+        19717411
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:06] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 12:21:06] Cargando datos del paciente...
+[28-10-2024 -> 12:21:06] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 12:21:06] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:06] Cargando resultados del paciente...
+[28-10-2024 -> 12:21:06] Cant. Resultados: 42
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:06] ERROR:
+    Código: 
+        12462222
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:07] ERROR:
+    Código: 
+        59695949
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:55] Cargando resultados del paciente...
+[28-10-2024 -> 12:21:55] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:55] ERROR:
+    Código: 
+        41560569
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:59] Cargando resultados del paciente...
+[28-10-2024 -> 12:21:59] Cant. Resultados: 42
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:21:59] ERROR:
+    Código: 
+        40796614
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 12:22:00] Cargando resultados del paciente...
+[28-10-2024 -> 12:22:00] Cant. Resultados: 1
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:18:49] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:18:49] Cargando datos del paciente...
+[28-10-2024 -> 06:18:49] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:18:49] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:18:49] Cargando resultados del paciente...
+[28-10-2024 -> 06:18:49] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:18:50] ERROR:
+    Código: 
+        25259035
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:18:50] ERROR:
+    Código: 
+        11551478
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:02] ERROR:
+    Código: 
+        43485469
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:03] ERROR:
+    Código: 
+        41610908
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:03] ERROR:
+    Código: 
+        23810357
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:03] ERROR:
+    Código: 
+        17059517
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:04] ERROR:
+    Código: 
+        28654535
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:04] ERROR:
+    Código: 
+        46418822
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:27] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:19:27] Cargando datos del paciente...
+[28-10-2024 -> 06:19:27] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:19:27] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:27] Cargando resultados del paciente...
+[28-10-2024 -> 06:19:27] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:28] ERROR:
+    Código: 
+        31719581
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:28] ERROR:
+    Código: 
+        36737739
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:33] ERROR:
+    Código: 
+        51244739
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:33] ERROR:
+    Código: 
+        4524822
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:33] ERROR:
+    Código: 
+        36109950
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:33] ERROR:
+    Código: 
+        11673446
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:35] ERROR:
+    Código: 
+        13354805
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:35] ERROR:
+    Código: 
+        24279700
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:41] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:19:41] Cargando datos del paciente...
+[28-10-2024 -> 06:19:41] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:19:41] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:41] Cargando resultados del paciente...
+[28-10-2024 -> 06:19:42] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:42] ERROR:
+    Código: 
+        57960082
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:42] ERROR:
+    Código: 
+        11195443
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:48] ERROR:
+    Código: 
+        54606797
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:48] ERROR:
+    Código: 
+        29460340
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:48] ERROR:
+    Código: 
+        20043594
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:49] ERROR:
+    Código: 
+        33705529
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:51] ERROR:
+    Código: 
+        56067973
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:51] ERROR:
+    Código: 
+        32628913
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:56] ERROR:
+    Código: 
+        33634515
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:19:56] ERROR:
+    Código: 
+        39804344
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:07] ERROR:
+    Código: 
+        18706627
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:07] ERROR:
+    Código: 
+        18038829
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:11] ERROR:
+    Código: 
+        25817753
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:11] ERROR:
+    Código: 
+        15028944
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:11] ERROR:
+    Código: 
+        11722816
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:11] ERROR:
+    Código: 
+        1869215
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:14] ERROR:
+    Código: 
+        46679484
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:14] ERROR:
+    Código: 
+        2332204
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:14] ERROR:
+    Código: 
+        25174672
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:14] ERROR:
+    Código: 
+        60038617
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:15] ERROR:
+    Código: 
+        9862975
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:15] ERROR:
+    Código: 
+        28979436
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:18] ERROR:
+    Código: 
+        64027967
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:19] ERROR:
+    Código: 
+        22941936
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:22] Cargando resultados del paciente...
+[28-10-2024 -> 06:20:22] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:22] ERROR:
+    Código: 
+        8386536
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:31] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:20:31] Cargando datos del paciente...
+[28-10-2024 -> 06:20:31] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:20:31] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:31] Cargando resultados del paciente...
+[28-10-2024 -> 06:20:32] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:32] ERROR:
+    Código: 
+        49386769
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:33] ERROR:
+    Código: 
+        25787309
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:48] ERROR:
+    Código: 
+        61502339
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:48] ERROR:
+    Código: 
+        59808096
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:51] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:20:51] Cargando datos del paciente...
+[28-10-2024 -> 06:20:51] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:20:51] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:51] Cargando resultados del paciente...
+[28-10-2024 -> 06:20:51] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:52] ERROR:
+    Código: 
+        45247877
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:20:52] ERROR:
+    Código: 
+        15409028
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:21:12] El usuario DPEREIRA ha ingresado al formulario.
+[28-10-2024 -> 06:21:12] Cargando datos del paciente...
+[28-10-2024 -> 06:21:13] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[28-10-2024 -> 06:21:13] Carga Completada.
+
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:21:13] Cargando resultados del paciente...
+[28-10-2024 -> 06:21:13] Cant. Resultados: 28
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:21:13] ERROR:
+    Código: 
+        44431317
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[28-10-2024 -> 06:21:14] ERROR:
+    Código: 
+        4608618
+
+    Descripción: 
+        No se encontró el procedimiento almacenado 'IRIS_WEBF_CMVM_RESULTADOS_UPDATE_EXAMEN_NUMERICO_CON_LOG'.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1250
+        
+  
+        
+en Negocio.N_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, String EVAL, Int32 ID_USER)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Negocio\Atenciones\N_Ate_Resultados.vb:línea 118
+        
+  
+        
+en Presentacion.Ate_Resultados_2.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES, String EVAL)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Presentacion\Resultados\Ate_Resultados_2.aspx.vb:línea 287
+----------------------------------------------------------------------------------

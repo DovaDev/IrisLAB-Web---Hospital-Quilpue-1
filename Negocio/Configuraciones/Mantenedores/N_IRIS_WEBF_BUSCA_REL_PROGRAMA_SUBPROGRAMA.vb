@@ -1,0 +1,17 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+
+Public Class N_IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA
+
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA
+    End Sub
+
+    Function IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA(ByVal ID_PREVE As Integer, ByVal ID_PROGRA As Integer) As List(Of E_IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA)
+        Return DD_Data.IRIS_WEBF_BUSCA_REL_PROGRAMA_SUBPROGRAMA(ID_PREVE, ID_PROGRA)
+
+    End Function
+End Class

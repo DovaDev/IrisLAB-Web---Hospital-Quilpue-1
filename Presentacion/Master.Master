@@ -1,0 +1,1262 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Master.master.vb" Inherits="Presentacion.Master" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Laboratorio Cliníco" />
+    <meta name="author" content="IrisLab - Osorno" />
+    <title class="fa fa-flask">IrisLab</title>
+    <link rel="icon" type="image/png" href="Imagenes/IRISLOGONEWMINI.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+    <link href="/css/sb-admin.css" rel="stylesheet" />
+    <link href="/css/Checkbox.css" rel="stylesheet" />
+    <link href="/css/Load_Modal.css" rel="stylesheet" />
+    <link href="/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="/css/Iris_Css.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JavaScript -->
+    <%--<script src="/js/jQuery.js"></script>--%>
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Libraries -->
+    <script src="/js/RUT.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap-datetimepicker.es.js"></script>
+    <script src="/js/moment_es.js"></script>
+    <script src="/js/Galletas.js"></script>
+    <script src="/Account/Logout.js"></script>
+    <script src="/js/Iris_Functions.js"></script>
+    <script src="/js/math.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Seleccionable -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script>
+        $(document).click(() => {
+            checkGalletas();
+        });
+
+        $(document).keypress(() => {
+            checkGalletas();
+        });
+
+        let checkGalletas = () => {
+            Galletas.modTime("ASP.NET_SessionId", 30 * 600);
+            Galletas.modTime("LOGGED", 30 * 600);
+            Galletas.modTime("ID_USER", 30 * 600);
+            Galletas.modTime("NICKNAME", 30 * 600);
+            Galletas.modTime("NAME", 30 * 600);
+            Galletas.modTime("SURNAME", 30 * 600);
+            Galletas.modTime("P_ADMIN", 30 * 600);
+            Galletas.modTime("USU_ID_PROC", 30 * 600);
+            Galletas.modTime("USU_TM", 30 * 600);
+            Galletas.modTime("ID_PROF", 30 * 600);
+            if (Galletas.getGalleta("ID_USER") == null || Galletas.getGalleta("ID_USER") == "null") {
+                location.href = "/Index.aspx";
+            }
+        }
+
+    </script>
+    <!-- Mostrar/Ocultar Elementos -->
+    <script>
+        var timer_RNUM;
+        $(document).ready(function () {
+
+            $('.keep-open').on({
+                "shown.bs.dropdown": function (zaxb) { $(zaxb.currentTarget).attr('closable', false); },
+                "click": function () { },
+                "hide.bs.dropdown": function (zaxb) { return $(zaxb.currentTarget).attr('closable') == 'true'; }
+            });
+
+            $('.keep-open #dLabel').on({
+                "click": function () {
+                    $(this).parent().attr('closable', true);
+                }
+            })
+
+            Busca_User_Notif_Master();
+            Nav();
+
+            var permiss = Galletas.getGalleta("P_ADMIN");
+            var ID_USER = Galletas.getGalleta("ID_USER");
+            if (ID_USER = '157') {
+                $("#bar_Ges_Fin").hide();
+                $("#bar_Gerencia").hide();
+                $("#M23").hide();
+            } else {
+                if (permiss == "1") {
+
+                    $("#bar_Gerencia").hide();                 // SIDEBAR gerencia
+                    $("#bar_Ges_Fin").show();                 // SIDEBAR gerencia
+                    $("#bar_Costos").hide();                   // SIDEBAR costos
+                }
+
+                if (permiss == "0") {
+                    console.log("perm 0");
+                    //$("#hide_nav_ul").hide();
+                    $("#M3").hide();
+                    //$("#M13").hide();
+                    $("#M16").hide();
+                    $("#M19").hide();
+                    $("#M17").hide();
+                    $("#M18").hide();
+                    //$("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#M23").hide();
+                    $("#hide_config").hide();
+                    $("#bar_Ges_Fin").hide();
+                    //$("#con_wra").addClass("ml-0");
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                    //ESCONDER BARRA LATERAL
+                } else if (permiss == "4") {
+                    console.log("perm 4");
+                    //$("#hide_nav_ul").hide();
+                    $("#M3").hide();
+                    //$("#M13").hide();
+                    //$("#M16").hide();
+                    //$("#M19").hide();
+                    $("#M17").hide();
+                    //$("#M18").hide();
+                    //$("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#M23").hide();
+                    $("#hide_config").hide();
+                    $("#bar_Ges_Fin").hide();
+                    //$("#con_wra").addClass("ml-0");
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                } else if (permiss == "2") {
+                    console.log("perm 2");
+                    //$("#hide_nav_ul").hide();
+                    $("#M3").hide();
+                    //$("#M13").hide();
+                    //$("#M16").hide();
+                    //$("#M19").hide();
+                    $("#M17").hide();
+                    //$("#M18").hide();
+                    //$("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#M23").hide();
+                    //$("#hide_config").hide();
+                    $("#bar_Ges_Fin").hide();
+                    //$("#con_wra").addClass("ml-0");
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                } else if ((permiss == "3") || (permiss == "5") || (permiss == "6") || (permiss == "7")) {
+                    console.log("perm 2 3 4 5 6 7");
+                    $("#hide_nav_ul").hide();
+                    $("#M13").hide();
+                    $("#hide_config").hide();
+                    //$("#con_wra").addClass("ml-0");
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                    //ESCONDER BARRA LATERAL
+                } else if ((permiss == "103") || (permiss == "104") || (permiss == "105") || (permiss == "107") || (permiss == "108") || (permiss == "109") || (permiss == "110")) {
+                    $("#hide_nav_ul").hide();
+                    $("#M13").hide();
+                    $("#hide_config").hide();
+                    $("#con_wra").addClass("ml-0");
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                    //ESCONDER SOLO GESTION FINACIERA
+                } else if ((permiss == "101") || (permiss == "102")) {
+                    $("#bar_Ges_Fin").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                    //SOLO MOSTRAR DERIVACION Y RECHAZO
+                } else if (permiss == "106") {
+                    //$("#M17").hide();
+                    //$("#M18").hide();
+                    $("#bar_Ges_Fin").hide();
+                    $("#M3").hide();
+                    $("#M7").hide();
+                    $("#M16").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                }
+                else if (permiss == "111") {
+                    $("#bar_Ges_Fin").hide();
+                    $("#hide_config").hide();
+                    $("#M3").hide();
+                    //$("#M7").hide();
+                    $("#M16").hide();
+                    $("#M17").hide();
+                    $("#M18").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                } else if (permiss == "119") {
+                    $("#bar_Ges_Fin").hide();
+                    $("#hide_config").hide();
+                    $("#M3").hide();
+                    //$("#M7").hide();
+                    $("#M16").hide();
+                    $("#M17").hide();
+                    $("#M18").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                    $("#M23").hide();
+                } else if (permiss == "120") {     //CAJA
+                    $("#bar_Ges_Fin").hide();
+                    $("#hide_config").hide();
+                    $("#M3").hide();
+                    $("#M7").hide();
+                    $("#M16").hide();
+                    $("#M17").hide();
+                    $("#M18").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                } else if (permiss == "122") {     //PROCEDENCIA-CAJA
+                    $("#bar_Ges_Fin").hide();
+                    $("#hide_config").hide();
+                    $("#M3").hide();
+                    //$("#M7").hide();
+                    $("#M16").hide();
+                    $("#M17").hide();
+                    $("#M18").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#bar_Costos").hide();
+                } else if (permiss == "123") {  //ENFERMERA COORDINADORA
+                    //$("#M17").hide();
+                    //$("#M18").hide();
+                    $("#bar_Ges_Fin").hide();
+                    $("#M3").hide();
+                    //$("#M7").hide();
+                    $("#M16").hide();
+                    $("#M19").hide();
+                    $("#M20").hide();
+                    $("#M21").hide();
+                    $("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    $("#M23").hide();
+                    $("#bar_Costos").hide();
+                    $("#hide_config").hide();
+                } else if (permiss == "127") {  //CONCILIACION
+                    //$("#M17").hide();
+                    //$("#M18").hide();
+                    $("#bar_Ges_Fin").hide();
+                    //$("#M3").hide();
+                    //$("#M7").hide();
+                    //$("#M16").hide();
+                    //$("#M19").hide();
+                    //$("#M20").hide();
+                    //$("#M21").hide();
+                    //$("#M22").hide();
+                    $("#bar_Gerencia").hide();
+                    //$("#M23").hide();
+                    $("#bar_Costos").hide();
+                    $("#hide_config").hide();
+                }
+            }
+
+
+            function Nav() {
+                if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+                    window.location.replace("/Rec_Browsers.html");
+                }
+            }
+
+            $(".modalcarga").hide();
+
+            if ($(window).width() > 973) {
+                $("#page-top").addClass("sidenav-toggled");
+            }
+
+            $(window).on('resize', function () {
+                if ($(window).width() > 973) {
+                    $("#page-top").addClass("sidenav-toggled");
+                }
+                else {
+                    $("#page-top").removeClass("sidenav-toggled");
+                }
+            });
+            ////ON CLICK CLASS TOGGLE   
+
+            $(".table-iris").on("click", "tr", (tabnavv) => {
+                $(tabnavv.currentTarget).parent("tbody").children("tr").removeClass("active");
+                $(tabnavv.currentTarget).toggleClass("active");
+            });
+
+
+
+            //var permiss = Galletas.getGalleta("P_ADMIN");
+            var permiss = 0;
+            //if (permiss = "1") {
+            //    $("#hide_nav_ul").show();
+            //    $("#M13").show();
+            //    $("#hide_config").show();
+            //} else 
+            //if (permiss = 0) {
+            //    $("#hide_nav_ul").hide();
+            //    $("#M13").hide();
+            //    $("#hide_config").hide();
+            //}
+
+
+
+
+            timer_RNUM = setInterval(function () {
+                Busca_User_Notif_Master();
+            }, 60000);
+            // TIMER 
+        });
+
+
+
+
+        function active_tr() {
+            $(".table-iris").on("click", "tr", function () {
+                $(this).parent("tbody").children("tr").removeClass("active");
+                $(this).toggleClass("active");
+            });
+        }
+
+        function modal_show() {
+            $(".modalcarga").show();
+            $(".container-fluid, .navbar").addClass("blur");
+
+
+        };
+        function Hide_Modal() {
+            $(".container-fluid, .navbar").removeClass("blur");
+            $(".modalcarga").fadeOut(250);
+        }
+
+        var Mx_Notif_User_Master = [{
+            "ID_NOTIF": "",
+            "TIPO_MSG": "",
+            "MSG": "",
+            "FECHA_D": "",
+            "FECHA_H": "",
+            "NOTIF_ESTADO": "",
+            "PERMANENTE": "",
+            "CONFIRMA": "",
+            "ID_REL_N_U": ""
+        }];
+        function Busca_User_Notif_Master() {
+            //Debug
+            $.ajax({
+                "type": "POST",
+                "url": "/Index.aspx/Bus_Notif",
+                //"data": Data_Par,
+                "contentType": "application/json;  charset=utf-8",
+                "dataType": "json",
+                "success": data => {
+                    //Debug
+                    if (data.d != null) {
+                        Mx_Notif_User_Master = data.d;
+                        Fill_Notif_User_Master();
+                    } else {
+                        $("#DDL_RNUM").empty();
+                        let cant_notif_user_Master = 0;
+                        let show_notif_RNUM = 0;
+                        $("<li class='alert-RNUM_OLD border-RNUM_OLD p-2 m-1 RNUM_OLD'>No hay notificaciones activas o nuevas.</li>").appendTo("#DDL_RNUM");
+                    }
+                },
+                "error": data => {
+                    //Debug
+                }
+            });
+        }
+        function Update_User_Notif_Master(ID_REL_N_U) {
+            //let Date_now = moment().format("DD-MM-YYYY h:mm:ss");
+            let Data_Par = JSON.stringify({
+                "ID_REL_N_U": ID_REL_N_U
+            });
+            //Debug
+            $.ajax({
+                "type": "POST",
+                "url": "/Index.aspx/Upd_Notif",
+                "data": Data_Par,
+                "contentType": "application/json;  charset=utf-8",
+                "dataType": "json",
+                "success": data => {
+                    //Debug
+
+                },
+                "error": data => {
+                    //Debug
+
+                }
+            });
+        }
+        function Delete_User_Notif_Master(ID_NOTIF) {
+            let Data_Par = JSON.stringify({
+                "ID_NOTIF": ID_NOTIF
+            });
+            //Debug
+            $.ajax({
+                "type": "POST",
+                "url": "/Index.aspx/Dlt_Notif",
+                "data": Data_Par,
+                "contentType": "application/json;  charset=utf-8",
+                "dataType": "json",
+                "success": data => {
+                    //Debug
+                    Busca_User_Notif_Master();
+                },
+                "error": data => {
+                    //Debug
+                }
+            });
+        }
+        function Fill_Notif_User_Master() {
+            $("#DDL_RNUM").empty();
+            let cant_notif_user_Master = 0;
+            let show_notif_RNUM = 0;
+            let new_notif_new = "";
+
+            if (Mx_Notif_User_Master.length > 0) { // Verificar si existen notificaciones
+                let hover_RRUM = "";
+                let colorr_NUM = "";
+                let tipo_notif_user_Master = "";
+                let index_CRUM = 0;
+                let fecha_now_RNUM = moment().format("DD-MM-YYYY h:mm");
+
+                Mx_Notif_User_Master.forEach(aah => {
+                    let RNUM_FECHA_D = moment(aah.FECHA_D).fromNow();
+                    let RNUM_FECHA_H = moment(aah.FECHA_H).format("DD-MM-YYYY h:mm");
+                    let BORNEW_RNUM = "";
+                    let dif_sec_RNUM = moment(aah.FECHA_H).diff(moment(), "seconds");
+                    let dif_init_RNUM = moment(aah.FECHA_D).diff(moment(), "seconds");
+                    let PERMANENTE_RNUM = "";
+
+                    if (dif_sec_RNUM >= 0 && dif_init_RNUM < 0) { // Verificar si es mayor a 1 segundo
+
+                        if (aah.CONFIRMA == 0) { // Verificar si NO se confirmo 
+                            BORNEW_RNUM = "RNUM_NEW";
+                            colorr_NUM = "warning";
+                            hover_RRUM = "hover-RNUM-warning";
+                            new_notif_new = " Nueva !"
+                            show_notif_RNUM = 1;
+                            cant_notif_user_Master = cant_notif_user_Master + 1;
+                        }
+                        else { // Si se confirmo
+                            new_notif_new = "";
+                            if (aah.PERMANENTE != 1) { // Si no es permanente
+                                BORNEW_RNUM = "RNUM_OLD";
+                                colorr_NUM = "RNUM_OLD";
+                                hover_RRUM = "";
+                            }
+                            else { // Si es permanente
+                                BORNEW_RNUM = "RNUM_PERM";
+                                colorr_NUM = "info";
+                                hover_RRUM = "";
+                            }
+                        }
+
+                        if (aah.PERMANENTE != 1) {
+                            PERMANENTE_RNUM = "Termina el: " + RNUM_FECHA_H;
+                        }
+                        else {
+                            PERMANENTE_RNUM = " Destacada <i class='fa fa-star'></i>";
+                        }
+
+                        switch (aah.TIPO_MSG) { // Tipo de mensaje
+                            case 1:
+                                tipo_notif_user_Master = "<i class='fa fa-trash-o fa-fw' style='font-size:1.5em'></i>[CACHE]" + new_notif_new + "<br>";
+                                break;
+                            case 2:
+                                tipo_notif_user_Master = "<i class='fa fa-cogs fa-fw' style='font-size:1.5em'></i>[SISTEMA]" + new_notif_new + "<br>";
+                                break;
+                            case 3:
+                                tipo_notif_user_Master = "<i class='fa fa-wrench fa-fw' style='font-size:1.5em'></i>[MANTENCIÓN]" + new_notif_new + "<br>";
+                                break;
+                            case 4:
+                                tipo_notif_user_Master = "<i class='fa fa-comment-o fa-fw' style='font-size:1.5em'></i>[OTRO]" + new_notif_new + "<br>";
+                                break;
+                        }
+                        let class_notif_user_master_show = " class='alert-" + colorr_NUM + " border-" + colorr_NUM + " p-2 m-1 " + hover_RRUM + " " + BORNEW_RNUM + "'";
+                        let msg_notif_user_master_show = "<b>" + tipo_notif_user_Master + "</b> " + aah.MSG + "<br><span style='font-size:13px'>" + RNUM_FECHA_D + " - " + PERMANENTE_RNUM + "</span>";
+                        $("<li" + class_notif_user_master_show + " data-index='" + index_CRUM + "' data-id='" + aah.ID_REL_N_U + "'>" + msg_notif_user_master_show + "</li>"
+                        ).appendTo("#DDL_RNUM");
+                    }
+                    else if (dif_sec_RNUM < 0 && aah.PERMANENTE != 1) { // Es menor a 1 segundo y diferente a permanente
+
+                        //console.log(aah.ID_NOTIF
+                        Delete_User_Notif_Master(aah.ID_NOTIF);
+                    }
+                    index_CRUM = index_CRUM + 1;
+                });
+
+                if (cant_notif_user_Master != 0) { // Dibujar cantidad de notificaciones 
+                    $("#cant_notif_user_Master").text(cant_notif_user_Master);
+                }
+            }
+
+
+            $(".RNUM_NEW").click((lal) => {  // Funcion click nueva notificacion
+                let index_CRUM_Valida = $(lal.currentTarget).attr("data-index");
+                let REL_RNUM_ID = "";
+                REL_RNUM_ID = $(lal.currentTarget).attr("data-id");
+                cant_notif_user_Master = cant_notif_user_Master - 1;
+
+                if (Mx_Notif_User_Master[index_CRUM_Valida].PERMANENTE != 1) { // Verifica si no es permanente 
+                    $(lal.currentTarget).addClass("RNUM_OLD");
+                    $(lal.currentTarget).removeClass("hover-RNUM-warning");
+                    $(lal.currentTarget).removeClass("RNUM_NEW");
+                }
+                else { // es Permanente
+                    $(lal.currentTarget).addClass("alert-info");
+                    $(lal.currentTarget).addClass("border-info");
+                    $(lal.currentTarget).addClass("RNUM_PERM");
+                    $(lal.currentTarget).removeClass("alert-warning");
+                    $(lal.currentTarget).removeClass("border-warning");
+                    $(lal.currentTarget).removeClass("hover-RNUM-warning");
+                    $(lal.currentTarget).removeClass("RNUM_NEW");
+                }
+
+                if (cant_notif_user_Master == 0) { // Verificar si se confirmo
+                    $("#cant_notif_user_Master").text("");
+                } else { // No se confirmo
+                    $("#cant_notif_user_Master").text(cant_notif_user_Master);
+                }
+
+                $(lal.currentTarget).unbind();
+                Update_User_Notif_Master(REL_RNUM_ID);
+            });
+
+            if (show_notif_RNUM == 1 && !$("#DDL_RNUM").hasClass("show")) { // Verificar si hay notificaciones nuevas y estan visible las notificaciones
+                $("#cant_notif_user_Master").click();
+            }
+        }
+        function getParameterByNameMaster(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+    <style>
+        .RNUM_OLD {
+            border: 2px solid #ade4a8 !important;
+            background-color: white !important;
+            min-width: 400px;
+            color: #353535;
+        }
+
+        .RNUM_PERM {
+            border: 2px solid #a8cde4 !important;
+            min-width: 400px;
+        }
+
+        .RNUM_OLD:hover {
+            background-color: white !important;
+        }
+
+        .RNUM_NEW {
+            border: 2px solid;
+            min-width: 400px;
+        }
+
+        .hover-RNUM-warning:hover {
+            background-color: #ddd2b2 !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-danger:hover {
+            background-color: #dbafb3 !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-info:hover {
+            background-color: #afd4db !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-success:hover {
+            background-color: #afdbb9 !important;
+            cursor: pointer;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="Cph_Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="fixed-nav" id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav-iris fixed-top" id="mainNav">
+        <style>
+            @media screen and (max-width:991px) {
+                .navbar-dark .navbar-nav .nav-link {
+                    color: #d7dddb;
+                }
+
+                    .navbar-dark .navbar-nav .nav-link:hover {
+                        color: white;
+                    }
+
+                    .navbar-dark .navbar-nav .nav-link:focus {
+                        color: white;
+                    }
+
+                #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li {
+                    color: #d7dddb;
+                }
+
+                    #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                        color: white;
+                    }
+
+                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                    color: white !important;
+                }
+            }
+
+            @media screen and (min-width:992px) {
+                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                    color: #005b71;
+                }
+
+                .navbar-collapse .navbar-sidenav {
+                    background: #f2f8ff !important;
+                }
+
+                    .navbar-collapse .navbar-sidenav .nav-link-collapse::after {
+                        float: right;
+                        content: '\f107';
+                        color: black !important;
+                        font-family: 'FontAwesome';
+                    }
+
+
+                .XX > li {
+                    color: #d7dddb !important;
+                    background-color: #007e9e;
+                }
+
+                #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                    color: white !important;
+                }
+
+                .submenu {
+                    background-color: #005b71;
+                    color: #d7dddb !important;
+                }
+
+                .subsubmenu {
+                    background-color: #005b71 !important;
+                    color: #d7dddb !important;
+                }
+
+                .submenu:hover {
+                    color: white !important;
+                }
+
+                .subsubmenu:hover {
+                    color: white !important;
+                }
+            }
+
+
+            .imgsz {
+                max-height: 5.2em;
+                position: fixed;
+                left: 0;
+                top: 9px;
+            }
+
+            .posia {
+                position: fixed;
+                left: 160px;
+            }
+
+            @media screen and (max-width:992px) {
+
+                .imgsz {
+                    left: -11px;
+                }
+
+                .posia {
+                    position: fixed;
+                    left: 150px;
+                    top: 7px;
+                }
+            }
+
+            .form-control, .input-group-addon {
+                border-color: #868e96;
+            }
+
+            .btn-block {
+                margin-top: 1vh;
+            }
+
+            .form-control:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            /*.form-control[readonly]{
+                 background-color: #fff;
+             }*/
+            .glyphicon {
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .glyphicon-arrow-left:before {
+                content: "\f053";
+            }
+
+            .glyphicon-arrow-right:before {
+                content: "\f054";
+            }
+
+            #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                text-decoration: none;
+                color: white;
+            }
+
+
+            /*/////MENU UTILIDADES/////*/
+            /*.navbar-nav li:hover > ul.dropdown-menu {
+                display: block;
+            }*/
+
+            .navbar-nav li[data-ayy=true]:hover > ul.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu {
+                position: relative;
+            }
+
+                .dropdown-submenu > .dropdown-menu {
+                    top: 0;
+                    /*left:-100%;*/
+                    left: -10rem; /* 10rem is the min-width of dropdown-menu */
+                    margin-top: -6px;
+                }
+
+            /* rotate caret on hover */
+            .dropdown-menu > li > a:hover:after {
+                text-decoration: underline;
+                transform: rotate(-90deg);
+            }
+        </style>
+
+        <a href="/Index.aspx">
+            <img src="/Imagenes/IRISLOGONEWBLANCO.png" class="imgsz" style="max-width: 150px;" />
+        </a>
+        <a class="navbar-brand posia" href="/Index.aspx" id="aTitle" runat="server">IrisLab</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-sidenav" id="hide_nav_ul">
+                <li id="M3" class="nav-item" data-toggle="tooltip" data-placement="right" title="Agenda Médica">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span class="nav-link-text">Agenda Médica</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents">
+                        <li>
+                            <a href="/Agenda_Med/N_Ver_Disponibilidad.aspx">Agendar</a>
+                        </li>
+                        <li>
+                            <a href="/Agenda_Med/F_Ate_Pac.aspx">Fecha Atención de Paciente</a>
+                        </li>
+                        <li>
+                            <a href="/Agenda_Med/Lis_Agen.aspx">Listado de Agendamiento</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M7" class="nav-item" data-toggle="tooltip" data-placement="right" title="Atención de Pacientes">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span class="nav-link-text">Atencion de Pacientes</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents2">
+                        <li>
+                            <a href="/Ate_Pac/Busca_Paciente.aspx">Búsqueda Paciente</a>
+                        </li>
+                        <li>
+                            <a href="/Ate_Pac/Editar_Paciente.aspx">Editar Paciente</a>
+                        </li>
+                        <li>
+                            <a href="/Ate_Pac/Editar_Atencion.aspx">Editar Atención</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M23" class="nav-item" data-toggle="tooltip" data-placement="right" title="Caja">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents10">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <span class="nav-link-text">Caja</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents10">
+                        <li>
+                            <a href="/Agenda_Med/Ingreso_Ate_Caja4.aspx">Ingreso Caja</a>
+                        </li>
+                        <li>
+                            <a href="/Gest_Financ/Estadisticas/Resumen/Resumen_Prev_Prog_Subp_Scr_3.aspx">Secretaria por Usuario</a>
+                        </li>
+                        <li>
+                            <a href="/Gest_Financ/Estadisticas/Resumen/Resumen_Prev_Prog_Subp_Scr_3_Glob.aspx">Secretaria Global</a>
+                        </li>
+                        <li>
+                            <a href="/Gest_Financ/Estadisticas/Resumen/Resumen_Prev_Prog_Subp_Scr_3_Glob_Rend.aspx">Revisión</a>
+                        </li>
+                        <li>
+                            <a href="/Gest_Financ/Estadisticas/Resumen/Resumen_Prev_Prog_Subp_Scr_3_Glob_Med.aspx">Revisión Múltiple</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M16" class="nav-item" data-toggle="tooltip" data-placement="right" title="Recepción de Muestra">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents4">
+                        <i class="fa fa-flask" aria-hidden="true"></i>
+                        <span class="nav-link-text">Recepción de Muestra</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents4">
+                        <li>
+                            <a href="/Recep_Mue/Recep_Mue_PENDIENTES_2.aspx">Recepción de Muestras</a>
+                        </li>
+                        <li>
+                            <a href="/Recep_Mue/Lis_Recep_Mue.aspx">Listado de Muestra Recepcionadas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M19" class="nav-item" data-toggle="tooltip" data-placement="right" title="Envío de Muestra">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents8">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                        <span class="nav-link-text">Envío de Muestra</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents8">
+                        <li>
+                            <a href="/Env_Mues_Lab/Env_Mues_Lab_PENDIENTES_2.aspx">Envío de Muestras</a>
+                        </li>
+                        <li>
+                            <a href="/Env_Mues_Lab/Lis_Env_Mues_Lab.aspx">Listado de Muestras Enviadas por Examen</a>
+                        </li>
+                        <li>
+                            <a href="/Env_Mues_Lab/Lis_Env_Mues_Lab_2.aspx">Listado de Muestras Enviadas por Tubo</a>
+                        </li>
+                        <li>
+                            <a href="/Env_Mues_Lab/Lis_Env_Mues_Lab_3.aspx">Listado de Muestras Enviadas por LOTE</a>
+                        </li>
+                        <li>
+                            <a href="/Env_Mues_Lab/Env_Mues_Lab_Mid_Recep.aspx">Recepcionar/Listar LOTE(S) Recibidos en Sección</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M17" class="nav-item" data-toggle="tooltip" data-placement="right" title="Derivación de Muestras">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents5">
+                        <i class="fa fa-exchange" aria-hidden="true"></i>
+                        <span class="nav-link-text">Derivación de Muestras</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents5">
+                        <li>
+                            <a href="/Deri_Mues/Deri_Mues.aspx">Derivar Muestras</a>
+                        </li>
+                        <li>
+                            <a href="/Deri_Mues/Deri_Lis.aspx">Listado de Derivaciones</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="M18" class="nav-item" data-toggle="tooltip" data-placement="right" title="Rechazo de Muestras">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents9">
+                        <i class="fa fa-window-close" aria-hidden="true"></i>
+                        <span class="nav-link-text">Rechazo de Muestras</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents9">
+                        <li>
+                            <a href="/Recha_Mues/Recha_Mues.aspx">Rechazar Muestras</a>
+                        </li>
+                        <li>
+                            <a href="/Recha_Mues/Lis_Lote_Recha.aspx">Ver Lotes de Rechazos</a>
+                        </li>
+                        <li>
+                            <a href="/Recha_Mues/Lis_Recha_Mues_2.aspx">Listado de Rechazo por Tubo</a>
+                        </li>
+                        <li>
+                            <a href="/Recha_Mues/Lis_Recha_Mues_Exa.aspx">Listado de Rechazo por Examen</a>
+                        </li>
+                        <li>
+                            <a href="/Recha_Mues/Lis_Recha_Mues_TP.aspx">Listado de Atenciones por Tipo Rechazo</a>
+                        </li>
+                    </ul>
+                </li>
+                <%-- <li id="M8" class="nav-item" data-toggle="tooltip" data-placement="right" title="Buscar Atenciones">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents3">
+                        <i class="fa fa-ambulance" aria-hidden="true"></i>
+                        <span class="nav-link-text">Buscar Atenciones</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents3">
+                        <li>
+                            <a href="/Buscar_Ate/Buscar_Atencion.aspx">Buscar Atenciones</a>
+                        </li>
+                    </ul>
+                </li>--%>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Buscar Atenciones" id="M20">
+                    <a class="nav-link" href="/Buscar_Ate/Buscar_Atencion.aspx">
+                        <i class="fa fa-ambulance"></i>
+                        <span class="nav-link-text">Buscar Atenciones</span>
+                    </a>
+                </li>
+
+                <%--<li id="M10" class="nav-item" data-toggle="tooltip" data-placement="right" title="Check List">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents6">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <span class="nav-link-text">Check List</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents6">
+                        <li>
+                            <a href="/CheckList.aspx">Ver Check List</a>
+
+                        </li>
+                    </ul>
+                </li>--%>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Check List" id="M21">
+                    <a class="nav-link" href="/CheckList.aspx">
+                        <i class="fa fa-check-square-o"></i>
+                        <span class="nav-link-text">Ver Check List</span>
+                    </a>
+                </li>
+
+                <%--                <li id="M11" class="nav-item" data-toggle="tooltip" data-placement="right" title="Reportes">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents7">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        <span class="nav-link-text">Reportes</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents7">
+                        <li>
+                            <a href="/Reportes.aspx">Ver Reportes</a>
+
+                        </li>
+                    </ul>
+                </li>--%>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reportes" id="M22">
+                    <a class="nav-link" href="/Reportes.aspx">
+                        <i class="fa fa-area-chart"></i>
+                        <span class="nav-link-text">Ver Reportes</span>
+                    </a>
+                </li>
+
+                <%--<li id="M15" class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestión Financiera">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents10">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <span class="nav-link-text">Gestión Financiera</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse XX" id="collapseComponents10">
+                        <li>
+                            <a href="/Gest_Financ.aspx">Panel Gestión Financiera</a>
+
+                        </li>
+                    </ul>
+                </li>--%>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestión Financiera" id="bar_Ges_Fin">
+                    <a class="nav-link" href="/Gest_Financ.aspx">
+                        <i class="fa fa-briefcase"></i>
+                        <span class="nav-link-text">Gestión Financiera</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gerencia" id="bar_Gerencia">
+                    <a class="nav-link" href="/Gerencia.aspx">
+                        <i class="fa fa-suitcase"></i>
+                        <span class="nav-link-text">Gerencia</span>
+                    </a>
+                </li>
+           <%--     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Costos" id="bar_Costos">
+                    <a class="nav-link" href="/Costos.aspx">
+                        <i class="fa fa-usd"></i>
+                        <span class="nav-link-text">Costos</span>
+                    </a>
+                </li>--%>
+                     <li id="M15" class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestión Financiera">
+         <a class="nav-link" href="/Gest_Financ.aspx">
+             <i class="fa fa-briefcase"></i>
+             <span class="nav-link-text">Gestión Financiera</span>
+         </a>
+     </li>
+                <%--<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Soporte Técnico">
+                    <a class="nav-link" href="/Servicio_Tecnico/Servicio_Tecnico.aspx">
+                        <i class="fa fa-wrench"></i>
+                        <span class="nav-link-text">Soporte Técnico</span>
+                    </a>
+                </li>--%>
+            </ul>
+            <ul id="M13" class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler" style="color: #e7e3e3;">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <%--////NAVBAR SUPERIOR///--%>
+            <ul class="navbar-nav ml-auto">
+
+
+                <%--  ////////////--%>
+
+
+
+                <li class="dropdown keep-open">
+                    <!-- Dropdown Button -->
+                    <a id="dLabel" role="button" href="#" data-toggle="dropdown" data-target="#" class="nav-link" style="color: white">
+                        <i class="fa fa-bell fa-fw"></i>Notificaciones 
+                        <span class="badge badge-light" id="cant_notif_user_Master" style="background-color: #e6d624; font-size: 15px; font-weight: 600"></span>
+                        <span class="caret"></span>
+                    </a>
+
+                    <!-- Dropdown Menu -->
+
+                    <ul class="dropdown-menu p-1" role="menu" aria-labelledby="dLabel" id="DDL_RNUM" style="max-height: 405px; overflow-y: scroll; overflow-x: hidden; background-color: #d6ffe3; width: auto">
+                    </ul>
+                </li>
+                <%--MANUALES--%>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white"><i class="fa fa-info fa-fw"></i>Manuales
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/Manual%20Iris%20v3.pdf" target="_blank">
+                            <img src="/Utilidades/print.png" />
+                            Manual Usuario</a>
+                        <a class="dropdown-item" href="/Manual%20Cache.pdf" target="_blank">
+                            <img src="/Utilidades/print.png" />
+                            Manual Cache</a>
+                        <a class="dropdown-item" href="/Manual%20IrisPrint.pdf" target="_blank">
+                            <img src="/Utilidades/print.png" />
+                            Manual IrisPrint</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                        <i class="fa fa-download fa-fw"></i>Utilidades
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/Utilidades/Team%20Viewer%207.exe">
+                            <img src="/Utilidades/tv.png" />
+                            Team Viewer 7</a></li>
+                        <li><a class="dropdown-item" href="/Utilidades/Ammyy%20Admin%20v3.5%20-%20Corporate.exe">
+                            <img src="/Utilidades/ammyy.png" />
+                            Ammyy</a></li>
+                        <li><a class="dropdown-item" href="/Utilidades/AcroRdrDC1801120040_es_ES.exe">
+                            <img src="/Utilidades/pdf.PNG" />
+                            PDF</a></li>
+                        <li><a class="dropdown-item" href="/Utilidades/wrar550es.exe">
+                            <img src="/Utilidades/winrar.png" />
+                            WinRAR</a></li>
+                        <li><a class="dropdown-item" href="/Utilidades/SETUP.rar">
+                            <img src="/Utilidades/print.png" />
+                            IrisPrint</a></li>
+                        <li class="dropdown-submenu" data-ayy="true"><a class="dropdown-item dropdown-toggle" href="#">
+                            <img src="/Utilidades/barcode.jpg" />
+                            Fuente C.B.</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/Utilidades/code128.ttf">
+                                    <img src="/Utilidades/barcode.jpg" />
+                                    Code 128</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" data-ayy="true"><a class="dropdown-item dropdown-toggle" href="#">
+                            <img src="/Utilidades/zebra.png" />
+                            Driver Etiqueta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/Utilidades/Zebra%20Driver.exe">
+                                    <img src="/Utilidades/zebra.png" />
+                                    Suit Zebra</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <%--CONFIGURACIONES--%>
+                <li class="nav-item" id="hide_contra">
+                    <a href="/C_C.aspx" class="nav-link mr-3" style="color: white">
+                        <i class="fa fa-fw fa-cog"></i>Restablecer contraseña</a>
+                </li>
+                <li class="nav-item" id="hide_config">
+                    <a href="/Configuraciones.aspx" class="nav-link" style="color: white">
+                        <i class="fa fa-fw fa-cog"></i>Configuraciones</a>
+                </li>
+                <%--LOGOUT--%>
+                <li class="nav-item">
+                    <a href="/Servicio_Tecnico/Servicio_Tecnico.aspx" class="nav-link mr-3" style="color: white">
+                        <i class="fa fa-fw fa-wrench"></i>Soporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: white">
+                        <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Modal Notificación-->
+    <div id="mdlNotif_usu_Master" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <%--<button type="button" class="close" data-dismiss="modal">&times;</button>--%>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!------ modal de carga -------->
+    <div class="modal modalcarga">
+        <div>
+            <h2><b>Cargando...</b></h2>
+            <div class="flex-content">
+                <div class="box2">
+                    <div style="display: inline-block">
+                        <img class="imght" src="/Imagenes/ILWS.png" />
+                    </div>
+                </div>
+                <div class="box1">
+                    <img class="img360" src="/Imagenes/IRISSSS.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content-wrapper py-3" id="con_wra">
+        <div class="container-fluid">
+            <asp:ContentPlaceHolder ID="Cph_Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+
+    <!-- Scroll to Top Button -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro que desea finalizar su sesión actual?</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btn_close_session">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal General Pinochet -->
+    <div class="modal fade" id="EM2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EM2Label">¿Desea Salir?</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p></p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Notificación-->
+    <div id="mdlNotif" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/sb-admin.min.js"></script>
+    <%--    <script src="/js/sb-admin.js"></script>--%>
+</body>
+</html>
+

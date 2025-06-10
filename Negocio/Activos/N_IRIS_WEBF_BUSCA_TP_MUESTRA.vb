@@ -1,0 +1,73 @@
+﻿Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_TP_MUESTRA
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_TP_MUESTRA
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_TP_MUESTRA
+    End Sub
+    Function IRIS_WEBF_BUSCA_TP_MUESTRA() As List(Of E_IRIS_WEBF_BUSCA_TP_MUESTRA)
+        Return DD_Data.IRIS_WEBF_BUSCA_TP_MUESTRA()
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_TP_MUESTRA_SANGRE_BY_ID_PER_NO_RELACIONADAS(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_MUESTRA_SANGRE)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_TP_MUESTRA_SANGRE_BY_ID_PER_NO_RELACIONADAS(ID_PER)
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_RELACION_TP_MUESTRA_SANGRE_MANTENEDOR_REL(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_MUESTRA_SANGRE_REL)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_RELACION_TP_MUESTRA_SANGRE_MANTENEDOR_REL(ID_PER)
+    End Function
+
+    Function IRIS_GRABA_RELACION_TP_MUESTRA_SANGRE_ESTUDIO(ByVal ID_PER As Integer, ByVal ID_USER As Integer, ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_GRABA_RELACION_TP_MUESTRA_SANGRE_ESTUDIO(ID_PER, ID_USER, ARRAY_)
+    End Function
+
+    Function IRIS_WEBF_UPDATE_REL_TP_DE_MUESTRA_SANGRE_ESTUDIO_QUITAR_RELACION(ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_REL_TP_DE_MUESTRA_SANGRE_ESTUDIO_QUITAR_RELACION(ARRAY_)
+    End Function
+
+    '--------------------------------------------PARTE DEL ANALIZADOR ------------------------------------------------'
+    Function IRIS_WEBF_CMVM_BUSCA_ANALIZADOR_BY_ID_PER_NO_RELACIONADAS(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_ANALIZADOR)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_ANALIZADOR_BY_ID_PER_NO_RELACIONADAS(ID_PER)
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_RELACION_ANALIZADOR_MANTENEDOR_REL(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_ANALIZADOR_REL)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_RELACION_ANALIZADOR_MANTENEDOR_REL(ID_PER)
+    End Function
+
+    Function IRIS_GRABA_RELACION_ANALIZADOR_ESTUDIO(ByVal ID_PER As Integer, ByVal ID_USER As Integer, ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_GRABA_RELACION_ANALIZADOR_ESTUDIO(ID_PER, ID_USER, ARRAY_)
+    End Function
+    Function IRIS_WEBF_UPDATE_REL_ANALIZADOR_QUITAR_RELACION(ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_REL_ANALIZADOR_QUITAR_RELACION(ARRAY_)
+    End Function
+    '----------------------------------------- Mantenedores de TIPO MUESTRA DE SANGRE --------------------------------------------'
+
+    Function IRIS_WEBF_BUSCA_MUESTRA_SANGRE() As List(Of E_IRIS_WEBF_BUSCA_MUESTRA_SANGRE)
+        Return DD_Data.IRIS_WEBF_BUSCA_MUESTRA_SANGRE()
+    End Function
+
+    Function IRIS_WEBF_GRABA_TP_DE_MUESTRA_SANGRE(ByVal MUESTRA_SANGRE_COD As String, ByVal MUESTRA_SANGRE_DESC As String, ByVal ID_ESTADO As Integer) As String
+        Return DD_Data.IRIS_WEBF_GRABA_TP_DE_MUESTRA_SANGRE(MUESTRA_SANGRE_COD, MUESTRA_SANGRE_DESC, ID_ESTADO)
+    End Function
+
+    Function IRIS_WEBF_UPDATE_TP_MUESTRA_SANGRE(ByVal ID_MUESTRA_SANGRE As Integer, ByVal MUESTRA_SANGRE_COD As String, ByVal MUESTRA_SANGRE_DESC As String, ByVal ID_ESTADO As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_TP_MUESTRA_SANGRE(ID_MUESTRA_SANGRE, MUESTRA_SANGRE_COD, MUESTRA_SANGRE_DESC, ID_ESTADO)
+    End Function
+
+    '----------------------------------------- Mantenedores de ANALIZADOR --------------------------------------------'
+
+    Function IRIS_WEBF_BUSCA_ANALIZADOR() As List(Of E_IRIS_WEBF_BUSCA_ANALIZADOR_REL)
+        Return DD_Data.IRIS_WEBF_BUSCA_ANALIZADOR()
+
+    End Function
+
+    Function IRIS_WEBF_GRABA_ANALIZADOR(ByVal ANAL_COD As String, ByVal ANAL_DESC As String, ByVal ID_ESTADO As Integer) As String
+        Return DD_Data.IRIS_WEBF_GRABA_ANALIZADOR(ANAL_COD, ANAL_DESC, ID_ESTADO)
+    End Function
+
+    Function IRIS_WEBF_UPDATE_ANALIZADOR(ByVal ID_ANAL As Integer, ByVal ANAL_COD As String, ByVal ANAL_DESC As String, ByVal ID_ESTADO As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_ANALIZADOR(ID_ANAL, ANAL_COD, ANAL_DESC, ID_ESTADO)
+    End Function
+End Class
+

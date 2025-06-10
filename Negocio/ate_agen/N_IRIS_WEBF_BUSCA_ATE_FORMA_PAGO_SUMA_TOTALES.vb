@@ -1,0 +1,13 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES
+    End Sub
+    Function IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES(ByVal ID_ATE As Integer) As List(Of E_IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES)
+        Return DD_Data.IRIS_WEBF_BUSCA_ATE_FORMA_PAGO_SUMA_TOTALES(ID_ATE)
+    End Function
+End Class

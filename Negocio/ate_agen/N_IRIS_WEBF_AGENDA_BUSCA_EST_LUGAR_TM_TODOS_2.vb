@@ -1,0 +1,22 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+
+Public Class N_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2
+
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2
+    End Sub
+
+    Function IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2(ByVal DESDE As String, ByVal HASTA As String) As List(Of E_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2)
+        Return DD_Data.IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2(DESDE, HASTA)
+
+    End Function
+
+    Function IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_POR_ID_TM_2(ByVal DESDE As String, ByVal HASTA As String, ByVal ID_TM As Integer) As List(Of E_IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_2)
+        Return DD_Data.IRIS_WEBF_AGENDA_BUSCA_EST_LUGAR_TM_TODOS_POR_ID_TM_2(DESDE, HASTA, ID_TM)
+
+    End Function
+End Class

@@ -1,0 +1,26 @@
+[26-02-2025 -> 09:05:41] El usuario DPEREIRA ha ingresado al formulario.
+[26-02-2025 -> 09:05:41] Cargando datos del paciente...
+[26-02-2025 -> 09:05:41] Paciente identificado:
+                         - RUT: 11.111.111-1
+                         - Nombre: PRUEBA
+[26-02-2025 -> 09:05:41] Carga Completada.
+
+----------------------------------------------------------------------------------
+[26-02-2025 -> 09:05:42] Cargando resultados del paciente...
+[26-02-2025 -> 09:05:42] Cant. Resultados: 23
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[26-02-2025 -> 09:06:03] El usuario DPEREIRA ha ingresado al formulario.
+[26-02-2025 -> 09:06:03] Cargando datos del paciente...
+[26-02-2025 -> 09:06:03] Paciente identificado:
+                         - RUT: 11.111.111-1
+                         - Nombre: PRUEBA
+[26-02-2025 -> 09:06:03] Carga Completada.
+
+----------------------------------------------------------------------------------
+[26-02-2025 -> 09:06:03] Cargando resultados del paciente...
+[26-02-2025 -> 09:06:03] Cant. Resultados: 23
+                         Carga Completada.
+
+----------------------------------------------------------------------------------

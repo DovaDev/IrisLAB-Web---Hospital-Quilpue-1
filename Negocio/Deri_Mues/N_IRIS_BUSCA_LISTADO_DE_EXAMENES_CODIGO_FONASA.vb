@@ -1,0 +1,17 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+
+Public Class N_IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA
+
+    Sub New()
+        DD_Data = New D_IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA
+    End Sub
+
+    Function IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA(ByVal ID_ATE As Integer) As List(Of E_IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA)
+        Return DD_Data.IRIS_BUSCA_LISTADO_DE_EXAMENES_CODIGO_FONASA(ID_ATE)
+
+    End Function
+End Class

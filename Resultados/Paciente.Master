@@ -1,0 +1,390 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Paciente.master.vb" Inherits="Resultados.Paciente" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta name="description" content="Laboratorio Cliníco" />
+    <meta name="author" content="IrisLab - Osorno" />
+    <title class="fa fa-flask">IrisLab - C.M.V.M.</title>
+    <link rel="icon" type="image/png" href="Imagenes/32X32.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+    <link href="/css/sb-admin.css" rel="stylesheet" />
+    <link href="/css/Checkbox.css" rel="stylesheet" />
+    <link href="/css/Load_Modal.css" rel="stylesheet" />
+    <link href="/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="/css/Iris_Css.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/jQuery.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Libraries -->
+    <script src="/js/RUT.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap-datetimepicker.es.js"></script>
+    <script src="/js/moment_es.js"></script>
+    <script src="/js/Iris_Functions.js"></script>
+
+
+    <!-- Mostrar/Ocultar Elementos -->
+    <script>
+        function modal_show() {
+            $(".modalcarga").show();
+            $(".container-fluid, .navbar").addClass("blur");
+
+
+        };
+        function Hide_Modal() {
+            $(".container-fluid, .navbar").removeClass("blur");
+            $(".modalcarga").fadeOut(250);
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="Cph_Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="" id="page-top">
+    <!-- Navigation -->
+    <%--<nav class="navbar navbar-expand-lg navbar-dark bg-nav-iris fixed-top" id="mainNav">--%>
+        <style>
+                    .RNUM_OLD {
+            border: 2px solid #ade4a8 !important;
+            background-color: white !important;
+            min-width: 400px;
+            color: #353535;
+        }
+
+        .RNUM_PERM {
+            border: 2px solid #a8cde4 !important;
+            min-width: 400px;
+        }
+
+        .RNUM_OLD:hover {
+            background-color: white !important;
+        }
+
+        .RNUM_NEW {
+            border: 2px solid;
+            min-width: 400px;
+        }
+
+        .hover-RNUM-warning:hover {
+            background-color: #ddd2b2 !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-danger:hover {
+            background-color: #dbafb3 !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-info:hover {
+            background-color: #afd4db !important;
+            cursor: pointer;
+        }
+
+        .hover-RNUM-success:hover {
+            background-color: #afdbb9 !important;
+            cursor: pointer;
+        }
+            @media screen and (max-width:991px) {
+                .navbar-dark .navbar-nav .nav-link {
+                    color: #d7dddb;
+                }
+
+                    .navbar-dark .navbar-nav .nav-link:hover {
+                        color: white;
+                    }
+
+                    .navbar-dark .navbar-nav .nav-link:focus {
+                        color: white;
+                    }
+
+                #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li {
+                    color: #d7dddb;
+                }
+
+                    #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                        color: white;
+                    }
+
+                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                    color: white !important;
+                }
+            }
+
+            @media screen and (min-width:992px) {
+                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                    color: #005b71;
+                }
+
+                .navbar-collapse .navbar-sidenav {
+                    background: #f2f8ff !important;
+                }
+
+                    .navbar-collapse .navbar-sidenav .nav-link-collapse::after {
+                        float: right;
+                        content: '\f107';
+                        color: black !important;
+                        font-family: 'FontAwesome';
+                    }
+
+
+                .XX > li {
+                    color: #d7dddb !important;
+                    background-color: #007e9e;
+                }
+
+                #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                    color: white !important;
+                }
+
+                .submenu {
+                    background-color: #005b71;
+                    color: #d7dddb !important;
+                }
+
+                .subsubmenu {
+                    background-color: #005b71 !important;
+                    color: #d7dddb !important;
+                }
+
+                .submenu:hover {
+                    color: white !important;
+                }
+
+                .subsubmenu:hover {
+                    color: white !important;
+                }
+            }
+
+
+            .imgsz {
+                max-height: 5.2em;
+                position: fixed;
+                left: 0;
+                top: -12px;
+            }
+
+            .posia {
+                position: fixed;
+                left: 160px;
+            }
+
+            @media screen and (max-width:992px) {
+
+                .imgsz {
+                    left: -11px;
+                }
+
+                .posia {
+                    position: fixed;
+                    left: 150px;
+                    top: 7px;
+                }
+            }
+
+            .form-control, .input-group-addon {
+                border-color: #868e96;
+            }
+
+            .btn-block {
+                margin-top: 1vh;
+            }
+
+            .form-control:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+            /*.form-control[readonly]{
+                 background-color: #fff;
+             }*/
+            .glyphicon {
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .glyphicon-arrow-left:before {
+                content: "\f053";
+            }
+
+            .glyphicon-arrow-right:before {
+                content: "\f054";
+            }
+
+            #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+                text-decoration: none;
+                color: white;
+            }
+
+                        .navbar-nav li[data-ayy=true]:hover > ul.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-submenu {
+                position: relative;
+            }
+
+                .dropdown-submenu > .dropdown-menu {
+                    top: 0;
+                    /*left:-100%;*/
+                    left: -10rem; /* 10rem is the min-width of dropdown-menu */
+                    margin-top: -6px;
+                }
+
+            /* rotate caret on hover */
+            .dropdown-menu > li > a:hover:after {
+                text-decoration: underline;
+                transform: rotate(-90deg);
+            }
+            /*//////////*/
+        </style>
+
+
+    <%--</nav>--%>
+
+    <!------ modal de carga -------->
+    <div class="modal modalcarga">
+        <div>
+            <h2><b>Cargando...</b></h2>
+            <div class="flex-content">
+                <div class="box2">
+                    <div style="display: inline-block">
+                        <img class="imght" src="/Imagenes/ILWS.png" />
+                    </div>
+                </div>
+                <div class="box1">
+                    <img class="img360" src="/Imagenes/IRISSSS.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+            <asp:ContentPlaceHolder ID="Cph_Body" runat="server">
+            </asp:ContentPlaceHolder>
+ 
+
+
+    <!-- Scroll to Top Button -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro que desea finalizar su sesión actual?</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btn_close_session">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal General Pinochet -->
+    <div class="modal fade" id="EM2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EM2Label">¿Desea Salir?</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p></p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Modal Notificación-->
+    <div id="mdlNotif_usu_Master" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <%--<button type="button" class="close" data-dismiss="modal">&times;</button>--%>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Modal Notificación-->
+    <div id="mdlNotif" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/sb-admin.min.js"></script>
+</body>
+</html>
+

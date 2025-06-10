@@ -1,0 +1,16 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO
+
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO
+    End Sub
+
+    Function IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO() As List(Of E_IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO)
+        Return DD_Data.IRIS_WEBF_BUSCA_CORRELATIVO_LOTE_RECHAZO()
+
+    End Function
+End Class

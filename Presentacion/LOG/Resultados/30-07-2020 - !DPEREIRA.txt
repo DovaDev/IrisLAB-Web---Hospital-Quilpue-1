@@ -1,0 +1,14 @@
+[30-07-2020 -> 06:03:04] El usuario DPEREIRA ha ingresado al formulario.
+[30-07-2020 -> 06:03:04] Cargando datos del paciente...
+[30-07-2020 -> 06:03:04] Paciente identificado:
+                         - RUT: 11.044.389-7
+                         - Nombre: MARIO ALBORNOZ VARAS
+[30-07-2020 -> 06:03:04] Carga Completada.
+
+----------------------------------------------------------------------------------
+[30-07-2020 -> 06:03:05] ID_ATE = 248699
+[30-07-2020 -> 06:03:15] Cargando resultados del paciente...
+[30-07-2020 -> 06:03:15] Cant. Resultados: 6
+                         Carga Completada.
+
+----------------------------------------------------------------------------------

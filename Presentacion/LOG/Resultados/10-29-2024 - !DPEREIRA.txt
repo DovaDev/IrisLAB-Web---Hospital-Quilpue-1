@@ -1,0 +1,41 @@
+[29-10-2024 -> 12:54:03] El usuario DPEREIRA ha ingresado al formulario.
+[29-10-2024 -> 12:54:03] Cargando datos del paciente...
+[29-10-2024 -> 12:54:03] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[29-10-2024 -> 12:54:03] Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:54:04] Cargando resultados del paciente...
+[29-10-2024 -> 12:54:04] Cant. Resultados: 14
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:54:08] Cargando resultados del paciente...
+[29-10-2024 -> 12:54:08] Cant. Resultados: 1
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:54:09] Cargando resultados del paciente...
+[29-10-2024 -> 12:54:09] Cant. Resultados: 13
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 12:54:11] Cargando resultados del paciente...
+[29-10-2024 -> 12:54:11] Cant. Resultados: 1
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 02:33:59] El usuario DPEREIRA ha ingresado al formulario.
+[29-10-2024 -> 02:33:59] Cargando datos del paciente...
+[29-10-2024 -> 02:33:59] Paciente identificado:
+                         - RUT: 22.222.222-2
+                         - Nombre: MARCELO PRUEBA
+[29-10-2024 -> 02:33:59] Carga Completada.
+
+----------------------------------------------------------------------------------
+[29-10-2024 -> 02:33:59] Cargando resultados del paciente...
+[29-10-2024 -> 02:33:59] Cant. Resultados: 14
+                         Carga Completada.
+
+----------------------------------------------------------------------------------

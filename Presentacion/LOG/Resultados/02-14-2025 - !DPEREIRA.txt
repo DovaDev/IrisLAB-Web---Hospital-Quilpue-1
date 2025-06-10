@@ -1,0 +1,52 @@
+----------------------------------------------------------------------------------
+[14-02-2025 -> 11:01:49] ERROR:
+    Código: 
+        25332309
+
+    Descripción: 
+        Error al convertir el tipo de datos nvarchar a numeric.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1830
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES)
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+[14-02-2025 -> 11:01:49] ERROR:
+    Código: 
+        7295401
+
+    Descripción: 
+        Error al convertir el tipo de datos nvarchar a numeric.
+
+    Stack Trace:        
+        
+en System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+        
+  
+        
+en System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+        
+  
+        
+en Datos.D_Ate_Resultados.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO_CON_LOG(Int32 ID_RES, String RES, Int32 ID_USUARIO)
+        
+en C:\Users\IrisLab User\source\repos\IrisLAB-Web---Hospital-Quilpue\Datos\Atenciones\D_Ate_Resultados.vb:línea 1830
+        
+  
+        
+en Presentacion.Ate_Resultados_3.IRIS_WEBF_UPDATE_RESULDADO_DE_EXAMEN_NUMERICO(Int32 ID_RES, String RES)
+----------------------------------------------------------------------------------

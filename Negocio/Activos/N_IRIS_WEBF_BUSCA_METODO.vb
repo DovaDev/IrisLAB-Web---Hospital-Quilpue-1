@@ -1,0 +1,30 @@
+﻿'Importar Capas
+Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_BUSCA_METODO
+    'Declaraciones Generales
+    Dim DD_Data As D_IRIS_WEBF_BUSCA_METODO
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_BUSCA_METODO
+    End Sub
+    Function IRIS_WEBF_BUSCA_METODO() As List(Of E_IRIS_WEBF_BUSCA_METODO)
+        Return DD_Data.IRIS_WEBF_BUSCA_METODO()
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_METODO_BY_ID_PER_NO_RELACIONADAS(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_METODO)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_METODO_BY_ID_PER_NO_RELACIONADAS(ID_PER)
+    End Function
+
+    Function IRIS_WEBF_CMVM_BUSCA_RELACION_ESTUDIO_METODO_MANTENEDOR_REL(ByVal ID_PER As Integer) As List(Of E_IRIS_WEBF_BUSCA_RELACION_METODO_ID_PER)
+        Return DD_Data.IRIS_WEBF_CMVM_BUSCA_RELACION_ESTUDIO_METODO_MANTENEDOR_REL(ID_PER)
+    End Function
+
+    Function IRIS_GRABA_RELACION_METODO_ESTUDIO(ByVal ID_PER As Integer, ByVal ID_USER As Integer, ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_GRABA_RELACION_METODO_ESTUDIO(ID_PER, ID_USER, ARRAY_)
+    End Function
+
+    Function IRIS_WEBF_UPDATE_REL_METODO_ESTUDIO_QUITAR_RELACION(ByVal ARRAY_ As Integer) As Integer
+        Return DD_Data.IRIS_WEBF_UPDATE_REL_METODO_ESTUDIO_QUITAR_RELACION(ARRAY_)
+    End Function
+
+End Class

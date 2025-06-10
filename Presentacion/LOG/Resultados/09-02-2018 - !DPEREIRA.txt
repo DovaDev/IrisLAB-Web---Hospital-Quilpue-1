@@ -1,0 +1,28 @@
+[09-02-2018 -> 09:32:58] El usuario DPEREIRA ha ingresado al formulario.
+[09-02-2018 -> 09:32:58] Cargando datos del paciente...
+[09-02-2018 -> 09:32:58] Paciente identificado:
+                         - RUT: 6.651.773-K
+                         - Nombre: RAQUEL RAFFERNAU ROSSI
+[09-02-2018 -> 09:32:58] Carga Completada.
+
+----------------------------------------------------------------------------------
+[09-02-2018 -> 09:32:58] Cargando resultados del paciente...
+[09-02-2018 -> 09:32:58] Cant. Resultados: 4
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[09-02-2018 -> 09:33:00] ID_ATE = 24150
+[09-02-2018 -> 09:34:50] ID_ATE = 24190
+[09-02-2018 -> 09:34:57] El usuario DPEREIRA ha ingresado al formulario.
+[09-02-2018 -> 09:34:57] Cargando datos del paciente...
+[09-02-2018 -> 09:34:57] Paciente identificado:
+                         - RUT: 13.225.360-9
+                         - Nombre: LUIS PUEYES TOBAR
+[09-02-2018 -> 09:34:57] Carga Completada.
+
+----------------------------------------------------------------------------------
+[09-02-2018 -> 09:34:57] Cargando resultados del paciente...
+[09-02-2018 -> 09:34:57] Cant. Resultados: 71
+                         Carga Completada.
+
+----------------------------------------------------------------------------------

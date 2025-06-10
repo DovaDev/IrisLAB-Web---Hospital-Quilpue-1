@@ -1,0 +1,44 @@
+
+        'Derivar según la función en cuestión
+        Select Case callFn
+            Case "Imp_Etiquetas"
+                'Notificación
+                xForm.Nin_Tray.BalloonTipTitle = "IrisLAB Print"
+                xForm.Nin_Tray.BalloonTipText = "Imprimiendo Etiqueta/s"
+                xForm.Nin_Tray.ShowBalloonTip(5000)
+                'Imprimir Etiquetas
+                Dim objRequest As New N_Imp_Etiquetas_Ate
+                Log.Write(False, "ctrl_etiq", "Iniciando Impresión Etiqueta")
+                Response = objRequest.Gen_Etiqueta(strJSON)
+                Return Response
+            Case "Imp_Voucher_Agendam"
+                'Notificación
+                xForm.Nin_Tray.BalloonTipTitle = "IrisLAB Print"
+                xForm.Nin_Tray.BalloonTipText = "Imprimiendo Voucher/s"
+                xForm.Nin_Tray.ShowBalloonTip(5000)
+                'Imprimir Etiquetas
+                Dim objRequest As New N_Imp_Voucher_Agendam
+                Log.Write(False, "ctrl_voucher", "Iniciando Impresión Voucher Agendam")
+                Response = objRequest.Gen_Voucher_Agendam(strJSON)
+                Return Response
+            Case "Imp_Voucher_Lugar_TM"
+                'Notificación
+                xForm.Nin_Tray.BalloonTipTitle = "IrisLAB Print"
+                xForm.Nin_Tray.BalloonTipText = "Imprimiendo Voucher/s"
+                xForm.Nin_Tray.ShowBalloonTip(5000)
+                'Imprimir Etiquetas
+                Dim objRequest As New N_Imp_Voucher_Lugar_TM
+                Log.Write(False, "ctrl_voucher", "Iniciando Impresión Voucher Lugar TM")
+                Response = objRequest.Gen_Voucher_Lugar_TM(strJSON)
+                Return Response
+            Case "Imp_Voucher_Compr_Ate"
+                'Notificación
+                xForm.Nin_Tray.BalloonTipTitle = "IrisLAB Print"
+                xForm.Nin_Tray.BalloonTipText = "Imprimiendo Voucher/s"
+                xForm.Nin_Tray.ShowBalloonTip(5000)
+                'Imprimir Etiquetas
+                Dim objRequest As New N_Imp_Voucher_Compr_Ate
+                Log.Write(False, "ctrl_voucher", "Iniciando Impresión Voucher Comprobante Atención")
+                Response = objRequest.Gen_Voucher_Lugar_TM(strJSON)
+                Return Response
+        End Select

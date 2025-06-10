@@ -1,0 +1,14 @@
+[31-05-2019 -> 02:43:14] El usuario DPEREIRA ha ingresado al formulario.
+[31-05-2019 -> 02:43:14] Cargando datos del paciente...
+[31-05-2019 -> 02:43:15] Paciente identificado:
+                         - RUT: 8.556.654-7
+                         - Nombre: PEDRO ALFREDO CABELLO CARRASCO
+[31-05-2019 -> 02:43:15] Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-05-2019 -> 02:43:15] Cargando resultados del paciente...
+[31-05-2019 -> 02:43:15] Cant. Resultados: 43
+                         Carga Completada.
+
+----------------------------------------------------------------------------------
+[31-05-2019 -> 02:43:20] ID_ATE = 203195

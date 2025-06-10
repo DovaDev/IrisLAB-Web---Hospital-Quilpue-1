@@ -1,0 +1,14 @@
+﻿Imports Datos
+Imports Entidades
+Public Class N_IRIS_WEBF_CMVM_GRABA_ASUNTO
+    Dim DD_Data As D_IRIS_WEBF_CMVM_GRABA_ASUNTO
+    Sub New()
+        DD_Data = New D_IRIS_WEBF_CMVM_GRABA_ASUNTO
+    End Sub
+    Function IRIS_WEBF_CMVM_GRABA_ASUNTO(ASUNTO, ID_USER_1, ID_USER_2, FECHA) As Integer
+        Return DD_Data.IRIS_WEBF_CMVM_GRABA_ASUNTO(ASUNTO, ID_USER_1, ID_USER_2, FECHA)
+    End Function
+    Function IRIS_WEBF_CMVM_GRABA_ASUNTO_MSG(ID_MSG_ASUNTO, ID_USER_1, TIPO, TEXT, FECHA) As Integer
+        Return DD_Data.IRIS_WEBF_CMVM_GRABA_ASUNTO_MSG(ID_MSG_ASUNTO, ID_USER_1, TIPO, TEXT, FECHA)
+    End Function
+End Class
