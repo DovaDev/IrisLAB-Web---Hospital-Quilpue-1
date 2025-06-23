@@ -246,7 +246,7 @@ Public Class Ate_Resultados_2
         NN_Result.SEXO = R_SEXO
 
 
-        Data_Res01 = (New D_Ate_Resultados).IRIS_WEB_RESULTADOS_BUSCA_VISOR_DETALLE(NN_Result.ID_ATE, R_ID_SECC, R_ID_EXAM, R_DIA, R_MES, R_AÑO, R_ID_AREA, R_ID_RLS_LS)
+        Data_Res01 = (New N_Ate_Resultados).IRIS_WEB_RESULTADOS_BUSCA_VISOR_DETALLE(NN_Result.ID_ATE, R_ID_SECC, R_ID_EXAM, R_DIA, R_MES, R_AÑO, R_ID_AREA, R_ID_RLS_LS)
 
 
         LOG.Write_Line("Cant. Resultados: " & Data_Res01.Count)
@@ -385,7 +385,7 @@ Public Class Ate_Resultados_2
 
 
 
-            ID_OTHER = (New D_Ate_Resultados).IRIS_WEBF_CMVM_BUSCA_ATE_L_R_2_AREA(ATE_NUM, DIRECTION, ID_PROC, ID_PREV, ID_PROG, ID_SECC, ID_EXAM, ID_SECT, ID_PACI, ID_USER.Value, USU_ID_PROC, ID_AREA, ACTIVA_PENDIENTES_R, ID_RLS_LS)
+            ID_OTHER = (New N_Ate_Resultados).IRIS_WEBF_CMVM_BUSCA_ATE_L_R_2_AREA(ATE_NUM, DIRECTION, ID_PROC, ID_PREV, ID_PROG, ID_SECC, ID_EXAM, ID_SECT, ID_PACI, ID_AREA, ACTIVA_PENDIENTES_R, ID_RLS_LS, USU_ID_PROC)
             If ID_OTHER = 0 Then
                 Return ATE_NUM
             End If
